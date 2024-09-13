@@ -1,38 +1,34 @@
-# 999-vue-element-plus-admin
+# vue-element-plus-admin
 
-This template should help get you started developing with Vue 3 in Vite.
+该模板应该可以帮助您开始在 Vite 中使用 Vue 3 进行开发。
 
-## Recommended IDE Setup
+## 推荐的 IDE 设置
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+[VSCode](https://code.visualstudio.com/?_blank) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Type Support for `.vue` Imports in TS
+## 自定义配置
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+参考 [Vite Configuration Reference](https://vitejs.dev/config/?_blank).
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## 项目设置
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 开发时编译和热重载
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### 为生产进行类型检查、编译和压缩
 
 ```sh
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### 使用 [ESLint](https://eslint.org/)
 
 ```sh
 npm run lint
