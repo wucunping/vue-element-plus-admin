@@ -4,7 +4,7 @@
 
 ## 推荐的 IDE 设置
 
-[VSCode](https://code.visualstudio.com/?_blank) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+<a href="https://code.visualstudio.com/" target="_blank">VSCode</a> + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
 ## 自定义配置
 
