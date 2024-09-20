@@ -1,4 +1,4 @@
-// import { createRouter, createWebHistory } from 'vue-router'
+// import { createRouter, createWebHistory } from 'vue-router'// 引入 Vue Router 和历史模式
 // import HomeView from '../views/HomeView.vue'
 
 // const router = createRouter({

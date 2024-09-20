@@ -1,14 +1,18 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
-  "exclude": ["src/**/__tests__/*"],
-  "compilerOptions": {
-    "composite": true,
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+	"extends": "@vue/tsconfig/tsconfig.dom.json", // 继承 tsconfig.json 的配置
+	"include": [
+		"env.d.ts", // 包含 src 目录下的声明文件
+		"src/**/*",
+		"src/**/*.vue" // 包含 src 目录下的所有 Vue 文件
+	],
+	"exclude": ["src/**/__tests__/*"], // 排除 node_modules 目录中的文件
+	"compilerOptions": {
+		"composite": true,
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
 
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
+		"baseUrl": ".", // 将相对路径基准设置为当前项目根目录
+		"paths": {
+			"@/*": ["./src/*"] // 定义路径别名，'@/' 代表 'src/' 目录
+		}
+	}
 }
