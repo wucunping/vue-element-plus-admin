@@ -1,11 +1,19 @@
+/*
+TypeScript配置
+项目使用了多个TypeScript配置文件（ tsconfig.json , tsconfig.app.json , tsconfig.node.json ）
+来管理不同场景下的TypeScript编译选项。
+tsconfig.json 是主配置文件，它通过references字段引用了其他两个配置文件，实现了配置的模块化。
+tsconfig.app.json 针对Vue应用进行了特定配置，如包含Vue文件、定义路径别名等。
+tsconfig.node.json 针对Node.js环境进行了配置，指定了模块解析方式和类型定义。
+*/
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    },
-    {
-      "path": "./tsconfig.app.json"
-    }
-  ]
+	"files": [],
+	"references": [
+		{
+			"path": "./tsconfig.node.json"
+		},
+		{
+			"path": "./tsconfig.app.json"
+		}
+	]
 }

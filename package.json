@@ -9,11 +9,12 @@
 		"preview": "vite preview",
 		"build-only": "vite build",
 		"type-check": "vue-tsc --build --force",
-		"lint": "eslint \"src/**/*.{ts,js}\" --fix",
+		"lint": "eslint \"src/**/*.{ts,js,tsx,vue,html}\" --fix",
 		"format": "prettier --write src/",
 		"stylelint": "stylelint \"**/*.css\""
 	},
 	"dependencies": {
+		"axios": "^1.7.7",
 		"dayjs": "^1.11.13",
 		"element-plus": "^2.8.3",
 		"lodash-es": "^4.17.21",

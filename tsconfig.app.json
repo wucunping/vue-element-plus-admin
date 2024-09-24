@@ -1,18 +1,27 @@
+// 开始定义 TypeScript 配置文件
 {
-	"extends": "@vue/tsconfig/tsconfig.dom.json", // 继承 tsconfig.json 的配置
+	// 继承 @vue/tsconfig 提供的 dom 相关配置
+	"extends": "@vue/tsconfig/tsconfig.dom.json",
+	// 定义哪些文件需要被 TypeScript 编译器处理
 	"include": [
-		"env.d.ts", // 包含 src 目录下的声明文件
-		"src/**/*",
-		"src/**/*.vue" // 包含 src 目录下的所有 Vue 文件
+		"env.d.ts", // 包含项目根目录下的 env.d.ts 声明文件
+		"src/**/*", // 包含 src 目录下的所有文件（不包括以点开头的文件或文件夹）
+		"src/**/*.vue", // 包含 src 目录及其子目录下的所有 Vue 文件
+		"types/**/*.d.ts" // （可选）包含 types 目录及其子目录下的所有 .d.ts 声明文件，当前行被注释掉
+		// "src/**/*.ts" // （可选）例如，也包含 src 目录及其子目录下的所有 .ts 文件，当前行被注释掉
 	],
-	"exclude": ["src/**/__tests__/*"], // 排除 node_modules 目录中的文件
+	"exclude": [
+		"src/**/__tests__/*" // 排除 src 目录下所有 __tests__ 子目录中的文件，通常用于忽略测试文件
+	],
+	// 定义 TypeScript 编译器的选项
 	"compilerOptions": {
-		"composite": true,
-		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+		"composite": true, // 启用项目引用和增量编译
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo", // 设置增量编译信息的存储位置
 
-		"baseUrl": ".", // 将相对路径基准设置为当前项目根目录
+		"baseUrl": ".", // 设置解析非相对模块名的基准目录，'.' 表示当前目录即项目根目录
+		// 定义模块路径别名，便于在项目中更简洁地引用模块
 		"paths": {
-			"@/*": ["./src/*"] // 定义路径别名，'@/' 代表 'src/' 目录
+			"@/*": ["./src/*"] // 将 '@/' 别名映射到 'src/' 目录，便于在项目中直接通过 '@/模块路径' 的方式引用 src 目录下的模块
 		}
 	}
 }

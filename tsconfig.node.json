@@ -1,19 +1,23 @@
+// 开始定义tsconfig.node.json的配置内容
 {
-  "extends": "@tsconfig/node20/tsconfig.json",
-  "include": [
-    "vite.config.*",
-    "vitest.config.*",
-    "cypress.config.*",
-    "nightwatch.conf.*",
-    "playwright.config.*"
-  ],
-  "compilerOptions": {
-    "composite": true,
-    "noEmit": true,
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+	// 继承@tsconfig/node20的默认配置
+	"extends": "@tsconfig/node20/tsconfig.json",
+	// 定义需要被TypeScript编译器处理的文件或文件夹
+	"include": [
+		"vite.config.*", // 包含所有以vite.config.开头的文件
+		"vitest.config.*", // 包含所有以vitest.config.开头的文件
+		"cypress.config.*", // 包含所有以cypress.config.开头的文件
+		"nightwatch.conf.*", // 包含所有以nightwatch.conf.开头的文件
+		"playwright.config.*" // 包含所有以playwright.config.开头的文件
+	],
+	// 定义TypeScript编译器的选项
+	"compilerOptions": {
+		"composite": true, // 启用增量编译和跨项目的类型引用
+		"noEmit": true, // 不生成输出文件，即不编译成JavaScript文件
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo", // 设置增量编译信息的存储位置
 
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "types": ["node"]
-  }
-}
+		"module": "ESNext", // 设置生成代码的模块系统为ESNext
+		"moduleResolution": "Bundler", // 设置模块解析策略为Bundler，适用于如Webpack这样的打包工具
+		"types": ["node"] // 只包含node的类型定义，忽略其他全局类型定
+	}
+} // 结束定义tsconfig.node.json的配置内容
