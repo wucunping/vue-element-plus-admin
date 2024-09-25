@@ -3,10 +3,10 @@ import router from '@/router'
 
 // 从状态管理库的app模块中导入useAppStoreWithOut函数，
 // 允许我们在非组件环境中访问app状态，比如获取应用配置等
-// import { useAppStoreWithOut } from '@/store/modules/app'
+import { useAppStoreWithOut } from '@/store/modules/app'
 
 // 从vue-router中导入RouteRecordRaw类型，用于类型定义路由记录对象
-// import type { RouteRecordRaw } from 'vue-router'
+import type { RouteRecordRaw } from 'vue-router'
 
 // 导入自定义hook useTitle，用于动态设置网页标题
 // import { useTitle } from '@/hooks/web/useTitle'

@@ -24,15 +24,15 @@ export default [
 	{
 		ignores: [
 			"src/error/demo.ts", // 全局忽略src/error/demo.ts文件
-			// "src/utils/color.ts", // 忽略src/utils/color.ts文件
-			// "src/utils/dateUtil.ts", // 忽略src/utils/dateUtil.ts文件
-			// "src/utils/domUtils.ts", // 忽略src/utils/domUtils.ts文件
-			// "src/utils/index.ts", // 忽略src/utils/index.ts文件
-			// "src/utils/is.ts", // 忽略src/utils/is.ts文件
-			// "src/utils/propTypes.ts", // 忽略src/utils/propTypes.ts文件
-			// "src/utils/routerHelper.ts", // 忽略src/utils/routerHelper.ts文件
-			// "src/utils/tree.ts", // 忽略src/utils/tree.ts文件
-			// "src/utils/tsxHelper.ts", // 忽略src/utils/tsxHelper.ts文件
+			"src/utils/color.ts", // 忽略src/utils/color.ts文件
+			"src/utils/dateUtil.ts", // 忽略src/utils/dateUtil.ts文件
+			"src/utils/domUtils.ts", // 忽略src/utils/domUtils.ts文件
+			"src/utils/index.ts", // 忽略src/utils/index.ts文件
+			"src/utils/is.ts", // 忽略src/utils/is.ts文件
+			"src/utils/propTypes.ts", // 忽略src/utils/propTypes.ts文件
+			"src/utils/routerHelper.ts", // 忽略src/utils/routerHelper.ts文件
+			"src/utils/tree.ts", // 忽略src/utils/tree.ts文件
+			"src/utils/tsxHelper.ts", // 忽略src/utils/tsxHelper.ts文件
 		],
 	},
 	{

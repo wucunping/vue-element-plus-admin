@@ -18,6 +18,11 @@
 
 		"module": "ESNext", // 设置生成代码的模块系统为ESNext
 		"moduleResolution": "Bundler", // 设置模块解析策略为Bundler，适用于如Webpack这样的打包工具
-		"types": ["node"] // 只包含node的类型定义，忽略其他全局类型定
+		// "moduleResolution": "node", // 决定如何处理模块，这里使用Node.js风格的模块解析机制
+		// "esModuleInterop": true, // 允许默认导入从CommonJS模块，改善与ES模块的互操作性
+		"types": [
+			"node" // 只包含node的类型定义，忽略其他全局类型定
+			// "element-plus/global" // Element Plus UI库的全局类型声明
+		]
 	}
 } // 结束定义tsconfig.node.json的配置内容
