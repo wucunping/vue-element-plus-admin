@@ -35,57 +35,57 @@ import { unref } from 'vue'
 // 引入vueuse的useDark函数，用于获取当前是否是暗黑模式
 import { useDark } from '@vueuse/core'
 
-// 定义应用状态接口
+/** 定义应用状态接口 */
 interface AppState {
-	// 是否显示面包屑
+	/** 是否显示面包屑 */
 	breadcrumb: boolean
-	// 是否显示面包屑图标
+	/** 是否显示面包屑图标 */
 	breadcrumbIcon: boolean
-	// 是否折叠菜单
+	/** 是否折叠菜单 */
 	collapse: boolean
-	// 是否只保持一个子菜单的展开
+	/** 是否只保持一个子菜单的展开 */
 	uniqueOpened: boolean
-	// 是否显示折叠图标
+	/** 是否显示折叠菜块图标 */
 	hamburger: boolean
-	// 是否显示全屏图标
+	/** 是否显示全屏图标 */
 	screenfull: boolean
-	// 是否显示尺寸图标
+	/** 是否显示尺寸图标 */
 	size: boolean
-	// 是否显示多语言图标
+	/** 是否显示多语言图标 */
 	locale: boolean
-	// 是否显示标签页
+	/** 是否显示标签页 */
 	tagsView: boolean
-	// 是否显示标签图标
+	/** 是否显示标签图标 */
 	tagsViewIcon: boolean
-	// 是否显示logo
+	/** 是否显示logo */
 	logo: boolean
-	// 是否固定toolheader
+	/** 是否固定toolheader */
 	fixedHeader: boolean
-	// 是否显示页脚
+	/** 是否显示页脚 */
 	footer: boolean
-	// 是否开始灰色模式，用于特殊悼念日
+	/** 是否开始灰色模式，用于特殊悼念日 */
 	greyMode: boolean
-	// 是否动态路由
+	/** 是否动态路由 */
 	dynamicRouter: boolean
-	// 是否服务端渲染动态路由
+	/** 是否服务端渲染动态路由 */
 	serverDynamicRouter: boolean
-	// 是否加载页面
+	/** 是否加载页面 */
 	pageLoading: boolean
-	// 布局类型
+	/** 布局类型 */
 	layout: LayoutType
-	// 标题
+	/** 标题 */
 	title: string
-	// 是否是暗黑模式
+	/** 是否是暗黑模式 */
 	isDark: boolean
-	// 组件尺寸
+	/** 组件尺寸 */
 	currentSize: ComponentSize
-	// 组件尺寸列表
+	/** 组件尺寸列表 */
 	sizeMap: ComponentSize[]
-	// 是否是移动端
+	/** 是否是移动端 */
 	mobile: boolean
-	// 主题设置
+	/** 主题设置 */
 	theme: ThemeTypes
-	// 是否固定菜单
+	/** 是否固定菜单 */
 	fixedMenu: boolean
 }
 
@@ -179,103 +179,153 @@ export const useAppStore = defineStore('app', {
 
 	// 定义计算属性
 	getters: {
-		// 获取是否显示面包屑
+		/**
+		 * 获取是否显示面包屑
+		 */
 		getBreadcrumb(): boolean {
 			return this.breadcrumb
 		},
-		// 获取是否显示面包屑图标
+		/**
+		 * 获取是否显示面包屑图标
+		 */
 		getBreadcrumbIcon(): boolean {
 			return this.breadcrumbIcon
 		},
-		// 获取是否折叠菜单
+		/**
+		 * 获取是否折叠菜单
+		 */
 		getCollapse(): boolean {
 			return this.collapse
 		},
-		// 获取是否只保持一个子菜单的展开
+		/**
+		 * 获取是否只保持一个子菜单的展开
+		 */
 		getUniqueOpened(): boolean {
 			return this.uniqueOpened
 		},
-		// 获取是否显示折叠图标
+		/**
+		 * 获取是否显示折叠菜图标
+		 */
 		getHamburger(): boolean {
 			return this.hamburger
 		},
-		// 获取是否显示全屏图标
+		/**
+		 * 获取是否显示全屏图标
+		 */
 		getScreenfull(): boolean {
 			return this.screenfull
 		},
-		// 获取是否显示尺寸图标
+		/**
+		 * 获取是否显示尺寸图标
+		 */
 		getSize(): boolean {
 			return this.size
 		},
-		// 获取是否显示多语言图标
+		/**
+		 * 获取是否显示多语言图标
+		 */
 		getLocale(): boolean {
 			return this.locale
 		},
-		// 获取是否显示标签页
+		/**
+		 * 获取是否显示标签页
+		 */
 		getTagsView(): boolean {
 			return this.tagsView
 		},
-		// 获取是否显示标签图标
+		/**
+		 * 获取是否显示标签图标
+		 */
 		getTagsViewIcon(): boolean {
 			return this.tagsViewIcon
 		},
-		// 获取是否显示logo
+		/**
+		 * 获取是否显示logo
+		 */
 		getLogo(): boolean {
 			return this.logo
 		},
-		// 获取是否固定toolheader
+		/**
+		 * 获取是否固定toolheader
+		 */
 		getFixedHeader(): boolean {
 			return this.fixedHeader
 		},
-		// 获取是否开始灰色模式，用于特殊悼念日
+		/**
+		 * 获取是否开始灰色模式，用于特殊悼念日
+		 */
 		getGreyMode(): boolean {
 			return this.greyMode
 		},
-		// 获取是否动态路由
+		/**
+		 * 获取是否动态路由
+		 */
 		getDynamicRouter(): boolean {
 			return this.dynamicRouter
 		},
-		// 获取是否服务端渲染动态路由
+		/**
+		 * 获取是否服务端渲染动态路由
+		 */
 		getServerDynamicRouter(): boolean {
 			return this.serverDynamicRouter
 		},
-		// 获取是否固定菜单
+		/**
+		 * 获取是否固定菜单
+		 */
 		getFixedMenu(): boolean {
 			return this.fixedMenu
 		},
-		// 获取是否加载页面
+		/**
+		 * 获取是否加载页面
+		 */
 		getPageLoading(): boolean {
 			return this.pageLoading
 		},
-		// 获取布局类型
+		/**
+		 * 获取布局类型
+		 */
 		getLayout(): LayoutType {
 			return this.layout
 		},
-		// 获取标题
+		/**
+		 * 获取标题
+		 */
 		getTitle(): string {
 			return this.title
 		},
-		// 获取是否是暗黑模式
+		/**
+		 * 获取是否是暗黑模式
+		 */
 		getIsDark(): boolean {
 			return this.isDark
 		},
-		// 获取组件尺寸
+		/**
+		 * 获取组件尺寸
+		 */
 		getCurrentSize(): ComponentSize {
 			return this.currentSize
 		},
-		// 获取组件尺寸列表
+		/**
+		 * 获取组件尺寸列表
+		 */
 		getSizeMap(): ComponentSize[] {
 			return this.sizeMap
 		},
-		// 获取是否是移动端
+		/**
+		 * 获取是否是移动端
+		 */
 		getMobile(): boolean {
 			return this.mobile
 		},
-		// 获取主题设置
+		/**
+		 * 获取主题设置
+		 */
 		getTheme(): ThemeTypes {
 			return this.theme
 		},
-		// 获取是否显示页脚
+		/**
+		 * 获取是否显示页脚
+		 */
 		getFooter(): boolean {
 			return this.footer
 		}
@@ -283,75 +333,129 @@ export const useAppStore = defineStore('app', {
 
 	// 定义方法
 	actions: {
-		// 设置是否显示面包屑
+		/**
+		 * 设置是否显示面包屑
+		 * @param {boolean} breadcrumb - 是否显示面包屑
+		 */
 		setBreadcrumb(breadcrumb: boolean) {
 			this.breadcrumb = breadcrumb
 		},
-		// 设置是否显示面包屑图标
+		/**
+		 * 设置是否显示面包屑图标
+		 * @param {boolean} breadcrumbIcon - 是否显示面包屑图标
+		 */
 		setBreadcrumbIcon(breadcrumbIcon: boolean) {
 			this.breadcrumbIcon = breadcrumbIcon
 		},
-		// 设置是否折叠菜单
+		/**
+		 * 设置是否折叠菜单
+		 * @param {boolean} collapse - 是否折叠菜单
+		 */
 		setCollapse(collapse: boolean) {
 			this.collapse = collapse
 		},
-		// 设置是否只保持一个子菜单的展开
+		/**
+		 * 设置是否只保持一个子菜单的展开
+		 * @param {boolean} uniqueOpened - 是否只保持一个子菜单的展开
+		 */
 		setUniqueOpened(uniqueOpened: boolean) {
 			this.uniqueOpened = uniqueOpened
 		},
-		// 设置是否显示折叠图标
+		/**
+		 * 设置是否显示折叠图标
+		 * @param {boolean} hamburger - 是否显示折叠图标
+		 */
 		setHamburger(hamburger: boolean) {
 			this.hamburger = hamburger
 		},
-		// 设置是否显示全屏图标
+		/**
+		 * 设置是否显示全屏图标
+		 * @param {boolean} screenfull - 是否显示全屏图标
+		 */
 		setScreenfull(screenfull: boolean) {
 			this.screenfull = screenfull
 		},
-		// 设置是否显示尺寸图标
+		/**
+		 * 设置是否显示尺寸图标
+		 * @param {boolean} size - 是否显示尺寸图标
+		 */
 		setSize(size: boolean) {
 			this.size = size
 		},
-		// 设置是否显示多语言图标
+		/**
+		 * 设置是否显示多语言图标
+		 * @param {boolean} locale - 是否显示多语言图标
+		 */
 		setLocale(locale: boolean) {
 			this.locale = locale
 		},
-		// 设置是否显示标签页
+		/**
+		 * 设置是否显示标签页
+		 * @param {boolean} tagsView - 是否显示标签页
+		 */
 		setTagsView(tagsView: boolean) {
 			this.tagsView = tagsView
 		},
-		// 设置是否显示标签图标
+		/**
+		 * 设置是否显示标签图标
+		 * @param {boolean} tagsViewIcon - 是否显示标签图标
+		 */
 		setTagsViewIcon(tagsViewIcon: boolean) {
 			this.tagsViewIcon = tagsViewIcon
 		},
-		// 设置是否显示logo
+		/**
+		 * 设置是否显示logo
+		 * @param {boolean} logo - 是否显示logo
+		 */
 		setLogo(logo: boolean) {
 			this.logo = logo
 		},
-		// 设置是否固定toolheader
+		/**
+		 * 设置是否固定toolheader
+		 * @param {boolean} fixedHeader - 是否固定toolheader
+		 */
 		setFixedHeader(fixedHeader: boolean) {
 			this.fixedHeader = fixedHeader
 		},
-		// 设置是否开始灰色模式，用于特殊悼念日
+		/**
+		 * 设置是否开始灰色模式，用于特殊悼念日
+		 * @param {boolean} greyMode - 是否开始灰色模式
+		 */
 		setGreyMode(greyMode: boolean) {
 			this.greyMode = greyMode
 		},
-		// 设置是否动态路由
+		/**
+		 * 设置是否动态路由
+		 * @param {boolean} dynamicRouter - 是否动态路由
+		 */
 		setDynamicRouter(dynamicRouter: boolean) {
 			this.dynamicRouter = dynamicRouter
 		},
-		// 设置是否服务端渲染动态路由
+		/**
+		 * 设置是否服务端渲染动态路由
+		 * @param {boolean} serverDynamicRouter - 是否服务端渲染动态路由
+		 */
 		setServerDynamicRouter(serverDynamicRouter: boolean) {
 			this.serverDynamicRouter = serverDynamicRouter
 		},
-		// 设置是否固定菜单
+		/**
+		 * 设置是否固定菜单
+		 * @param {boolean} fixedMenu - 是否固定菜单
+		 */
 		setFixedMenu(fixedMenu: boolean) {
 			this.fixedMenu = fixedMenu
 		},
-		// 设置是否加载页面
+		/**
+		 * 设置是否加载页面
+		 * @param {boolean} pageLoading - 是否加载页面
+		 */
 		setPageLoading(pageLoading: boolean) {
 			this.pageLoading = pageLoading
 		},
-		// 设置布局类型
+		/**
+		 * 设置布局类型
+		 * @param {LayoutType} layout - 布局类型
+		 */
 		setLayout(layout: LayoutType) {
 			if (this.mobile && layout !== 'classic') {
 				ElMessage.warning('移动端模式下不支持切换其它布局')
@@ -359,11 +463,17 @@ export const useAppStore = defineStore('app', {
 			}
 			this.layout = layout
 		},
-		// 设置标题
+		/**
+		 * 设置标题
+		 * @param {string} title - 页面标题
+		 */
 		setTitle(title: string) {
 			this.title = title
 		},
-		// 设置是否是暗黑模式
+		/**
+		 * 设置是否是暗黑模式
+		 * @param {boolean} isDark - 是否是暗黑模式
+		 */
 		setIsDark(isDark: boolean) {
 			this.isDark = isDark
 			if (this.isDark) {
@@ -375,30 +485,46 @@ export const useAppStore = defineStore('app', {
 			}
 			this.setPrimaryLight() // 注意：这里缺少函数定义，无法提供完整的函数注释
 		},
-		// 设置组件尺寸
+		/**
+		 * 设置组件尺寸
+		 * @param {ComponentSize} currentSize - 当前组件尺寸
+		 */
 		setCurrentSize(currentSize: ComponentSize) {
 			this.currentSize = currentSize
 		},
-		// 设置是否是移动端
+		/**
+		 * 设置是否是移动端
+		 * @param {boolean} mobile - 是否是移动端
+		 */
 		setMobile(mobile: boolean) {
 			this.mobile = mobile
 		},
-		// 设置主题设置
+		/**
+		 * 设置主题设置
+		 * @param {ThemeTypes} theme - 主题设置
+		 */
 		setTheme(theme: ThemeTypes) {
 			this.theme = Object.assign(this.theme, theme)
 		},
-		// 设置CSS变量主题
+		/**
+		 * 设置CSS变量主题
+		 */
 		setCssVarTheme() {
 			for (const key in this.theme) {
 				setCssVar(`--${humpToUnderline(key)}`, this.theme[key])
 			}
 			this.setPrimaryLight() // 注意：这里缺少函数定义，无法提供完整的函数注释
 		},
-		// 设置页脚显示
+		/**
+		 * 设置页脚显示
+		 * @param {boolean} footer - 是否显示页脚
+		 */
 		setFooter(footer: boolean) {
 			this.footer = footer
 		},
-		// 设置主题光度
+		/**
+		 * 设置主题光度
+		 */
 		setPrimaryLight() {
 			if (this.theme.elColorPrimary) {
 				const elColorPrimary = this.theme.elColorPrimary
@@ -410,7 +536,10 @@ export const useAppStore = defineStore('app', {
 				setCssVar(`--el-color-primary-dark-2`, mix(color, elColorPrimary, 0.2))
 			}
 		},
-		// 设置菜单主题
+		/**
+		 * 设置菜单主题
+		 * @param {string} color - 菜单主题颜色
+		 */
 		setMenuTheme(color: string) {
 			const primaryColor = useCssVar('--el-color-primary', document.documentElement)
 			const isDarkColor = colorIsDark(color)
@@ -441,7 +570,10 @@ export const useAppStore = defineStore('app', {
 			this.setTheme(theme)
 			this.setCssVarTheme()
 		},
-		// 设置头部主题
+		/**
+		 * 设置头部主题
+		 * @param {string} color - 头部主题颜色
+		 */
 		setHeaderTheme(color: string) {
 			const isDarkColor = colorIsDark(color)
 			const textColor = isDarkColor ? '#fff' : 'inherit'
@@ -460,7 +592,9 @@ export const useAppStore = defineStore('app', {
 				this.setMenuTheme(color)
 			}
 		},
-		// 初始化主题
+		/**
+		 * 初始化主题
+		 */
 		initTheme() {
 			const isDark = useDark({
 				valueDark: 'dark',
@@ -473,7 +607,10 @@ export const useAppStore = defineStore('app', {
 	persist: true
 })
 
-// 导出带有 store 的 app store
+/**
+ * 导出带有 store 的应用状态管理 store
+ * @returns {ReturnType<typeof useAppStore>} - 返回应用状态管理 store 的实例
+ */
 export const useAppStoreWithOut = () => {
-	return useAppStore(store)
+	return useAppStore(store) // 返回已定义的应用状态管理 store 实例
 }

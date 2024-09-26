@@ -8,23 +8,34 @@
  * 注意：该文件是一个 TypeScript 声明文件（.d.ts），用于提供类型信息，不包含实际的可执行代码。
  */
 
-// 声明一个模块 'vue'，以便在此模块内扩展 Vue 的全局类型。
+/**
+ * 声明一个 Vue 模块，以扩展 Vue 的全局类型。
+ */
 declare module 'vue' {
-	// 在 Vue 模块内导出一个名为 'GlobalComponents' 的接口。
-	// 这个接口用于定义全局可用的 Vue 组件。
+	/**
+	 * 在 Vue 模块内定义一个接口，名为 GlobalComponents，用于表示全局可用的 Vue 组件。
+	 */
 	export interface GlobalComponents {
-		// 定义一个名为 'Icon' 的属性，其类型是从 '../src/components/Icon/index' 文件中导入的 'Icon' 组件的类型。
-		// 通过这种方式，我们可以在全局范围内使用 'Icon' 组件，而无需在每个使用它的文件中单独导入。
+		/**
+		 * 定义 Icon 组件，类型来源于 '../src/components/Icon/index' 文件中的 Icon 组件。
+		 * 这允许我们在全局范围内使用 Icon 组件，而无需在每个文件中单独导入。
+		 */
 		Icon: (typeof import('../src/components/Icon/index'))['Icon']
 
-		// 定义一个名为 'Permission' 的属性，其类型是从 '../src/components/Permission/index' 文件中导入的 'Permission' 组件的类型。
+		/**
+		 * 定义 Permission 组件，类型来源于 '../src/components/Permission/index' 文件中的 Permission 组件。
+		 */
 		Permission: (typeof import('../src/components/Permission/index'))['Permission']
 
-		// 定义一个名为 'BaseButton' 的属性，其类型是从 '../src/components/Button/index' 文件中导入的 'BaseButton' 组件的类型。
+		/**
+		 * 定义 BaseButton 组件，类型来源于 '../src/components/Button/index' 文件中的 BaseButton 组件。
+		 */
 		BaseButton: (typeof import('../src/components/Button/index'))['BaseButton']
 	}
 }
 
-// 导出一个空对象，这是 TypeScript 的一个常见模式，用于确保文件被视为模块。
-// 在这个特定的文件中，我们主要关注于类型声明，并不需要导出任何实际的运行时值。
+/**
+ * 导出一个空对象，以确保此文件被视为模块。
+ * 此文件主要关注类型声明，因此不需要导出任何运行时值。
+ */
 export {}

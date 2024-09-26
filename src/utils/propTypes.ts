@@ -32,12 +32,16 @@ import { VueTypeValidableDef, VueTypesInterface, createTypes, toValidableType } 
 // 导入 Vue 中的 CSSProperties 类型，用于定义 style 属性的类型
 import { CSSProperties } from 'vue'
 
-// 定义一个扩展了 VueTypesInterface 的 PropTypes 类型，添加了一个只读的 style 属性
+/**
+ * 定义一个扩展了 VueTypesInterface 的 PropTypes 类型，添加了一个只读的 style 属性
+ */
 type PropTypes = VueTypesInterface & {
 	readonly style: VueTypeValidableDef<CSSProperties> // style 属性的类型为 VueTypeValidableDef<CSSProperties>
 }
 
-// 使用 createTypes 函数创建一个包含基础类型定义的新 PropTypes 对象
+/**
+ * 使用 createTypes 函数创建一个包含基础类型定义的新 PropTypes 对象
+ */
 const newPropTypes = createTypes({
 	func: undefined, // 函数类型
 	bool: undefined, // 布尔类型
@@ -47,16 +51,24 @@ const newPropTypes = createTypes({
 	integer: undefined // 整数类型（虽然 JS 中没有真正的整数类型，但这里可以作为一种约束）
 }) as PropTypes // 断言新创建的对象符合我们定义的 PropTypes 类型
 
-// 定义一个 propTypes 类，继承自新创建的 newPropTypes 对象
+/**
+ * 定义一个 propTypes 类，继承自新创建的 newPropTypes 对象
+ */
 class propTypes extends newPropTypes {
-	// 定义一个静态的 style 方法，用于获取 style 属性的验证类型定义
+	/**
+	 * 定义一个静态的 style 方法，用于获取 style 属性的验证类型定义
+	 */
 	static get style() {
-		// 使用 toValidableType 函数创建一个可以验证的类型定义，指定其名称为 'style'，并定义其类型为 String 或 Object
+		/**
+		 * 使用 toValidableType 函数创建一个可以验证的类型定义，指定其名称为 'style'，并定义其类型为 String 或 Object
+		 */
 		return toValidableType('style', {
 			type: [String, Object] // style 属性可以接受字符串或对象类型的值
 		})
 	}
 }
 
-// 导出 propTypes 类，以便在其他文件中使用
+/**
+ * 导出 propTypes 类，以便在其他文件中使用
+ */
 export { propTypes }

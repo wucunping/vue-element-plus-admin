@@ -16,9 +16,14 @@
 // 导入dayjs库，一个轻量级的日期处理库
 import dayjs from 'dayjs'
 
-// 定义日期时间格式常量
+/**
+ * 定义日期时间格式常量
+ */
 const DATE_TIME_FORMAT = 'YYYY-MM-DD HH:mm:ss'
-// 定义日期格式常量
+
+/**
+ * 定义日期格式常量
+ */
 const DATE_FORMAT = 'YYYY-MM-DD'
 
 /**

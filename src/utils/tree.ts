@@ -20,19 +20,26 @@
 
 // 定义TreeHelperConfig接口，用于定义树形结构的配置
 interface TreeHelperConfig {
-	id: string // 节点ID
-	children: string // 子节点属性名
-	pid: string // 父节点ID
+	/** 节点ID */
+	id: string
+	/** 子节点属性名 */
+	children: string
+	/** 父节点ID */
+	pid: string
 }
 
-// 定义默认的TreeHelperConfig配置
+/**
+ * 定义默认的TreeHelperConfig配置
+ */
 const DEFAULT_CONFIG: TreeHelperConfig = {
 	id: 'id',
 	children: 'children',
 	pid: 'pid'
 }
 
-// 获取配置对象，合并默认配置和自定义配置
+/**
+ * 获取配置对象，合并默认配置和自定义配置
+ */
 const getConfig = (config: Partial<TreeHelperConfig>) => Object.assign({}, DEFAULT_CONFIG, config)
 
 /**

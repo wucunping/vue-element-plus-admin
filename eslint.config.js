@@ -47,6 +47,8 @@ export default [
 			'@typescript-eslint/no-explicit-any': 0, // 禁用在类型检查中明确使用any，0表示禁用
 			'@typescript-eslint/no-var-requires': 0, // 禁用使用var进行require，0表示禁用
 			'@typescript-eslint/no-empty-function': 0, // 禁用空函数的检查，0表示禁用
+			"@typescript-eslint/no-unused-expressions": "off", // 禁用未使用的表达式的检查，0表示禁用
+			'@typescript-eslint/no-empty-interface': 0, // 禁用空接口的检查，0表示禁用
 			'vue/custom-event-name-casing': 0, // 禁用自定义事件名的大小写检查，0表示禁用
 			'no-use-before-define': 0, // 禁用在使用前定义的检查，0表示禁用
 			'@typescript-eslint/no-use-before-define': 0, // 禁用在ts中使用前定义的检查，0表示禁用

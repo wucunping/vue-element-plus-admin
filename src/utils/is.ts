@@ -64,18 +64,22 @@ export const isObject = (val: any): val is Record<any, any> => {
  * @returns 如果val为空，则返回true，否则返回false
  */
 export const isEmpty = <T = unknown>(val: T): val is T => {
+	// 检查值是否为数组或字符串，如果是，则返回其长度是否为 0
 	if (isArray(val) || isString(val)) {
 		return val.length === 0
 	}
 
+	// 检查值是否为 Map 或 Set 实例，如果是，则返回其大小是否为 0
 	if (val instanceof Map || val instanceof Set) {
 		return val.size === 0
 	}
 
+	// 检查值是否为对象，如果是，则返回其键的数量是否为 0
 	if (isObject(val)) {
 		return Object.keys(val).length === 0
 	}
 
+	// 对于其他类型的值，返回 false，表示该值不为空
 	return false
 }
 

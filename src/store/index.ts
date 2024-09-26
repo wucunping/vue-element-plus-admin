@@ -11,11 +11,15 @@ const store = createPinia()
 // 使用pinia的持久化插件，将store中的数据持久化
 store.use(piniaPluginPersistedstate)
 
-// 定义一个setupStore函数，该函数接收一个Vue应用实例作为参数，
-// 并在该Vue应用实例上安装我们之前创建的pinia store
+/**
+ * 定义一个setupStore函数，该函数接收一个Vue应用实例作为参数，
+ * 并在该Vue应用实例上安装我们之前创建的pinia store
+ */
 export const setupStore = (app: App<Element>) => {
 	app.use(store)
 }
 
-// 导出store，这样其他模块也可以直接使用这个store实例
+/**
+ * 导出store，这样其他模块也可以直接使用这个store实例
+ */
 export { store }
