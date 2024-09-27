@@ -5,7 +5,9 @@ import { createPinia } from 'pinia'
 // 引入pinia的持久化插件，该插件可以帮助我们将store中的数据持久化到localStorage等存储介质中
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
-// 调用createPinia方法，创建一个pinia store实例
+/**
+ * 调用createPinia方法，创建一个pinia store实例
+ */
 const store = createPinia()
 
 // 使用pinia的持久化插件，将store中的数据持久化
