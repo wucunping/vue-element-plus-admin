@@ -82,7 +82,8 @@ export const useNow = (immediate = true) => {
 
 	// 组件挂载时执行，立即开始更新时间
 	tryOnMounted(() => {
-		immediate && start() // 如果 immediate 为 true，则启动定时器
+		// immediate && start() // 如果 immediate 为 true，则启动定时器
+		if (immediate) start() // 如果 immediate 为 true，则启动定时器
 	})
 
 	// 组件卸载时执行，停止更新时间

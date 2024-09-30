@@ -123,7 +123,9 @@ export const usePermissionStore = defineStore('permission', {
 	},
 	// 定义持久化配置
 	persist: {
-		paths: ['routers', 'addRouters', 'menuTabRouters'] // 需要持久化的状态字段
+		// paths: ['routers', 'addRouters', 'menuTabRouters'] // 老版本写法，需要持久化的状态字段
+		pick: ['routers', 'addRouters', 'menuTabRouters'] // 需要持久化的状态字段
+		// omit: ['routers', 'addRouters', 'menuTabRouters'] // 忽略特定的状态字段，不将其持久化，可以使用 omit 选项
 	}
 })
 

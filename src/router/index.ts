@@ -35,13 +35,13 @@ export const constantRouterMap: AppRouteRecordRaw[] = [
 		}
 	},
 	{
-		path: '/login', // 路径为根地址
-		component: () => import('@/views/Login/Login.vue'), // 使用 Layout 组件
-		// redirect: '/dashboard/analysis', // 重定向地址
-		name: 'Login', // 路由名称
+		path: '/login',
+		component: () => import('@/views/Login/Login.vue'),
+		name: 'Login',
 		meta: {
-			// 路由元信息
-			hidden: true // 隐藏路由
+			hidden: true,
+			title: t('router.login'),
+			noTagsView: true
 		}
 	}
 	// {
@@ -204,7 +204,8 @@ export const resetRouter = (): void => {
 		const { name } = route // 获取路由名称
 		if (name && !NO_RESET_WHITE_LIST.includes(name as string)) {
 			// 如果名称存在并且不在白名单中
-			router.hasRoute(name) && router.removeRoute(name) // 移除路由
+			// router.hasRoute(name) && router.removeRoute(name) // 移除路由
+			if (router.hasRoute(name)) router.removeRoute(name) // 移除路由
 		}
 	})
 }

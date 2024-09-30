@@ -53,12 +53,27 @@ const { loadStart, loadDone } = usePageLoading()
  *
  * @param to 即将进入的目标路由对象
  * @param from 当前导航正要离开的路由对象
- * @param next 解析这个钩子，执行下一个导航守卫或确认导航
+ * @param next 一定要调用的方法，用于继续导航
  */
 router.beforeEach(async (to, from, next) => {
-	// console.log(`output->to`, to)
-	// console.log(`output->from`, from)
-	next()
+	start() // 开始 NProgress
+	loadStart() // 开始页面加载
+
+	const permissionStore = usePermissionStoreWithOut() // 获取权限状态管理
+	const appStore = useAppStoreWithOut() // 获取应用状态管理
+	const userStore = useUserStoreWithOut() // 获取用户状态管理
+
+	// 如果用户信息存在
+	if (userStore.getUserInfo) {
+		next() // 继续导航
+	} else {
+		// 如果目标路径在白名单中, 则直接进入
+		if (NO_REDIRECT_WHITE_LIST.indexOf(to.path) !== -1) {
+			next() // 继续导航
+		} else {
+			next(`/login?redirect=${to.path}`) // 否则重定向到登录页
+		}
+	}
 })
 
 /**

@@ -151,7 +151,8 @@ export const isString = (val: unknown): val is string => {
  * @param val 待检查的值
  * @returns 如果val是函数类型，则返回true，否则返回false
  */
-export const isFunction = (val: unknown): val is Function => {
+// export const isFunction = (val: unknown): val is Function => {
+export const isFunction = (val: unknown): val is (...args: any[]) => any => {
 	return typeof val === 'function'
 }
 

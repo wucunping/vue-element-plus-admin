@@ -14,15 +14,15 @@ export default tseslint.config({
 	// 注释：可以指定eslint忽略的文件和文件夹，这里被注释掉了
 	ignores: [
 		"src/error/demo.ts", // 全局忽略src/error/demo.ts文件
-		"src/utils/color.ts", // 忽略src/utils/color.ts文件
-		"src/utils/dateUtil.ts", // 忽略src/utils/dateUtil.ts文件
-		"src/utils/domUtils.ts", // 忽略src/utils/domUtils.ts文件
-		"src/utils/index.ts", // 忽略src/utils/index.ts文件
-		"src/utils/is.ts", // 忽略src/utils/is.ts文件
-		"src/utils/propTypes.ts", // 忽略src/utils/propTypes.ts文件
-		"src/utils/routerHelper.ts", // 忽略src/utils/routerHelper.ts文件
-		"src/utils/tree.ts", // 忽略src/utils/tree.ts文件
-		"src/utils/tsxHelper.ts", // 忽略src/utils/tsxHelper.ts文件
+		// "src/utils/color.ts", // 忽略src/utils/color.ts文件
+		// "src/utils/dateUtil.ts", // 忽略src/utils/dateUtil.ts文件
+		// "src/utils/domUtils.ts", // 忽略src/utils/domUtils.ts文件
+		// "src/utils/index.ts", // 忽略src/utils/index.ts文件
+		// "src/utils/is.ts", // 忽略src/utils/is.ts文件
+		// "src/utils/propTypes.ts", // 忽略src/utils/propTypes.ts文件
+		// "src/utils/routerHelper.ts", // 忽略src/utils/routerHelper.ts文件
+		// "src/utils/tree.ts", // 忽略src/utils/tree.ts文件
+		// "src/utils/tsxHelper.ts", // 忽略src/utils/tsxHelper.ts文件
 	],
 	// 指定eslint需要检查和处理的文件，这里包括src目录下的所有.ts、.tsx和.vue文件
 	files: ['src/**/*.ts', 'src/**/*.tsx', 'src/**/*.vue'],

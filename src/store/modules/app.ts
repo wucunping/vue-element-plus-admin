@@ -511,7 +511,8 @@ export const useAppStore = defineStore('app', {
 		 */
 		setCssVarTheme() {
 			for (const key in this.theme) {
-				setCssVar(`--${humpToUnderline(key)}`, this.theme[key])
+				// setCssVar(`--${humpToUnderline(key)}`, this.theme[key])
+				setCssVar(`--${humpToUnderline(key)}`, this.theme[key as keyof ThemeTypes])
 			}
 			this.setPrimaryLight() // 注意：这里缺少函数定义，无法提供完整的函数注释
 		},
@@ -542,6 +543,7 @@ export const useAppStore = defineStore('app', {
 		 */
 		setMenuTheme(color: string) {
 			const primaryColor = useCssVar('--el-color-primary', document.documentElement)
+			const primaryColorValue = unref(primaryColor)
 			const isDarkColor = colorIsDark(color)
 			const theme: Recordable = {
 				// 左侧菜单边框颜色
@@ -553,12 +555,17 @@ export const useAppStore = defineStore('app', {
 				// 左侧菜单选中背景颜色
 				leftMenuBgActiveColor: isDarkColor
 					? 'var(--el-color-primary)'
-					: hexToRGB(unref(primaryColor), 0.1),
+					: // : hexToRGB(unref(primaryColor), 0.1),
+						primaryColorValue
+						? hexToRGB(primaryColorValue, 0.1)
+						: '#fff', // 替换为默认颜色
 				// 左侧菜单收起选中背景颜色
 				leftMenuCollapseBgActiveColor: isDarkColor
 					? 'var(--el-color-primary)'
-					: hexToRGB(unref(primaryColor), 0.1),
-				// 左侧菜单字体颜色
+					: // : hexToRGB(unref(primaryColor), 0.1),
+						primaryColorValue
+						? hexToRGB(primaryColorValue, 0.1)
+						: '#fff', // 替换为默认颜色					// 左侧菜单字体颜色
 				leftMenuTextColor: isDarkColor ? '#bfcbd9' : '#333',
 				// 左侧菜单选中字体颜色
 				leftMenuTextActiveColor: isDarkColor ? '#fff' : 'var(--el-color-primary)',

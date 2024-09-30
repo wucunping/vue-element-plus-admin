@@ -27,7 +27,7 @@ import 'nprogress/nprogress.css'
 // 导入 VueUse 中处理 CSS 变量的工具函数
 import { useCssVar } from '@vueuse/core'
 
-// 定义主颜色变量，获取根元素的 CSS 变量 '--el-color-primary'
+/** 定义主颜色变量，获取根元素的 CSS 变量 '--el-color-primary' */
 const primaryColor = useCssVar('--el-color-primary', document.documentElement)
 
 /**
@@ -49,7 +49,8 @@ export const useNProgress = () => {
 		const bar = document.getElementById('nprogress')?.getElementsByClassName('bar')[0] as ElRef
 		// 如果找到了进度条元素，设置其背景颜色
 		if (bar) {
-			bar.style.background = unref(primaryColor.value) // 设置进度条的背景颜色为主颜色
+			// bar.style.background = unref(primaryColor.value) // 设置进度条的背景颜色为主颜色
+			bar.style.background = unref(primaryColor.value) || '#ffffff' // 设置进度条的背景颜色为主颜色,颜色为空的情况下使用使用白色作为默认值
 		}
 	}
 

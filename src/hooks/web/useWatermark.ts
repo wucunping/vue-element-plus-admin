@@ -11,6 +11,8 @@
  * @module Watermark
  */
 
+import { es } from 'element-plus/es/locales.mjs'
+
 // 创建一个唯一的符号，用于标识水印元素
 const domSymbol = Symbol('watermark-dom')
 
@@ -33,7 +35,8 @@ export function useWatermark(appendEl: HTMLElement | null = document.body) {
 		if (domId) {
 			// 如果水印元素存在
 			const el = appendEl // 获取附加元素
-			el && el.removeChild(domId) // 从附加元素中移除水印
+			// el && el.removeChild(domId) // 从附加元素中移除水印
+			if (el) el.removeChild(domId) // 从附加元素中移除水印
 		}
 		window.removeEventListener('resize', func) // 移除窗口大小变化时的事件监听
 	}
@@ -74,7 +77,8 @@ export function useWatermark(appendEl: HTMLElement | null = document.body) {
 		div.style.background = 'url(' + can.toDataURL('image/png') + ') left top repeat' // 将 canvas 的图片作为 div 的背景
 
 		const el = appendEl // 获取附加元素
-		el && el.appendChild(div) // 将水印 div 添加到附加元素中
+		// el && el.appendChild(div) // 将水印 div 添加到附加元素中
+		if (el) el.appendChild(div) // 将水印 div 添加到附加元素中
 		return id // 返回水印元素的 id
 	}
 

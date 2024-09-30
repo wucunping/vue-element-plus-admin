@@ -108,7 +108,8 @@ export const treeToList = <T = any>(tree: any, config: Partial<TreeHelperConfig>
  */
 export const findNode = <T = any>(
 	tree: any,
-	func: Function,
+	// func: Function,
+	func: (node: any) => node is T, // 明确函数参数和返回值类型
 	config: Partial<TreeHelperConfig> = {}
 ): T | null => {
 	// 获取配置对象
@@ -121,7 +122,8 @@ export const findNode = <T = any>(
 	// 遍历列表，如果找到符合条件的节点则返回，否则将子节点添加到列表中继续查找
 	for (const node of list) {
 		if (func(node)) return node
-		node[children!] && list.push(...node[children!])
+		// node[children!] && list.push(...node[children!])
+		if (node[children!]) list.push(...node[children!])
 	}
 
 	// 如果没有找到符合条件的节点则返回null
@@ -137,7 +139,8 @@ export const findNode = <T = any>(
  */
 export const findNodeAll = <T = any>(
 	tree: any,
-	func: Function,
+	// func: Function,
+	func: (node: any) => node is T, // 明确函数参数和返回值类型
 	config: Partial<TreeHelperConfig> = {}
 ): T[] => {
 	// 获取配置对象
@@ -150,8 +153,10 @@ export const findNodeAll = <T = any>(
 
 	// 遍历列表，如果找到符合条件的节点则添加到结果列表中，否则将子节点添加到列表中继续查找
 	for (const node of list) {
-		func(node) && result.push(node)
-		node[children!] && list.push(...node[children!])
+		// func(node) && result.push(node)
+		// node[children!] && list.push(...node[children!])
+		if (func(node)) result.push(node)
+		if (node[children!]) list.push(...node[children!])
 	}
 
 	// 返回结果列表
@@ -167,7 +172,8 @@ export const findNodeAll = <T = any>(
  */
 export const findPath = <T = any>(
 	tree: any,
-	func: Function,
+	// func: Function,
+	func: (node: any) => node is T, // 明确函数参数和返回值类型
 	config: Partial<TreeHelperConfig> = {}
 ): T | T[] | null => {
 	// 获取配置对象
@@ -189,7 +195,8 @@ export const findPath = <T = any>(
 			list.shift()
 		} else {
 			visitedSet.add(node)
-			node[children!] && list.unshift(...node[children!])
+			// node[children!] && list.unshift(...node[children!])
+			if (node[children!]) list.unshift(...node[children!])
 			path.push(node)
 			if (func(node)) {
 				return path
@@ -208,32 +215,38 @@ export const findPath = <T = any>(
  * @param config 配置对象
  * @returns 符合条件的路径列表
  */
-export const findPathAll = (tree: any, func: Function, config: Partial<TreeHelperConfig> = {}) => {
-	// 获取配置对象
+export const findPathAll = (tree: any, func: Fn, config: Partial<TreeHelperConfig> = {}) => {
+	// 获取配置，可能会有默认值
 	config = getConfig(config)
-	// 初始化路径列表
+	// 用于存储当前路径的数组
 	const path: any[] = []
-	// 初始化节点列表
+	// 将输入的树结构转换为数组形式
 	const list = [...tree]
-	// 创建一个集合，用于存储已经访问过的节点
+	// 用于存储所有符合条件的路径
+	const result: any[] = []
+	// 使用集合来追踪已访问的节点
 	const visitedSet = new Set(),
-		{ children } = config
+		{ children } = config // 从配置中获取子节点的键名
 
-	// 遍历列表，如果找到符合条件的节点则将路径添加到结果列表中，否则将子节点添加到列表中继续查找
+	// 循环遍历列表，直到所有节点都被处理
 	while (list.length) {
-		const node = list[0]
+		const node = list[0] // 取出当前节点
+		// 如果当前节点已经访问过
 		if (visitedSet.has(node)) {
-			path.pop()
-			list.shift()
+			path.pop() // 移除路径中的最后一个节点
+			list.shift() // 移除列表中的第一个节点
 		} else {
-			visitedSet.add(node)
-			node[children!] && list.unshift(...node[children!])
-			path.push(node)
-			func(node) && result.push([...path])
+			visitedSet.add(node) // 标记当前节点为已访问
+			// 如果当前节点有子节点，添加到列表前面
+			// node[children!] && list.unshift(...node[children!])
+			if (node[children!]) list.unshift(...node[children!])
+			path.push(node) // 将当前节点加入路径
+			// 如果当前节点符合条件，则将路径的副本添加到结果中
+			// func(node) && result.push([...path])
+			if (func(node)) result.push([...path])
 		}
 	}
-
-	// 返回结果列表
+	// 返回所有符合条件的路径
 	return result
 }
 
@@ -291,7 +304,8 @@ export const forEach = <T = any>(
 		if (func(list[i])) {
 			return
 		}
-		children && list[i][children] && list.splice(i + 1, 0, ...list[i][children])
+		// children && list[i][children] && list.splice(i + 1, 0, ...list[i][children])
+		if (children && list[i][children]) list.splice(i + 1, 0, ...list[i][children])
 	}
 }
 
@@ -303,7 +317,8 @@ export const forEach = <T = any>(
  */
 export const treeMap = <T = any>(
 	treeData: T[],
-	opt: { children?: string; conversion: Function }
+	// opt: { children?: string; conversion: Function }
+	opt: { children?: string; conversion: (input: T) => any }
 ): T[] => {
 	return treeData.map((item) => treeMapEach(item, opt))
 }
@@ -316,7 +331,8 @@ export const treeMap = <T = any>(
  */
 export const treeMapEach = (
 	data: any,
-	{ children = 'children', conversion }: { children?: string; conversion: Function }
+	// { children = 'children', conversion }: { children?: string; conversion: Function }
+	{ children = 'children', conversion }: { children?: string; conversion: (data: any) => any }
 ) => {
 	const haveChildren = Array.isArray(data[children]) && data[children].length > 0
 	const conversionData = conversion(data) || {}
@@ -343,7 +359,12 @@ export const treeMapEach = (
  * @param callBack 遍历函数
  * @param parentNode 父节点
  */
-export const eachTree = (treeDatas: any[], callBack: Function, parentNode = {}) => {
+export const eachTree = (
+	treeDatas: any[],
+	// callBack: Function,
+	callBack: (element: any, parentNode: any) => any,
+	parentNode = {}
+) => {
 	treeDatas.forEach((element) => {
 		const newNode = callBack(element, parentNode) || element
 		if (element.children) {
