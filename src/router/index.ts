@@ -19,6 +19,7 @@ import { useI18n } from '@/hooks/web/useI18n' // 导入国际化函数
 import { NO_RESET_WHITE_LIST } from '@/constants' // 导入常量
 
 const { t } = useI18n() // 获取国际化函数
+console.log(`output->`, t('router.login'))
 
 /**
  * 路由记录接口定义

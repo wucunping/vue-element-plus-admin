@@ -75,7 +75,14 @@ export const setupI18n = async (app: App<Element>) => {
 	// 创建 i18n 配置选项
 	const options = await createI18nOptions()
 	// 创建 i18n 实例
-	i18n = createI18n(options) as I18n
+	// i18n = createI18n(options) as I18n
+	i18n = createI18n(options) as unknown as I18n<
+		Record<string, unknown>,
+		Record<string, unknown>,
+		Record<string, unknown>,
+		unknown,
+		boolean
+	>
 	// 在 Vue 应用中使用 i18n 插件
 	app.use(i18n)
 }

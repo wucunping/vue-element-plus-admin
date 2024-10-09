@@ -1,7 +1,8 @@
 {
-  "recommendations": [
-    "Vue.volar",
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode"
+  "recommendations": [  // 推荐的扩展列表
+    "Vue.volar",  // Vue.js 项目的支持扩展
+    "dbaeumer.vscode-eslint",  // ESLint 代码检查扩展
+    "esbenp.prettier-vscode" , // Prettier 代码格式化扩展
+		"lokalise.i18n-ally" // Lokalise 的国际化助手扩展
   ]
 }

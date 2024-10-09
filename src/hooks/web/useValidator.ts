@@ -14,7 +14,7 @@
  */
 
 import { useI18n } from '@/hooks/web/useI18n' // 导入国际化相关的 hook
-import { FormItemRule } from 'element-plus' // 导入 Element Plus 的表单项规则类型
+import type { FormItemRule } from 'element-plus' // 导入 Element Plus 的表单项规则类型
 
 // 初始化国际化的翻译函数
 const { t } = useI18n()

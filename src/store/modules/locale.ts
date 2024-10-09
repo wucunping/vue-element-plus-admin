@@ -122,5 +122,3 @@ export const useLocaleStoreWithOut = () => {
 	// 返回语言存储实例
 	return useLocaleStore(store) // 返回语言存储实例
 }
-
-export const aa = '11'
