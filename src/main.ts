@@ -7,6 +7,13 @@ import App from '@/App.vue' // 引入根组件 App.vue，通过 '@' 别名从 sr
 import router from '@/router'
 import '@/permission'
 
+// // 如果是开发环境，则动态引入生产环境 Mock 服务器
+// if (import.meta.env.DEV) {
+// 	import('../mock/_createProductionServer').then(({ setupProdMockServer }) => {
+// 		setupProdMockServer()
+// 	})
+// }
+
 /**
  * 异步设置所有内容
  *

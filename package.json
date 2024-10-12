@@ -1,11 +1,14 @@
 {
 	"name": "vue-element-plus-admin",
+	"description": "一套基于vue3、element-plus、typesScript、vite4的后台集成方案。",
+	"author": "[吴尘](https://github.com/wucunping)",
+	"license": "MIT",
 	"version": "1.0.0",
 	"private": true,
 	"type": "module",
 	"scripts": {
 		"i": "pnpm install",
-		"dev": "vite",
+		"dev": "vite --mode development",
 		"build": "run-p type-check \"build-only {@}\" --",
 		"preview": "vite preview",
 		"build-only": "vite build",

@@ -1,0 +1,21 @@
+/**
+ * @file index.less
+ * @description 该文件用于导入样式文件和设置抽屉弹出时的样式。
+ * @example @import './index.less';
+ * @version 1.0
+ * @author [吴尘](https://github.com/wucunping)
+ * @date 2024-10-11
+ * @module 样式配置
+ */
+
+// 导入变量样式文件
+@import './var.css';
+
+// 导入 Element Plus 的暗黑主题 CSS 变量样式
+@import 'element-plus/theme-chalk/dark/css-vars.css';
+
+// 解决抽屉弹出时，body宽度变化的问题
+.el-popup-parent--hidden {
+	// 设置弹出层父元素的宽度为100%，并强制应用该样式
+	width: 100% !important;
+}

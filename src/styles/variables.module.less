@@ -1,0 +1,30 @@
+/**
+ * @file variables.module.less
+ * @description 该文件用于定义和导出命名空间变量，主要用于管理系统和前端组件库的样式设计。
+ * @example 
+ * // 使用导出的命名空间
+ * @import 'variables.module.less';
+ * .admin {
+ *     namespace: var(--namespace);
+ * }
+ * .el-component {
+ *     namespace: var(--elNamespace);
+ * }
+ * @version 1.0
+ * @author [吴尘](https://github.com/wucunping)
+ * @date 2024-10-11
+ * @module 样式变量模块
+ */
+
+// 命名空间
+@adminNamespace: v; // 定义管理员命名空间，赋值为 v
+
+// el命名空间
+@elNamespace: el; // 定义 el 命名空间，赋值为 el
+
+// 导出变量
+:export {
+	// 导出变量的块开始
+	namespace: @adminNamespace; // 导出管理员命名空间
+	elNamespace: @elNamespace; // 导出 el 命名空间
+} // 导出变量的块结束
