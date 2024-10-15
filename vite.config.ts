@@ -108,7 +108,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
       alias: [
         {
           find: 'vue-i18n',
-          replacement: 'vue-i18n/dist/vue-i18n.esm-bundler.js' // 使用 ESM 格式
+          replacement: 'vue-i18n/dist/vue-i18n.cjs.js' // 使用 ESM 格式
         },
         {
           find: /\@\//,
