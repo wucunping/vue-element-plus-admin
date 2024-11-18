@@ -1,3 +1,19 @@
+/**
+ * @file extensions.json
+ * @description 推荐的扩展列表配置文件
+ * @example {
+ *   "recommendations": [...]
+ * }
+ * @version 1.0.0
+ * @author [吴尘](https://github.com/wucunping)
+ * @date 2024-11-18
+ * @module extensions
+ */
+
 {
-  "recommendations": ["vue.volar", "lokalise.i18n-ally"]
+  // 推荐的扩展列表
+  "recommendations": [
+    "vue.volar", // Vue.js 项目的支持扩展
+    "lokalise.i18n-ally" // Lokalise 的国际化助手扩展
+  ]
 }

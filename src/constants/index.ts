@@ -1,4 +1,18 @@
 /**
+ * @file index.ts
+ * @description 此文件包含全局常量和配置设置，用于管理请求状态码、超时时间、内容类型等。
+ * @example
+ * // 使用请求成功状态码
+ * if (response.code === SUCCESS_CODE) {
+ *   // 处理成功的请求
+ * }
+ * @version 1.0.0
+ * @author [吴尘](https://github.com/wucunping)
+ * @date 2024-10-16
+ * @module config
+ */
+
+/**
  * 请求成功状态码
  */
 export const SUCCESS_CODE = 0

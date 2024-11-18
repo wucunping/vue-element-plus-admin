@@ -1,9 +1,22 @@
+/**
+ * @file index.ts
+ * @description 路由配置文件
+ * @example
+ * // 使用示例
+ * import router from './index'
+ *
+ * @version 1.0.0
+ * @author [吴尘](https://github.com/wucunping)
+ * @date 2024-11-18
+ * @module Router
+ */
+
 import { createRouter, createWebHashHistory } from 'vue-router'
-import type { RouteRecordRaw } from 'vue-router'
+import type { RouteRecordRaw } from 'vue-router' // 导入 RouteRecordRaw 类型，用于定义路由记录
 import type { App } from 'vue'
-import { Layout, getParentLayout } from '@/utils/routerHelper'
-import { useI18n } from '@/hooks/web/useI18n'
-import { NO_RESET_WHITE_LIST } from '@/constants'
+import { Layout, getParentLayout } from '@/utils/routerHelper' // 从工具模块中导入 Layout 和 getParentLayout 函数
+import { useI18n } from '@/hooks/web/useI18n' // 从国际化钩子中导入 useI18n 函数
+import { NO_RESET_WHITE_LIST } from '@/constants' // 从常量定义模块中导入 NO_RESET_WHITE_LIST 变量
 
 const { t } = useI18n()
 
@@ -730,6 +743,10 @@ export const asyncRouterMap: AppRouteRecordRaw[] = [
   }
 ]
 
+/**
+ * 创建路由
+ * @returns {Router} 返回创建的路由实例
+ */
 const router = createRouter({
   history: createWebHashHistory(),
   strict: true,
@@ -737,6 +754,9 @@ const router = createRouter({
   scrollBehavior: () => ({ left: 0, top: 0 })
 })
 
+/**
+ * 重置路由
+ */
 export const resetRouter = (): void => {
   router.getRoutes().forEach((route) => {
     const { name } = route
@@ -746,8 +766,13 @@ export const resetRouter = (): void => {
   })
 }
 
+/**
+ * 设置路由
+ * @param {App<Element>} app - Vue 应用实例
+ */
 export const setupRouter = (app: App<Element>) => {
   app.use(router)
 }
 
+// 导出路由实例
 export default router
