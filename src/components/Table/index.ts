@@ -1,4 +1,6 @@
 import Table from './src/Table.vue'
+
+// 从 element-plus 导入表格组件
 import { ElTable } from 'element-plus'
 import { TableColumn, TableSetProps } from './src/types'
 
