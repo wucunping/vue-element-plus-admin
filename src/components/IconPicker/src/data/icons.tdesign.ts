@@ -1,1209 +1,1221 @@
+/**
+ * @file icons.tdesign.ts
+ * @description A comprehensive list of TDesign icons used in the application.
+ * This file defines the icon names and their prefixes for the IconPicker component.
+ * @example Usage of an icon: <Icon name="vi-tdesign:add" />
+ * @version 1.0.0
+ * @date 2024-11-19
+ * @module IconPicker
+ * @author [吴尘](https://github.com/wucunping)
+ */
+
 export default {
-  name: 'TDesign Icons',
-  prefix: 'vi-tdesign',
+  name: 'TDesign Icons', // TDesign 图标集名称
+  prefix: 'vi-tdesign', // TDesign 图标的前缀
+
   icons: [
-    'vi-tdesign:activity',
-    'vi-tdesign:add',
-    'vi-tdesign:add-and-subtract',
-    'vi-tdesign:add-circle',
-    'vi-tdesign:add-rectangle',
-    'vi-tdesign:address-book',
-    'vi-tdesign:adjustment',
-    'vi-tdesign:airplay-wave',
-    'vi-tdesign:alarm',
-    'vi-tdesign:alarm-add',
-    'vi-tdesign:alarm-off',
-    'vi-tdesign:align-top',
-    'vi-tdesign:align-vertical',
-    'vi-tdesign:alpha',
-    'vi-tdesign:analytics',
-    'vi-tdesign:anchor',
-    'vi-tdesign:angry',
-    'vi-tdesign:animation',
-    'vi-tdesign:animation-1',
-    'vi-tdesign:anticlockwise',
-    'vi-tdesign:api',
-    'vi-tdesign:app',
-    'vi-tdesign:apple',
-    'vi-tdesign:application',
-    'vi-tdesign:architecture-hui-style',
-    'vi-tdesign:archway',
-    'vi-tdesign:archway-1',
-    'vi-tdesign:arrow-down',
-    'vi-tdesign:arrow-down-circle',
-    'vi-tdesign:arrow-down-rectangle',
-    'vi-tdesign:arrow-left',
-    'vi-tdesign:arrow-left-circle',
-    'vi-tdesign:arrow-left-down',
-    'vi-tdesign:arrow-left-down-circle',
-    'vi-tdesign:arrow-left-right-1',
-    'vi-tdesign:arrow-left-right-2',
-    'vi-tdesign:arrow-left-right-3',
-    'vi-tdesign:arrow-left-right-circle',
-    'vi-tdesign:arrow-left-up',
-    'vi-tdesign:arrow-left-up-circle',
-    'vi-tdesign:arrow-right',
-    'vi-tdesign:arrow-right-circle',
-    'vi-tdesign:arrow-right-down',
-    'vi-tdesign:arrow-right-down-circle',
-    'vi-tdesign:arrow-right-up',
-    'vi-tdesign:arrow-right-up-circle',
-    'vi-tdesign:arrow-triangle-down',
-    'vi-tdesign:arrow-triangle-down-filled',
-    'vi-tdesign:arrow-triangle-up',
-    'vi-tdesign:arrow-triangle-up-filled',
-    'vi-tdesign:arrow-up',
-    'vi-tdesign:arrow-up-circle',
-    'vi-tdesign:arrow-up-down-1',
-    'vi-tdesign:arrow-up-down-2',
-    'vi-tdesign:arrow-up-down-3',
-    'vi-tdesign:arrow-up-down-circle',
-    'vi-tdesign:artboard',
-    'vi-tdesign:article',
-    'vi-tdesign:assignment',
-    'vi-tdesign:assignment-checked',
-    'vi-tdesign:assignment-code',
-    'vi-tdesign:assignment-error',
-    'vi-tdesign:assignment-user',
-    'vi-tdesign:attach',
-    'vi-tdesign:attic',
-    'vi-tdesign:attic-1',
-    'vi-tdesign:audio',
-    'vi-tdesign:awkward',
-    'vi-tdesign:backtop',
-    'vi-tdesign:backtop-rectangle',
-    'vi-tdesign:backup',
-    'vi-tdesign:backward',
-    'vi-tdesign:bad-laugh',
-    'vi-tdesign:bamboo-shoot',
-    'vi-tdesign:banana',
-    'vi-tdesign:barbecue',
-    'vi-tdesign:barcode',
-    'vi-tdesign:barcode-1',
-    'vi-tdesign:base-station',
-    'vi-tdesign:battery',
-    'vi-tdesign:battery-add',
-    'vi-tdesign:battery-charging',
-    'vi-tdesign:battery-low',
-    'vi-tdesign:bean',
-    'vi-tdesign:beer',
-    'vi-tdesign:beta',
-    'vi-tdesign:bifurcate',
-    'vi-tdesign:bill',
-    'vi-tdesign:blockchain',
-    'vi-tdesign:bluetooth',
-    'vi-tdesign:bone',
-    'vi-tdesign:book',
-    'vi-tdesign:book-open',
-    'vi-tdesign:bookmark',
-    'vi-tdesign:bookmark-add',
-    'vi-tdesign:bookmark-checked',
-    'vi-tdesign:bookmark-double',
-    'vi-tdesign:bookmark-minus',
-    'vi-tdesign:braces',
-    'vi-tdesign:brackets',
-    'vi-tdesign:bread',
-    'vi-tdesign:bridge',
-    'vi-tdesign:bridge-1',
-    'vi-tdesign:bridge-2',
-    'vi-tdesign:bridge-3',
-    'vi-tdesign:bridge-4',
-    'vi-tdesign:bridge-5',
-    'vi-tdesign:bridge-6',
-    'vi-tdesign:brightness',
-    'vi-tdesign:brightness-1',
-    'vi-tdesign:broccoli',
-    'vi-tdesign:browse',
-    'vi-tdesign:browse-gallery',
-    'vi-tdesign:browse-off',
-    'vi-tdesign:brush',
-    'vi-tdesign:bug',
-    'vi-tdesign:bug-report',
-    'vi-tdesign:building',
-    'vi-tdesign:building-1',
-    'vi-tdesign:building-2',
-    'vi-tdesign:building-3',
-    'vi-tdesign:building-4',
-    'vi-tdesign:building-5',
-    'vi-tdesign:bulletpoint',
-    'vi-tdesign:button',
-    'vi-tdesign:cabbage',
-    'vi-tdesign:cake',
-    'vi-tdesign:calculation',
-    'vi-tdesign:calculation-1',
-    'vi-tdesign:calculator',
-    'vi-tdesign:calculator-1',
-    'vi-tdesign:calendar',
-    'vi-tdesign:calendar-1',
-    'vi-tdesign:calendar-2',
-    'vi-tdesign:calendar-edit',
-    'vi-tdesign:calendar-event',
-    'vi-tdesign:call',
-    'vi-tdesign:call-1',
-    'vi-tdesign:call-cancel',
-    'vi-tdesign:call-forwarded',
-    'vi-tdesign:call-incoming',
-    'vi-tdesign:call-off',
-    'vi-tdesign:calm',
-    'vi-tdesign:calm-1',
-    'vi-tdesign:camera',
-    'vi-tdesign:camera-1',
-    'vi-tdesign:camera-2',
-    'vi-tdesign:camera-off',
-    'vi-tdesign:candy',
-    'vi-tdesign:card',
-    'vi-tdesign:cardmembership',
-    'vi-tdesign:caret-down',
-    'vi-tdesign:caret-down-small',
-    'vi-tdesign:caret-left',
-    'vi-tdesign:caret-left-small',
-    'vi-tdesign:caret-right',
-    'vi-tdesign:caret-right-small',
-    'vi-tdesign:caret-up',
-    'vi-tdesign:caret-up-small',
-    'vi-tdesign:cart',
-    'vi-tdesign:cart-add',
-    'vi-tdesign:cast',
-    'vi-tdesign:castle',
-    'vi-tdesign:castle-1',
-    'vi-tdesign:castle-2',
-    'vi-tdesign:castle-3',
-    'vi-tdesign:castle-4',
-    'vi-tdesign:castle-5',
-    'vi-tdesign:castle-6',
-    'vi-tdesign:castle-7',
-    'vi-tdesign:cat',
-    'vi-tdesign:catalog',
-    'vi-tdesign:cd',
-    'vi-tdesign:celsius',
-    'vi-tdesign:center-focus-strong',
-    'vi-tdesign:centimeter',
-    'vi-tdesign:certificate',
-    'vi-tdesign:certificate-1',
-    'vi-tdesign:chart',
-    'vi-tdesign:chart-3d',
-    'vi-tdesign:chart-add',
-    'vi-tdesign:chart-analytics',
-    'vi-tdesign:chart-area',
-    'vi-tdesign:chart-area-multi',
-    'vi-tdesign:chart-bar',
-    'vi-tdesign:chart-bubble',
-    'vi-tdesign:chart-colum',
-    'vi-tdesign:chart-combo',
-    'vi-tdesign:chart-line',
-    'vi-tdesign:chart-line-data',
-    'vi-tdesign:chart-line-data-1',
-    'vi-tdesign:chart-line-multi',
-    'vi-tdesign:chart-maximum',
-    'vi-tdesign:chart-median',
-    'vi-tdesign:chart-minimum',
-    'vi-tdesign:chart-pie',
-    'vi-tdesign:chart-radar',
-    'vi-tdesign:chart-radial',
-    'vi-tdesign:chart-ring',
-    'vi-tdesign:chart-ring-1',
-    'vi-tdesign:chart-scatter',
-    'vi-tdesign:chart-stacked',
-    'vi-tdesign:chat',
-    'vi-tdesign:chat-add',
-    'vi-tdesign:chat-bubble',
-    'vi-tdesign:chat-bubble-1',
-    'vi-tdesign:chat-bubble-add',
-    'vi-tdesign:chat-bubble-error',
-    'vi-tdesign:chat-bubble-help',
-    'vi-tdesign:chat-bubble-history',
-    'vi-tdesign:chat-bubble-locked',
-    'vi-tdesign:chat-bubble-smile',
-    'vi-tdesign:chat-checked',
-    'vi-tdesign:chat-clear',
-    'vi-tdesign:chat-double',
-    'vi-tdesign:chat-error',
-    'vi-tdesign:chat-heart',
-    'vi-tdesign:chat-message',
-    'vi-tdesign:chat-off',
-    'vi-tdesign:chat-poll',
-    'vi-tdesign:chat-setting',
-    'vi-tdesign:check',
-    'vi-tdesign:check-circle',
-    'vi-tdesign:check-circle-filled',
-    'vi-tdesign:check-double',
-    'vi-tdesign:check-rectangle',
-    'vi-tdesign:check-rectangle-filled',
-    'vi-tdesign:cheese',
-    'vi-tdesign:cherry',
-    'vi-tdesign:chevron-down',
-    'vi-tdesign:chevron-down-circle',
-    'vi-tdesign:chevron-down-double',
-    'vi-tdesign:chevron-down-double-s',
-    'vi-tdesign:chevron-down-rectangle',
-    'vi-tdesign:chevron-down-s',
-    'vi-tdesign:chevron-left',
-    'vi-tdesign:chevron-left-circle',
-    'vi-tdesign:chevron-left-double',
-    'vi-tdesign:chevron-left-double-s',
-    'vi-tdesign:chevron-left-rectangle',
-    'vi-tdesign:chevron-left-s',
-    'vi-tdesign:chevron-right',
-    'vi-tdesign:chevron-right-circle',
-    'vi-tdesign:chevron-right-double',
-    'vi-tdesign:chevron-right-double-s',
-    'vi-tdesign:chevron-right-rectangle',
-    'vi-tdesign:chevron-right-s',
-    'vi-tdesign:chevron-up',
-    'vi-tdesign:chevron-up-circle',
-    'vi-tdesign:chevron-up-double',
-    'vi-tdesign:chevron-up-double-s',
-    'vi-tdesign:chevron-up-rectangle',
-    'vi-tdesign:chevron-up-s',
-    'vi-tdesign:chicken',
-    'vi-tdesign:chili',
-    'vi-tdesign:chimney',
-    'vi-tdesign:chimney-1',
-    'vi-tdesign:chimney-2',
-    'vi-tdesign:chinese-cabbage',
-    'vi-tdesign:church',
-    'vi-tdesign:circle',
-    'vi-tdesign:city',
-    'vi-tdesign:city-1',
-    'vi-tdesign:city-10',
-    'vi-tdesign:city-11',
-    'vi-tdesign:city-12',
-    'vi-tdesign:city-13',
-    'vi-tdesign:city-14',
-    'vi-tdesign:city-15',
-    'vi-tdesign:city-2',
-    'vi-tdesign:city-3',
-    'vi-tdesign:city-4',
-    'vi-tdesign:city-5',
-    'vi-tdesign:city-6',
-    'vi-tdesign:city-7',
-    'vi-tdesign:city-8',
-    'vi-tdesign:city-9',
-    'vi-tdesign:city-ancient',
-    'vi-tdesign:city-ancient-1',
-    'vi-tdesign:city-ancient-2',
-    'vi-tdesign:clear',
-    'vi-tdesign:clear-formatting',
-    'vi-tdesign:clear-formatting-1',
-    'vi-tdesign:close',
-    'vi-tdesign:close-circle',
-    'vi-tdesign:close-circle-filled',
-    'vi-tdesign:close-octagon',
-    'vi-tdesign:close-rectangle',
-    'vi-tdesign:cloud',
-    'vi-tdesign:cloud-download',
-    'vi-tdesign:cloud-upload',
-    'vi-tdesign:cloudy-day',
-    'vi-tdesign:cloudy-night',
-    'vi-tdesign:cloudy-night-rain',
-    'vi-tdesign:cloudy-rain',
-    'vi-tdesign:cloudy-sunny',
-    'vi-tdesign:code',
-    'vi-tdesign:code-1',
-    'vi-tdesign:code-off',
-    'vi-tdesign:cola',
-    'vi-tdesign:collage',
-    'vi-tdesign:collection',
-    'vi-tdesign:color-invert',
-    'vi-tdesign:combination',
-    'vi-tdesign:command',
-    'vi-tdesign:compass',
-    'vi-tdesign:compass-1',
-    'vi-tdesign:component-breadcrumb',
-    'vi-tdesign:component-checkbox',
-    'vi-tdesign:component-divider-horizontal',
-    'vi-tdesign:component-divider-vertical',
-    'vi-tdesign:component-dropdown',
-    'vi-tdesign:component-grid',
-    'vi-tdesign:component-input',
-    'vi-tdesign:component-layout',
-    'vi-tdesign:component-radio',
-    'vi-tdesign:component-space',
-    'vi-tdesign:component-steps',
-    'vi-tdesign:component-switch',
-    'vi-tdesign:constraint',
-    'vi-tdesign:contrast',
-    'vi-tdesign:contrast-1',
-    'vi-tdesign:control-platform',
-    'vi-tdesign:cooperate',
-    'vi-tdesign:coordinate-system',
-    'vi-tdesign:copy',
-    'vi-tdesign:copyright',
-    'vi-tdesign:corn',
-    'vi-tdesign:coupon',
-    'vi-tdesign:course',
-    'vi-tdesign:cpu',
-    'vi-tdesign:crack',
-    'vi-tdesign:creditcard',
-    'vi-tdesign:creditcard-add',
-    'vi-tdesign:creditcard-off',
-    'vi-tdesign:crooked-smile',
-    'vi-tdesign:cry-and-laugh',
-    'vi-tdesign:cry-loudly',
-    'vi-tdesign:css3',
-    'vi-tdesign:cucumber',
-    'vi-tdesign:currency-exchange',
-    'vi-tdesign:cursor',
-    'vi-tdesign:curtain',
-    'vi-tdesign:curve',
-    'vi-tdesign:cut',
-    'vi-tdesign:cut-1',
-    'vi-tdesign:dam',
-    'vi-tdesign:dam-1',
-    'vi-tdesign:dam-2',
-    'vi-tdesign:dam-3',
-    'vi-tdesign:dam-4',
-    'vi-tdesign:dam-5',
-    'vi-tdesign:dam-6',
-    'vi-tdesign:dam-7',
-    'vi-tdesign:dart-board',
-    'vi-tdesign:dashboard',
-    'vi-tdesign:dashboard-1',
-    'vi-tdesign:data',
-    'vi-tdesign:data-base',
-    'vi-tdesign:data-checked',
-    'vi-tdesign:data-display',
-    'vi-tdesign:data-error',
-    'vi-tdesign:data-search',
-    'vi-tdesign:delete',
-    'vi-tdesign:delete-1',
-    'vi-tdesign:delete-time',
-    'vi-tdesign:delta',
-    'vi-tdesign:depressed',
-    'vi-tdesign:desktop',
-    'vi-tdesign:desktop-1',
-    'vi-tdesign:despise',
-    'vi-tdesign:device',
-    'vi-tdesign:discount',
-    'vi-tdesign:discount-filled',
-    'vi-tdesign:dissatisfaction',
-    'vi-tdesign:divide',
-    'vi-tdesign:dividers',
-    'vi-tdesign:dividers-1',
-    'vi-tdesign:doge',
-    'vi-tdesign:double-storey',
-    'vi-tdesign:download',
-    'vi-tdesign:download-1',
-    'vi-tdesign:downscale',
-    'vi-tdesign:drag-drop',
-    'vi-tdesign:drag-move',
-    'vi-tdesign:drink',
-    'vi-tdesign:drumstick',
-    'vi-tdesign:dv',
-    'vi-tdesign:dvd',
-    'vi-tdesign:earphone',
-    'vi-tdesign:earth',
-    'vi-tdesign:edit',
-    'vi-tdesign:edit-1',
-    'vi-tdesign:edit-2',
-    'vi-tdesign:edit-off',
-    'vi-tdesign:education',
-    'vi-tdesign:eggplant',
-    'vi-tdesign:ellipsis',
-    'vi-tdesign:emo-emotional',
-    'vi-tdesign:enter',
-    'vi-tdesign:equal',
-    'vi-tdesign:error',
-    'vi-tdesign:error-circle',
-    'vi-tdesign:error-circle-filled',
-    'vi-tdesign:error-triangle',
-    'vi-tdesign:excited',
-    'vi-tdesign:excited-1',
-    'vi-tdesign:expand-horizontal',
-    'vi-tdesign:expand-vertical',
-    'vi-tdesign:explore',
-    'vi-tdesign:explore-off',
-    'vi-tdesign:exposure',
-    'vi-tdesign:extension',
-    'vi-tdesign:extension-off',
-    'vi-tdesign:face-retouching',
-    'vi-tdesign:fact-check',
-    'vi-tdesign:fahrenheit-scale',
-    'vi-tdesign:feel-at-ease',
-    'vi-tdesign:ferocious',
-    'vi-tdesign:ferris-wheel',
-    'vi-tdesign:file',
-    'vi-tdesign:file-1',
-    'vi-tdesign:file-add',
-    'vi-tdesign:file-add-1',
-    'vi-tdesign:file-attachment',
-    'vi-tdesign:file-blocked',
-    'vi-tdesign:file-code',
-    'vi-tdesign:file-code-1',
-    'vi-tdesign:file-copy',
-    'vi-tdesign:file-download',
-    'vi-tdesign:file-excel',
-    'vi-tdesign:file-export',
-    'vi-tdesign:file-icon',
-    'vi-tdesign:file-image',
-    'vi-tdesign:file-import',
-    'vi-tdesign:file-locked',
-    'vi-tdesign:file-minus',
-    'vi-tdesign:file-music',
-    'vi-tdesign:file-onenote',
-    'vi-tdesign:file-outlook',
-    'vi-tdesign:file-paste',
-    'vi-tdesign:file-pdf',
-    'vi-tdesign:file-powerpoint',
-    'vi-tdesign:file-restore',
-    'vi-tdesign:file-safety',
-    'vi-tdesign:file-search',
-    'vi-tdesign:file-setting',
-    'vi-tdesign:file-teams',
-    'vi-tdesign:file-unknown',
-    'vi-tdesign:file-unlocked',
-    'vi-tdesign:file-word',
-    'vi-tdesign:file-zip',
-    'vi-tdesign:fill-color',
-    'vi-tdesign:fill-color-1',
-    'vi-tdesign:film',
-    'vi-tdesign:film-1',
-    'vi-tdesign:filter',
-    'vi-tdesign:filter-1',
-    'vi-tdesign:filter-2',
-    'vi-tdesign:filter-3',
-    'vi-tdesign:filter-clear',
-    'vi-tdesign:filter-off',
-    'vi-tdesign:fingerprint',
-    'vi-tdesign:fingerprint-1',
-    'vi-tdesign:fingerprint-2',
-    'vi-tdesign:fingerprint-3',
-    'vi-tdesign:fish',
-    'vi-tdesign:flag',
-    'vi-tdesign:flag-1',
-    'vi-tdesign:flag-2',
-    'vi-tdesign:flag-3',
-    'vi-tdesign:flag-4',
-    'vi-tdesign:flashlight',
-    'vi-tdesign:flight-landing',
-    'vi-tdesign:flight-takeoff',
-    'vi-tdesign:flip-smiling-face',
-    'vi-tdesign:flip-to-back',
-    'vi-tdesign:flip-to-front',
-    'vi-tdesign:focus',
-    'vi-tdesign:fog',
-    'vi-tdesign:fog-night',
-    'vi-tdesign:fog-sunny',
-    'vi-tdesign:folder',
-    'vi-tdesign:folder-1',
-    'vi-tdesign:folder-add',
-    'vi-tdesign:folder-add-1',
-    'vi-tdesign:folder-blocked',
-    'vi-tdesign:folder-details',
-    'vi-tdesign:folder-export',
-    'vi-tdesign:folder-import',
-    'vi-tdesign:folder-locked',
-    'vi-tdesign:folder-minus',
-    'vi-tdesign:folder-move',
-    'vi-tdesign:folder-off',
-    'vi-tdesign:folder-open',
-    'vi-tdesign:folder-open-1',
-    'vi-tdesign:folder-search',
-    'vi-tdesign:folder-setting',
-    'vi-tdesign:folder-shared',
-    'vi-tdesign:folder-unlocked',
-    'vi-tdesign:folder-zip',
-    'vi-tdesign:forest',
-    'vi-tdesign:fork',
-    'vi-tdesign:form',
-    'vi-tdesign:format-horizontal-align-bottom',
-    'vi-tdesign:format-horizontal-align-center',
-    'vi-tdesign:format-horizontal-align-top',
-    'vi-tdesign:format-vertical-align-center',
-    'vi-tdesign:format-vertical-align-left',
-    'vi-tdesign:format-vertical-align-right',
-    'vi-tdesign:forward',
-    'vi-tdesign:frame',
-    'vi-tdesign:frame-1',
-    'vi-tdesign:fries',
-    'vi-tdesign:fullscreen',
-    'vi-tdesign:fullscreen-1',
-    'vi-tdesign:fullscreen-2',
-    'vi-tdesign:fullscreen-exit',
-    'vi-tdesign:fullscreen-exit-1',
-    'vi-tdesign:function-curve',
-    'vi-tdesign:functions',
-    'vi-tdesign:functions-1',
-    'vi-tdesign:gamepad',
-    'vi-tdesign:gamepad-1',
-    'vi-tdesign:gamma',
-    'vi-tdesign:garlic',
-    'vi-tdesign:gender-female',
-    'vi-tdesign:gender-male',
-    'vi-tdesign:gesture-applause',
-    'vi-tdesign:gesture-click',
-    'vi-tdesign:gesture-down',
-    'vi-tdesign:gesture-expansion',
-    'vi-tdesign:gesture-left',
-    'vi-tdesign:gesture-left-slip',
-    'vi-tdesign:gesture-pray',
-    'vi-tdesign:gesture-pray-1',
-    'vi-tdesign:gesture-press',
-    'vi-tdesign:gesture-ranslation',
-    'vi-tdesign:gesture-ranslation-1',
-    'vi-tdesign:gesture-right',
-    'vi-tdesign:gesture-right-slip',
-    'vi-tdesign:gesture-slide-up',
-    'vi-tdesign:gesture-up',
-    'vi-tdesign:gesture-up-1',
-    'vi-tdesign:gesture-up-2',
-    'vi-tdesign:gesture-up-and-down',
-    'vi-tdesign:gesture-wipe-down',
-    'vi-tdesign:gift',
-    'vi-tdesign:giggle',
-    'vi-tdesign:git-branch',
-    'vi-tdesign:git-commit',
-    'vi-tdesign:git-merge',
-    'vi-tdesign:git-pull-request',
-    'vi-tdesign:git-repository',
-    'vi-tdesign:git-repository-commits',
-    'vi-tdesign:git-repository-private',
-    'vi-tdesign:gps',
-    'vi-tdesign:grape',
-    'vi-tdesign:greater-than',
-    'vi-tdesign:greater-than-or-equal',
-    'vi-tdesign:green-onion',
-    'vi-tdesign:grid-add',
-    'vi-tdesign:grid-view',
-    'vi-tdesign:guitar',
-    'vi-tdesign:hamburger',
-    'vi-tdesign:happy',
-    'vi-tdesign:hard-disk-storage',
-    'vi-tdesign:hard-drive',
-    'vi-tdesign:hashtag',
-    'vi-tdesign:hd',
-    'vi-tdesign:heart',
-    'vi-tdesign:heart-filled',
-    'vi-tdesign:help',
-    'vi-tdesign:help-circle',
-    'vi-tdesign:help-circle-filled',
-    'vi-tdesign:help-rectangle',
-    'vi-tdesign:highlight',
-    'vi-tdesign:highlight-1',
-    'vi-tdesign:history',
-    'vi-tdesign:history-setting',
-    'vi-tdesign:home',
-    'vi-tdesign:hospital',
-    'vi-tdesign:hospital-1',
-    'vi-tdesign:hotspot-wave',
-    'vi-tdesign:hourglass',
-    'vi-tdesign:houses',
-    'vi-tdesign:houses-1',
-    'vi-tdesign:houses-2',
-    'vi-tdesign:html5',
-    'vi-tdesign:https',
-    'vi-tdesign:ice-cream',
-    'vi-tdesign:icon',
-    'vi-tdesign:image',
-    'vi-tdesign:image-1',
-    'vi-tdesign:image-add',
-    'vi-tdesign:image-edit',
-    'vi-tdesign:image-error',
-    'vi-tdesign:image-off',
-    'vi-tdesign:image-search',
-    'vi-tdesign:indent-left',
-    'vi-tdesign:indent-right',
-    'vi-tdesign:indicator',
-    'vi-tdesign:info-circle',
-    'vi-tdesign:info-circle-filled',
-    'vi-tdesign:ink',
-    'vi-tdesign:install',
-    'vi-tdesign:install-desktop',
-    'vi-tdesign:install-mobile',
-    'vi-tdesign:institution',
-    'vi-tdesign:institution-checked',
-    'vi-tdesign:internet',
-    'vi-tdesign:ipod',
-    'vi-tdesign:joyful',
-    'vi-tdesign:jump',
-    'vi-tdesign:jump-off',
-    'vi-tdesign:keyboard',
-    'vi-tdesign:laptop',
-    'vi-tdesign:layers',
-    'vi-tdesign:layout',
-    'vi-tdesign:leaderboard',
-    'vi-tdesign:lemon',
-    'vi-tdesign:lemon-slice',
-    'vi-tdesign:less-than',
-    'vi-tdesign:less-than-or-equal',
-    'vi-tdesign:letters-a',
-    'vi-tdesign:letters-b',
-    'vi-tdesign:letters-c',
-    'vi-tdesign:letters-d',
-    'vi-tdesign:letters-e',
-    'vi-tdesign:letters-f',
-    'vi-tdesign:letters-g',
-    'vi-tdesign:letters-h',
-    'vi-tdesign:letters-i',
-    'vi-tdesign:letters-j',
-    'vi-tdesign:letters-k',
-    'vi-tdesign:letters-l',
-    'vi-tdesign:letters-m',
-    'vi-tdesign:letters-n',
-    'vi-tdesign:letters-o',
-    'vi-tdesign:letters-p',
-    'vi-tdesign:letters-q',
-    'vi-tdesign:letters-r',
-    'vi-tdesign:letters-s',
-    'vi-tdesign:letters-t',
-    'vi-tdesign:letters-u',
-    'vi-tdesign:letters-v',
-    'vi-tdesign:letters-w',
-    'vi-tdesign:letters-x',
-    'vi-tdesign:letters-y',
-    'vi-tdesign:letters-z',
-    'vi-tdesign:lightbulb',
-    'vi-tdesign:lightbulb-circle',
-    'vi-tdesign:lighthouse',
-    'vi-tdesign:lighthouse-1',
-    'vi-tdesign:lighthouse-2',
-    'vi-tdesign:lighting-circle',
-    'vi-tdesign:line-height',
-    'vi-tdesign:link',
-    'vi-tdesign:link-1',
-    'vi-tdesign:link-unlink',
-    'vi-tdesign:liquor',
-    'vi-tdesign:list',
-    'vi-tdesign:load',
-    'vi-tdesign:loading',
-    'vi-tdesign:location',
-    'vi-tdesign:location-1',
-    'vi-tdesign:location-enlargement',
-    'vi-tdesign:location-error',
-    'vi-tdesign:location-parking-place',
-    'vi-tdesign:location-reduction',
-    'vi-tdesign:location-setting',
-    'vi-tdesign:lock-off',
-    'vi-tdesign:lock-on',
-    'vi-tdesign:lock-time',
-    'vi-tdesign:login',
-    'vi-tdesign:logo-adobe-illustrate',
-    'vi-tdesign:logo-adobe-photoshop',
-    'vi-tdesign:logo-adobe-photoshop-1',
-    'vi-tdesign:logo-android',
-    'vi-tdesign:logo-apple',
-    'vi-tdesign:logo-apple-filled',
-    'vi-tdesign:logo-behance',
-    'vi-tdesign:logo-chrome',
-    'vi-tdesign:logo-chrome-filled',
-    'vi-tdesign:logo-cinema4d',
-    'vi-tdesign:logo-codepen',
-    'vi-tdesign:logo-codesandbox',
-    'vi-tdesign:logo-dribbble',
-    'vi-tdesign:logo-facebook',
-    'vi-tdesign:logo-figma',
-    'vi-tdesign:logo-framer',
-    'vi-tdesign:logo-github',
-    'vi-tdesign:logo-github-filled',
-    'vi-tdesign:logo-gitlab',
-    'vi-tdesign:logo-ie',
-    'vi-tdesign:logo-ie-filled',
-    'vi-tdesign:logo-instagram',
-    'vi-tdesign:logo-qq',
-    'vi-tdesign:logo-twitter',
-    'vi-tdesign:logo-wechat',
-    'vi-tdesign:logo-wechat-stroke',
-    'vi-tdesign:logo-wecom',
-    'vi-tdesign:logo-windows',
-    'vi-tdesign:logo-windows-filled',
-    'vi-tdesign:logo-youtube',
-    'vi-tdesign:logout',
-    'vi-tdesign:look-around',
-    'vi-tdesign:loudspeaker',
-    'vi-tdesign:mail',
-    'vi-tdesign:map',
-    'vi-tdesign:map-3d',
-    'vi-tdesign:map-add',
-    'vi-tdesign:map-aiming',
-    'vi-tdesign:map-blocked',
-    'vi-tdesign:map-bubble',
-    'vi-tdesign:map-cancel',
-    'vi-tdesign:map-chat',
-    'vi-tdesign:map-checked',
-    'vi-tdesign:map-collection',
-    'vi-tdesign:map-connection',
-    'vi-tdesign:map-distance',
-    'vi-tdesign:map-double',
-    'vi-tdesign:map-edit',
-    'vi-tdesign:map-grid',
-    'vi-tdesign:map-information',
-    'vi-tdesign:map-information-1',
-    'vi-tdesign:map-information-2',
-    'vi-tdesign:map-location',
-    'vi-tdesign:map-locked',
-    'vi-tdesign:map-marked',
-    'vi-tdesign:map-navigation',
-    'vi-tdesign:map-outline',
-    'vi-tdesign:map-route-planning',
-    'vi-tdesign:map-ruler',
-    'vi-tdesign:map-safety',
-    'vi-tdesign:map-search',
-    'vi-tdesign:map-search-1',
-    'vi-tdesign:map-setting',
-    'vi-tdesign:map-unlocked',
-    'vi-tdesign:mark-as-unread',
-    'vi-tdesign:markup',
-    'vi-tdesign:mathematics',
-    'vi-tdesign:measurement',
-    'vi-tdesign:measurement-1',
-    'vi-tdesign:measurement-2',
-    'vi-tdesign:meat-pepper',
-    'vi-tdesign:media-library',
-    'vi-tdesign:member',
-    'vi-tdesign:menu',
-    'vi-tdesign:menu-application',
-    'vi-tdesign:menu-fold',
-    'vi-tdesign:menu-unfold',
-    'vi-tdesign:merge-cells',
-    'vi-tdesign:microphone',
-    'vi-tdesign:microphone-1',
-    'vi-tdesign:microphone-2',
-    'vi-tdesign:milk',
-    'vi-tdesign:minus',
-    'vi-tdesign:minus-circle',
-    'vi-tdesign:minus-circle-filled',
-    'vi-tdesign:minus-rectangle',
-    'vi-tdesign:minus-rectangle-filled',
-    'vi-tdesign:mirror',
-    'vi-tdesign:mobile',
-    'vi-tdesign:mobile-blocked',
-    'vi-tdesign:mobile-list',
-    'vi-tdesign:mobile-navigation',
-    'vi-tdesign:mobile-shortcut',
-    'vi-tdesign:mobile-vibrate',
-    'vi-tdesign:mode-dark',
-    'vi-tdesign:mode-light',
-    'vi-tdesign:module',
-    'vi-tdesign:money',
-    'vi-tdesign:monument',
-    'vi-tdesign:moon',
-    'vi-tdesign:moon-fall',
-    'vi-tdesign:moon-rising',
-    'vi-tdesign:more',
-    'vi-tdesign:mosque',
-    'vi-tdesign:mosque-1',
-    'vi-tdesign:mouse',
-    'vi-tdesign:move',
-    'vi-tdesign:move-1',
-    'vi-tdesign:movie-clapper',
-    'vi-tdesign:multiply',
-    'vi-tdesign:museum',
-    'vi-tdesign:museum-1',
-    'vi-tdesign:museum-2',
-    'vi-tdesign:mushroom',
-    'vi-tdesign:mushroom-1',
-    'vi-tdesign:music',
-    'vi-tdesign:music-1',
-    'vi-tdesign:music-2',
-    'vi-tdesign:music-rectangle-add',
-    'vi-tdesign:navigation-arrow',
-    'vi-tdesign:next',
-    'vi-tdesign:no-expression',
-    'vi-tdesign:noodle',
-    'vi-tdesign:notification',
-    'vi-tdesign:notification-add',
-    'vi-tdesign:notification-circle',
-    'vi-tdesign:notification-error',
-    'vi-tdesign:notification-filled',
-    'vi-tdesign:numbers-0',
-    'vi-tdesign:numbers-0-1',
-    'vi-tdesign:numbers-1',
-    'vi-tdesign:numbers-1-1',
-    'vi-tdesign:numbers-2',
-    'vi-tdesign:numbers-2-1',
-    'vi-tdesign:numbers-3',
-    'vi-tdesign:numbers-3-1',
-    'vi-tdesign:numbers-4',
-    'vi-tdesign:numbers-4-1',
-    'vi-tdesign:numbers-5',
-    'vi-tdesign:numbers-5-1',
-    'vi-tdesign:numbers-6',
-    'vi-tdesign:numbers-6-1',
-    'vi-tdesign:numbers-7',
-    'vi-tdesign:numbers-7-1',
-    'vi-tdesign:numbers-8',
-    'vi-tdesign:numbers-8-1',
-    'vi-tdesign:numbers-9',
-    'vi-tdesign:numbers-9-1',
-    'vi-tdesign:nut',
-    'vi-tdesign:object-storage',
-    'vi-tdesign:open-mouth',
-    'vi-tdesign:opera',
-    'vi-tdesign:order-adjustment-column',
-    'vi-tdesign:order-ascending',
-    'vi-tdesign:order-descending',
-    'vi-tdesign:outbox',
-    'vi-tdesign:page-first',
-    'vi-tdesign:page-head',
-    'vi-tdesign:page-last',
-    'vi-tdesign:palace',
-    'vi-tdesign:palace-1',
-    'vi-tdesign:palace-2',
-    'vi-tdesign:palace-3',
-    'vi-tdesign:palace-4',
-    'vi-tdesign:palette',
-    'vi-tdesign:palette-1',
-    'vi-tdesign:panorama-horizontal',
-    'vi-tdesign:panorama-vertical',
-    'vi-tdesign:pantone',
-    'vi-tdesign:parabola',
-    'vi-tdesign:parentheses',
-    'vi-tdesign:paste',
-    'vi-tdesign:patio',
-    'vi-tdesign:pause',
-    'vi-tdesign:pause-circle',
-    'vi-tdesign:pause-circle-filled',
-    'vi-tdesign:pause-circle-stroke',
-    'vi-tdesign:pea',
-    'vi-tdesign:peach',
-    'vi-tdesign:pear',
-    'vi-tdesign:pearl-of-the-orient',
-    'vi-tdesign:pen',
-    'vi-tdesign:pen-ball',
-    'vi-tdesign:pen-brush',
-    'vi-tdesign:pen-mark',
-    'vi-tdesign:pen-quill',
-    'vi-tdesign:pending',
-    'vi-tdesign:percent',
-    'vi-tdesign:personal-information',
-    'vi-tdesign:phone-locked',
-    'vi-tdesign:phone-search',
-    'vi-tdesign:pi',
-    'vi-tdesign:piano',
-    'vi-tdesign:pin',
-    'vi-tdesign:pin-filled',
-    'vi-tdesign:play',
-    'vi-tdesign:play-circle',
-    'vi-tdesign:play-circle-filled',
-    'vi-tdesign:play-circle-stroke',
-    'vi-tdesign:play-circle-stroke-add',
-    'vi-tdesign:play-demo',
-    'vi-tdesign:play-rectangle',
-    'vi-tdesign:plus',
-    'vi-tdesign:popsicle',
-    'vi-tdesign:portrait',
-    'vi-tdesign:pout',
-    'vi-tdesign:poweroff',
-    'vi-tdesign:precise-monitor',
-    'vi-tdesign:previous',
-    'vi-tdesign:print',
-    'vi-tdesign:pumpkin',
-    'vi-tdesign:pyramid',
-    'vi-tdesign:pyramid-maya',
-    'vi-tdesign:qrcode',
-    'vi-tdesign:quadratic',
-    'vi-tdesign:questionnaire',
-    'vi-tdesign:queue',
-    'vi-tdesign:radar',
-    'vi-tdesign:radio-1',
-    'vi-tdesign:radio-2',
-    'vi-tdesign:radish',
-    'vi-tdesign:rain-heavy',
-    'vi-tdesign:rain-light',
-    'vi-tdesign:rain-medium',
-    'vi-tdesign:rainbow',
-    'vi-tdesign:rectangle',
-    'vi-tdesign:refresh',
-    'vi-tdesign:relation',
-    'vi-tdesign:relativity',
-    'vi-tdesign:remote-wave',
-    'vi-tdesign:remove',
-    'vi-tdesign:replay',
-    'vi-tdesign:rice',
-    'vi-tdesign:rice-ball',
-    'vi-tdesign:roast',
-    'vi-tdesign:rocket',
-    'vi-tdesign:rollback',
-    'vi-tdesign:rollfront',
-    'vi-tdesign:root-list',
-    'vi-tdesign:rotate',
-    'vi-tdesign:rotate-locked',
-    'vi-tdesign:rotation',
-    'vi-tdesign:round',
-    'vi-tdesign:router-wave',
-    'vi-tdesign:rss',
-    'vi-tdesign:ruler',
-    'vi-tdesign:sailing-hotel',
-    'vi-tdesign:sandwich',
-    'vi-tdesign:saturation',
-    'vi-tdesign:sausage',
-    'vi-tdesign:save',
-    'vi-tdesign:saving-pot',
-    'vi-tdesign:scan',
-    'vi-tdesign:screen-4k',
-    'vi-tdesign:screencast',
-    'vi-tdesign:screenshot',
-    'vi-tdesign:scroll-bar',
-    'vi-tdesign:sd-card',
-    'vi-tdesign:sd-card-1',
-    'vi-tdesign:search',
-    'vi-tdesign:search-error',
-    'vi-tdesign:secured',
-    'vi-tdesign:send',
-    'vi-tdesign:send-cancel',
-    'vi-tdesign:sensors',
-    'vi-tdesign:sensors-1',
-    'vi-tdesign:sensors-2',
-    'vi-tdesign:sensors-off',
-    'vi-tdesign:serenity',
-    'vi-tdesign:server',
-    'vi-tdesign:service',
-    'vi-tdesign:setting',
-    'vi-tdesign:setting-1',
-    'vi-tdesign:share',
-    'vi-tdesign:share-1',
-    'vi-tdesign:sharpness',
-    'vi-tdesign:shield-error',
-    'vi-tdesign:shimen',
-    'vi-tdesign:shop',
-    'vi-tdesign:shop-1',
-    'vi-tdesign:shop-2',
-    'vi-tdesign:shop-3',
-    'vi-tdesign:shop-4',
-    'vi-tdesign:shop-5',
-    'vi-tdesign:shrimp',
-    'vi-tdesign:shrink-horizontal',
-    'vi-tdesign:shrink-vertical',
-    'vi-tdesign:shutter',
-    'vi-tdesign:shutup',
-    'vi-tdesign:sim-card',
-    'vi-tdesign:sim-card-1',
-    'vi-tdesign:sim-card-2',
-    'vi-tdesign:sinister-smile',
-    'vi-tdesign:sip',
-    'vi-tdesign:slash',
-    'vi-tdesign:sleep',
-    'vi-tdesign:slice',
-    'vi-tdesign:slideshow',
-    'vi-tdesign:smile',
-    'vi-tdesign:sneer',
-    'vi-tdesign:snowflake',
-    'vi-tdesign:sonic',
-    'vi-tdesign:sound',
-    'vi-tdesign:sound-down',
-    'vi-tdesign:sound-high',
-    'vi-tdesign:sound-low',
-    'vi-tdesign:sound-mute',
-    'vi-tdesign:sound-mute-1',
-    'vi-tdesign:sound-up',
-    'vi-tdesign:space',
-    'vi-tdesign:speechless-1',
-    'vi-tdesign:star',
-    'vi-tdesign:star-filled',
-    'vi-tdesign:statue-of-jesus',
-    'vi-tdesign:sticky-note',
-    'vi-tdesign:stop',
-    'vi-tdesign:stop-circle',
-    'vi-tdesign:stop-circle-filled',
-    'vi-tdesign:stop-circle-stroke',
-    'vi-tdesign:store',
-    'vi-tdesign:street-road',
-    'vi-tdesign:street-road-1',
-    'vi-tdesign:subtitle',
-    'vi-tdesign:subway-line',
-    'vi-tdesign:sum',
-    'vi-tdesign:sun-fall',
-    'vi-tdesign:sun-rising',
-    'vi-tdesign:sunny',
-    'vi-tdesign:support',
-    'vi-tdesign:surprised',
-    'vi-tdesign:surprised-1',
-    'vi-tdesign:swap',
-    'vi-tdesign:swap-left',
-    'vi-tdesign:swap-right',
-    'vi-tdesign:swear-1',
-    'vi-tdesign:swear-2',
-    'vi-tdesign:system-2',
-    'vi-tdesign:system-3',
-    'vi-tdesign:system-application',
-    'vi-tdesign:system-blocked',
-    'vi-tdesign:system-code',
-    'vi-tdesign:system-components',
-    'vi-tdesign:system-coordinate',
-    'vi-tdesign:system-device',
-    'vi-tdesign:system-interface',
-    'vi-tdesign:system-location',
-    'vi-tdesign:system-locked',
-    'vi-tdesign:system-log',
-    'vi-tdesign:system-marked',
-    'vi-tdesign:system-messages',
-    'vi-tdesign:system-regulation',
-    'vi-tdesign:system-search',
-    'vi-tdesign:system-setting',
-    'vi-tdesign:system-storage',
-    'vi-tdesign:system-sum',
-    'vi-tdesign:system-unlocked',
-    'vi-tdesign:tab',
-    'vi-tdesign:table',
-    'vi-tdesign:table-1',
-    'vi-tdesign:table-2',
-    'vi-tdesign:table-add',
-    'vi-tdesign:table-split',
-    'vi-tdesign:tag',
-    'vi-tdesign:tangerinr',
-    'vi-tdesign:tape',
-    'vi-tdesign:task',
-    'vi-tdesign:task-1',
-    'vi-tdesign:task-add',
-    'vi-tdesign:task-add-1',
-    'vi-tdesign:task-checked',
-    'vi-tdesign:task-error',
-    'vi-tdesign:task-location',
-    'vi-tdesign:task-marked',
-    'vi-tdesign:task-setting',
-    'vi-tdesign:task-visible',
-    'vi-tdesign:tea',
-    'vi-tdesign:teahouse',
-    'vi-tdesign:template',
-    'vi-tdesign:temple',
-    'vi-tdesign:terminal',
-    'vi-tdesign:terminal-rectangle',
-    'vi-tdesign:terminal-rectangle-1',
-    'vi-tdesign:terminal-window',
-    'vi-tdesign:textbox',
-    'vi-tdesign:textformat-bold',
-    'vi-tdesign:textformat-color',
-    'vi-tdesign:textformat-italic',
-    'vi-tdesign:textformat-strikethrough',
-    'vi-tdesign:textformat-underline',
-    'vi-tdesign:textformat-wrap',
-    'vi-tdesign:theaters',
-    'vi-tdesign:thumb-down',
-    'vi-tdesign:thumb-down-1',
-    'vi-tdesign:thumb-down-2',
-    'vi-tdesign:thumb-up',
-    'vi-tdesign:thumb-up-1',
-    'vi-tdesign:thumb-up-2',
-    'vi-tdesign:thunder',
-    'vi-tdesign:thunderstorm',
-    'vi-tdesign:thunderstorm-night',
-    'vi-tdesign:thunderstorm-sunny',
-    'vi-tdesign:ticket',
-    'vi-tdesign:time',
-    'vi-tdesign:time-filled',
-    'vi-tdesign:tips',
-    'vi-tdesign:tips-double',
-    'vi-tdesign:tomato',
-    'vi-tdesign:tools',
-    'vi-tdesign:tools-circle',
-    'vi-tdesign:tornado',
-    'vi-tdesign:tower',
-    'vi-tdesign:tower-1',
-    'vi-tdesign:tower-2',
-    'vi-tdesign:tower-3',
-    'vi-tdesign:tower-clock',
-    'vi-tdesign:town',
-    'vi-tdesign:traffic',
-    'vi-tdesign:traffic-events',
-    'vi-tdesign:transform',
-    'vi-tdesign:transform-1',
-    'vi-tdesign:transform-2',
-    'vi-tdesign:transform-3',
-    'vi-tdesign:translate',
-    'vi-tdesign:translate-1',
-    'vi-tdesign:tree-list',
-    'vi-tdesign:tree-round-dot',
-    'vi-tdesign:tree-round-dot-vertical',
-    'vi-tdesign:tree-square-dot',
-    'vi-tdesign:tree-square-dot-vertical',
-    'vi-tdesign:trending-down',
-    'vi-tdesign:trending-up',
-    'vi-tdesign:tv',
-    'vi-tdesign:tv-1',
-    'vi-tdesign:tv-2',
-    'vi-tdesign:typography',
-    'vi-tdesign:uncomfortable',
-    'vi-tdesign:uncomfortable-1',
-    'vi-tdesign:uncomfortable-2',
-    'vi-tdesign:undertake',
-    'vi-tdesign:undertake-delivery',
-    'vi-tdesign:undertake-environment-protection',
-    'vi-tdesign:undertake-hold-up',
-    'vi-tdesign:undertake-transaction',
-    'vi-tdesign:unfold-less',
-    'vi-tdesign:unfold-more',
-    'vi-tdesign:unhappy',
-    'vi-tdesign:unhappy-1',
-    'vi-tdesign:uninstall',
-    'vi-tdesign:upload',
-    'vi-tdesign:upload-1',
-    'vi-tdesign:upscale',
-    'vi-tdesign:usb',
-    'vi-tdesign:user',
-    'vi-tdesign:user-1',
-    'vi-tdesign:user-add',
-    'vi-tdesign:user-arrow-down',
-    'vi-tdesign:user-arrow-left',
-    'vi-tdesign:user-arrow-right',
-    'vi-tdesign:user-arrow-up',
-    'vi-tdesign:user-avatar',
-    'vi-tdesign:user-blocked',
-    'vi-tdesign:user-business',
-    'vi-tdesign:user-checked',
-    'vi-tdesign:user-checked-1',
-    'vi-tdesign:user-circle',
-    'vi-tdesign:user-clear',
-    'vi-tdesign:user-error-1',
-    'vi-tdesign:user-invisible',
-    'vi-tdesign:user-list',
-    'vi-tdesign:user-locked',
-    'vi-tdesign:user-marked',
-    'vi-tdesign:user-password',
-    'vi-tdesign:user-safety',
-    'vi-tdesign:user-search',
-    'vi-tdesign:user-setting',
-    'vi-tdesign:user-talk',
-    'vi-tdesign:user-talk-1',
-    'vi-tdesign:user-talk-off-1',
-    'vi-tdesign:user-time',
-    'vi-tdesign:user-transmit',
-    'vi-tdesign:user-unknown',
-    'vi-tdesign:user-unlocked',
-    'vi-tdesign:user-vip',
-    'vi-tdesign:user-visible',
-    'vi-tdesign:usergroup',
-    'vi-tdesign:usergroup-add',
-    'vi-tdesign:usergroup-clear',
-    'vi-tdesign:vehicle',
-    'vi-tdesign:verified',
-    'vi-tdesign:verify',
-    'vi-tdesign:video',
-    'vi-tdesign:video-camera',
-    'vi-tdesign:video-camera-1',
-    'vi-tdesign:video-camera-2',
-    'vi-tdesign:video-camera-dollar',
-    'vi-tdesign:video-camera-minus',
-    'vi-tdesign:video-camera-music',
-    'vi-tdesign:video-camera-off',
-    'vi-tdesign:video-library',
-    'vi-tdesign:view-agenda',
-    'vi-tdesign:view-column',
-    'vi-tdesign:view-in-ar',
-    'vi-tdesign:view-list',
-    'vi-tdesign:view-module',
-    'vi-tdesign:visual-recognition',
-    'vi-tdesign:wallet',
-    'vi-tdesign:watch',
-    'vi-tdesign:watermelon',
-    'vi-tdesign:wave-left',
-    'vi-tdesign:wave-right',
-    'vi-tdesign:wealth',
-    'vi-tdesign:wealth-1',
-    'vi-tdesign:widget',
-    'vi-tdesign:wifi',
-    'vi-tdesign:wifi-1',
-    'vi-tdesign:wifi-off',
-    'vi-tdesign:wifi-off-1',
-    'vi-tdesign:window',
-    'vi-tdesign:window-1',
-    'vi-tdesign:windy',
-    'vi-tdesign:windy-rain',
-    'vi-tdesign:wink',
-    'vi-tdesign:work',
-    'vi-tdesign:work-history',
-    'vi-tdesign:work-off',
-    'vi-tdesign:wry-smile',
-    'vi-tdesign:zoom-in',
-    'vi-tdesign:zoom-out'
+    'vi-tdesign:activity', // 活动图标
+    'vi-tdesign:add', // 添加图标
+    'vi-tdesign:add-and-subtract', // 加减图标
+    'vi-tdesign:add-circle', // 加号圆形图标
+    'vi-tdesign:add-rectangle', // 加号矩形图标
+    'vi-tdesign:address-book', // 通讯录图标
+    'vi-tdesign:adjustment', // 调整图标
+    'vi-tdesign:airplay-wave', // 投屏波纹图标
+    'vi-tdesign:alarm', // 闹钟图标
+    'vi-tdesign:alarm-add', // 添加闹钟图标
+    'vi-tdesign:alarm-off', // 关闭闹钟图标
+    'vi-tdesign:align-top', // 顶部对齐图标
+    'vi-tdesign:align-vertical', // 垂直对齐图标
+    'vi-tdesign:alpha', // 字母图标
+    'vi-tdesign:analytics', // 数据分析图标
+    'vi-tdesign:anchor', // 锚点图标
+    'vi-tdesign:angry', // 生气表情图标
+    'vi-tdesign:animation', // 动画图标
+    'vi-tdesign:animation-1', // 动画图标变体
+    'vi-tdesign:anticlockwise', // 逆时针图标
+    'vi-tdesign:api', // API 接口图标
+    'vi-tdesign:app', // 应用图标
+    'vi-tdesign:apple', // 苹果图标
+    'vi-tdesign:application', // 应用程序图标
+    'vi-tdesign:architecture-hui-style', // 徽派建筑图标
+    'vi-tdesign:archway', // 拱门图标
+    'vi-tdesign:archway-1', // 拱门图标变体
+    'vi-tdesign:arrow-down', // 向下箭头图标
+    'vi-tdesign:arrow-down-circle', // 向下箭头圆形图标
+    'vi-tdesign:arrow-down-rectangle', // 向下箭头矩形图标
+    'vi-tdesign:arrow-left', // 向左箭头图标
+    'vi-tdesign:arrow-left-circle', // 向左箭头圆形图标
+    'vi-tdesign:arrow-left-down', // 左下箭头图标
+    'vi-tdesign:arrow-left-down-circle', // 左下箭头圆形图标
+    'vi-tdesign:arrow-left-right-1', // 左右箭头图标
+    'vi-tdesign:arrow-left-right-2', // 左右箭头图标变体1
+    'vi-tdesign:arrow-left-right-3', // 左右箭头图标变体2
+    'vi-tdesign:arrow-left-right-circle', // 左右箭头圆形图标
+    'vi-tdesign:arrow-left-up', // 左上箭头图标
+    'vi-tdesign:arrow-left-up-circle', // 左上箭头圆形图标
+    'vi-tdesign:arrow-right', // 向右箭头图标
+    'vi-tdesign:arrow-right-circle', // 向右箭头圆形图标
+    'vi-tdesign:arrow-right-down', // 右下箭头图标
+    'vi-tdesign:arrow-right-down-circle', // 右下箭头圆形图标
+    'vi-tdesign:arrow-right-up', // 右上箭头图标
+    'vi-tdesign:arrow-right-up-circle', // 右上箭头圆形图标
+    'vi-tdesign:arrow-triangle-down', // 向下三角箭头图标
+    'vi-tdesign:arrow-triangle-down-filled', // 向下三角箭头实心图标
+    'vi-tdesign:arrow-triangle-up', // 向上三角箭头图标
+    'vi-tdesign:arrow-triangle-up-filled', // 向上三角箭头实心图标
+    'vi-tdesign:arrow-up', // 向上箭头图标
+    'vi-tdesign:arrow-up-circle', // 向上箭头圆形图标
+    'vi-tdesign:arrow-up-down-1', // 上下箭头图标
+    'vi-tdesign:arrow-up-down-2', // 上下箭头图标变体1
+    'vi-tdesign:arrow-up-down-3', // 上下箭头图标变体2
+    'vi-tdesign:arrow-up-down-circle', // 上下箭头圆形图标
+    'vi-tdesign:artboard', // 画板图标
+    'vi-tdesign:article', // 文章图标
+    'vi-tdesign:assignment', // 分配任务图标
+    'vi-tdesign:assignment-checked', // 已完成任务图标
+    'vi-tdesign:assignment-code', // 编码任务图标
+    'vi-tdesign:assignment-error', // 错误任务图标
+    'vi-tdesign:assignment-user', // 用户任务图标
+    'vi-tdesign:attach', // 附件图标
+    'vi-tdesign:attic', // 阁楼图标
+    'vi-tdesign:attic-1', // 阁楼图标变体
+    'vi-tdesign:audio', // 音频图标
+    'vi-tdesign:awkward', // 尴尬表情图标
+    'vi-tdesign:backtop', // 返回顶部图标
+    'vi-tdesign:backtop-rectangle', // 返回顶部矩形图标
+    'vi-tdesign:backup', // 备份图标
+    'vi-tdesign:backward', // 向后图标
+    'vi-tdesign:bad-laugh', // 不好笑表情图标
+    'vi-tdesign:bamboo-shoot', // 竹笋图标
+    'vi-tdesign:banana', // 香蕉图标
+    'vi-tdesign:barbecue', // 烧烤图标
+    'vi-tdesign:barcode', // 条形码图标
+    'vi-tdesign:barcode-1', // 条形码图标变体
+    'vi-tdesign:base-station', // 基站图标
+    'vi-tdesign:battery', // 电池图标
+    'vi-tdesign:battery-add', // 添加电池图标
+    'vi-tdesign:battery-charging', // 充电电池图标
+    'vi-tdesign:battery-low', // 低电量电池图标
+    'vi-tdesign:bean', // 豆子图标
+    'vi-tdesign:beer', // 啤酒图标
+    'vi-tdesign:beta', // 测试版图标
+    'vi-tdesign:bifurcate', // 分叉图标
+    'vi-tdesign:bill', // 账单图标
+    'vi-tdesign:blockchain', // 区块链图标
+    'vi-tdesign:bluetooth', // 蓝牙图标
+    'vi-tdesign:bone', // 骨头图标
+    'vi-tdesign:book', // 书籍图标
+    'vi-tdesign:book-open', // 打开的书籍图标
+    'vi-tdesign:bookmark', // 书签图标
+    'vi-tdesign:bookmark-add', // 添加书签图标
+    'vi-tdesign:bookmark-checked', // 已标记书签图标
+    'vi-tdesign:bookmark-double', // 双书签图标
+    'vi-tdesign:bookmark-minus', // 移除书签图标
+    'vi-tdesign:braces', // 大括号图标
+    'vi-tdesign:brackets', // 中括号图标
+    'vi-tdesign:bread', // 面包图标
+    'vi-tdesign:bridge', // 桥梁图标
+    'vi-tdesign:bridge-1', // 桥梁图标变体1
+    'vi-tdesign:bridge-2', // 桥梁图标变体2
+    'vi-tdesign:bridge-3', // 桥梁图标变体3
+    'vi-tdesign:bridge-4', // 桥梁图标变体4
+    'vi-tdesign:bridge-5', // 桥梁图标变体5
+    'vi-tdesign:bridge-6', // 桥梁图标变体6
+    'vi-tdesign:brightness', // 亮度图标
+    'vi-tdesign:brightness-1', // 亮度图标变体1
+    'vi-tdesign:broccoli', // 西兰花图标
+    'vi-tdesign:browse', // 浏览图标
+    'vi-tdesign:browse-gallery', // 图库浏览图标
+    'vi-tdesign:browse-off', // 停止浏览图标
+    'vi-tdesign:brush', // 刷子图标
+    'vi-tdesign:bug', // Bug图标
+    'vi-tdesign:bug-report', // Bug报告图标
+    'vi-tdesign:building', // 建筑图标
+    'vi-tdesign:building-1', // 建筑图标变体1
+    'vi-tdesign:building-2', // 建筑图标变体2
+    'vi-tdesign:building-3', // 建筑图标变体3
+    'vi-tdesign:building-4', // 建筑图标变体4
+    'vi-tdesign:building-5', // 建筑图标变体5
+    'vi-tdesign:bulletpoint', // 项目符号图标
+    'vi-tdesign:button', // 按钮图标
+    'vi-tdesign:cabbage', // 卷心菜图标
+    'vi-tdesign:cake', // 蛋糕图标
+    'vi-tdesign:calculation', // 计算图标
+    'vi-tdesign:calculation-1', // 计算图标变体1
+    'vi-tdesign:calculator', // 计算器图标
+    'vi-tdesign:calculator-1', // 计算器图标变体1
+    'vi-tdesign:calendar', // 日历图标
+    'vi-tdesign:calendar-1', // 日历图标变体1
+    'vi-tdesign:calendar-2', // 日历图标变体2
+    'vi-tdesign:calendar-edit', // 日历编辑图标
+    'vi-tdesign:calendar-event', // 日历事件图标
+    'vi-tdesign:call', // 电话图标
+    'vi-tdesign:call-1', // 电话图标变体1
+    'vi-tdesign:call-cancel', // 电话取消图标
+    'vi-tdesign:call-forwarded', // 电话转接图标
+    'vi-tdesign:call-incoming', // 来电图标
+    'vi-tdesign:call-off', // 挂断电话图标
+    'vi-tdesign:calm', // 冷静表情图标
+    'vi-tdesign:calm-1', // 冷静表情图标变体1
+    'vi-tdesign:camera', // 相机图标
+    'vi-tdesign:camera-1', // 相机图标变体1
+    'vi-tdesign:camera-2', // 相机图标变体2
+    'vi-tdesign:camera-off', // 相机关闭图标
+    'vi-tdesign:candy', // 糖果图标
+    'vi-tdesign:card', // 卡片图标
+    'vi-tdesign:cardmembership', // 会员卡图标
+    'vi-tdesign:caret-down', // 向下箭头图标
+    'vi-tdesign:caret-down-small', // 小型向下箭头图标
+    'vi-tdesign:caret-left', // 向左箭头图标
+    'vi-tdesign:caret-left-small', // 小型向左箭头图标
+    'vi-tdesign:caret-right', // 向右箭头图标
+    'vi-tdesign:caret-right-small', // 小型向右箭头图标
+    'vi-tdesign:caret-up', // 向上箭头图标
+    'vi-tdesign:caret-up-small', // 小型向上箭头图标
+    'vi-tdesign:cart', // 购物车图标
+    'vi-tdesign:cart-add', // 添加到购物车图标
+    'vi-tdesign:cast', // 投屏图标
+    'vi-tdesign:castle', // 城堡图标
+    'vi-tdesign:castle-1', // 城堡图标变体1
+    'vi-tdesign:castle-2', // 城堡图标变体2
+    'vi-tdesign:castle-3', // 城堡图标变体3
+    'vi-tdesign:castle-4', // 城堡图标变体4
+    'vi-tdesign:castle-5', // 城堡图标变体5
+    'vi-tdesign:castle-6', // 城堡图标变体6
+    'vi-tdesign:castle-7', // 城堡图标变体7
+    'vi-tdesign:cat', // 猫图标
+    'vi-tdesign:catalog', // 目录图标
+    'vi-tdesign:cd', // CD光盘图标
+    'vi-tdesign:celsius', // 摄氏度图标
+    'vi-tdesign:center-focus-strong', // 聚焦中心图标
+    'vi-tdesign:centimeter', // 厘米图标
+    'vi-tdesign:certificate', // 证书图标
+    'vi-tdesign:certificate-1', // 证书图标变体1
+    'vi-tdesign:chart', // 图表图标
+    'vi-tdesign:chart-3d', // 3D图表图标
+    'vi-tdesign:chart-add', // 添加图表图标
+    'vi-tdesign:chart-analytics', // 分析图表图标
+    'vi-tdesign:chart-area', // 区域图表图标
+    'vi-tdesign:chart-area-multi', // 多区域图表图标
+    'vi-tdesign:chart-bar', // 条形图图标
+    'vi-tdesign:chart-bubble', // 气泡图表图标
+    'vi-tdesign:chart-colum', // 柱状图图标
+    'vi-tdesign:chart-combo', // 组合图表图标
+    'vi-tdesign:chart-line', // 折线图图标
+    'vi-tdesign:chart-line-data', // 数据折线图图标
+    'vi-tdesign:chart-line-data-1', // 数据折线图图标变体1
+    'vi-tdesign:chart-line-multi', // 多折线图图标
+    'vi-tdesign:chart-maximum', // 最大值图表图标
+    'vi-tdesign:chart-median', // 中位数图表图标
+    'vi-tdesign:chart-minimum', // 最小值图表图标
+    'vi-tdesign:chart-pie', // 饼图图标
+    'vi-tdesign:chart-radar', // 雷达图图标
+    'vi-tdesign:chart-radial', // 辐射图图标
+    'vi-tdesign:chart-ring', // 环形图图标
+    'vi-tdesign:chart-ring-1', // 环形图图标变体1
+    'vi-tdesign:chart-scatter', // 散点图图标
+    'vi-tdesign:chart-stacked', // 堆叠图图标
+    'vi-tdesign:chat', // 聊天图标
+    'vi-tdesign:chat-add', // 添加聊天图标
+    'vi-tdesign:chat-bubble', // 聊天气泡图标
+    'vi-tdesign:chat-bubble-1', // 聊天气泡图标变体1
+    'vi-tdesign:chat-bubble-add', // 添加气泡图标
+    'vi-tdesign:chat-bubble-error', // 气泡错误图标
+    'vi-tdesign:chat-bubble-help', // 气泡帮助图标
+    'vi-tdesign:chat-bubble-history', // 气泡历史记录图标
+    'vi-tdesign:chat-bubble-locked', // 锁定气泡图标
+    'vi-tdesign:chat-bubble-smile', // 微笑气泡图标
+    'vi-tdesign:chat-checked', // 聊天校验图标
+    'vi-tdesign:chat-clear', // 清除聊天图标
+    'vi-tdesign:chat-double', // 双重聊天图标
+    'vi-tdesign:chat-error', // 聊天错误图标
+    'vi-tdesign:chat-heart', // 聊天心形图标
+    'vi-tdesign:chat-message', // 聊天信息图标
+    'vi-tdesign:chat-off', // 关闭聊天图标
+    'vi-tdesign:chat-poll', // 聊天投票图标
+    'vi-tdesign:chat-setting', // 聊天设置图标
+    'vi-tdesign:check', // 检查图标
+    'vi-tdesign:check-circle', // 圆圈检查图标
+    'vi-tdesign:check-circle-filled', // 实心圆圈检查图标
+    'vi-tdesign:check-double', // 双重检查图标
+    'vi-tdesign:check-rectangle', // 矩形检查图标
+    'vi-tdesign:check-rectangle-filled', // 实心矩形检查图标
+    'vi-tdesign:cheese', // 奶酪图标
+    'vi-tdesign:cherry', // 樱桃图标
+    'vi-tdesign:chevron-down', // 向下箭头图标
+    'vi-tdesign:chevron-down-circle', // 圆圈向下箭头图标
+    'vi-tdesign:chevron-down-double', // 双向下箭头图标
+    'vi-tdesign:chevron-down-double-s', // 小型双向下箭头图标
+    'vi-tdesign:chevron-down-rectangle', // 矩形向下箭头图标
+    'vi-tdesign:chevron-down-s', // 小型向下箭头图标
+    'vi-tdesign:chevron-left', // 向左箭头图标
+    'vi-tdesign:chevron-left-circle', // 圆圈向左箭头图标
+    'vi-tdesign:chevron-left-double', // 双向左箭头图标
+    'vi-tdesign:chevron-left-double-s', // 小型双向左箭头图标
+    'vi-tdesign:chevron-left-rectangle', // 矩形向左箭头图标
+    'vi-tdesign:chevron-left-s', // 小型向左箭头图标
+    'vi-tdesign:chevron-right', // 向右箭头图标
+    'vi-tdesign:chevron-right-circle', // 圆圈向右箭头图标
+    'vi-tdesign:chevron-right-double', // 双向右箭头图标
+    'vi-tdesign:chevron-right-double-s', // 小型双向右箭头图标
+    'vi-tdesign:chevron-right-rectangle', // 矩形向右箭头图标
+    'vi-tdesign:chevron-right-s', // 小型向右箭头图标
+    'vi-tdesign:chevron-up', // 向上箭头图标
+    'vi-tdesign:chevron-up-circle', // 圆圈向上箭头图标
+    'vi-tdesign:chevron-up-double', // 双向上箭头图标
+    'vi-tdesign:chevron-up-double-s', // 小型双向上箭头图标
+    'vi-tdesign:chevron-up-rectangle', // 矩形向上箭头图标
+    'vi-tdesign:chevron-up-s', // 小型向上箭头图标
+    'vi-tdesign:chicken', // 鸡图标
+    'vi-tdesign:chili', // 辣椒图标
+    'vi-tdesign:chimney', // 烟囱图标
+    'vi-tdesign:chimney-1', // 烟囱图标变体1
+    'vi-tdesign:chimney-2', // 烟囱图标变体2
+    'vi-tdesign:chinese-cabbage', // 大白菜图标
+    'vi-tdesign:church', // 教堂图标
+    'vi-tdesign:circle', // 圆圈图标
+    'vi-tdesign:city', // 城市图标
+    'vi-tdesign:city-1', // 城市图标变体1
+    'vi-tdesign:city-10', // 城市图标变体10
+    'vi-tdesign:city-11', // 城市图标变体11
+    'vi-tdesign:city-12', // 城市图标变体12
+    'vi-tdesign:city-13', // 城市图标变体13
+    'vi-tdesign:city-14', // 城市图标变体14
+    'vi-tdesign:city-15', // 城市图标变体15
+    'vi-tdesign:city-2', // 城市图标变体2
+    'vi-tdesign:city-3', // 城市图标变体3
+    'vi-tdesign:city-4', // 城市图标变体4
+    'vi-tdesign:city-5', // 城市图标变体5
+    'vi-tdesign:city-6', // 城市图标变体6
+    'vi-tdesign:city-7', // 城市图标变体7
+    'vi-tdesign:city-8', // 城市图标变体8
+    'vi-tdesign:city-9', // 城市图标变体9
+    'vi-tdesign:city-ancient', // 古代城市图标
+    'vi-tdesign:city-ancient-1', // 古代城市图标变体1
+    'vi-tdesign:city-ancient-2', // 古代城市图标变体2
+    'vi-tdesign:clear', // 清除图标
+    'vi-tdesign:clear-formatting', // 清除格式图标
+    'vi-tdesign:clear-formatting-1', // 清除格式图标变体1
+    'vi-tdesign:close', // 关闭图标
+    'vi-tdesign:close-circle', // 圆圈关闭图标
+    'vi-tdesign:close-circle-filled', // 实心圆圈关闭图标
+    'vi-tdesign:close-octagon', // 八边形关闭图标
+    'vi-tdesign:close-rectangle', // 矩形关闭图标
+    'vi-tdesign:cloud', // 云图标
+    'vi-tdesign:cloud-download', // 云下载图标
+    'vi-tdesign:cloud-upload', // 云上传图标
+    'vi-tdesign:cloudy-day', // 多云白天图标
+    'vi-tdesign:cloudy-night', // 多云夜晚图标
+    'vi-tdesign:cloudy-night-rain', // 多云夜晚有雨图标
+    'vi-tdesign:cloudy-rain', // 多云有雨图标
+    'vi-tdesign:cloudy-sunny', // 多云晴天图标
+    'vi-tdesign:code', // 代码图标
+    'vi-tdesign:code-1', // 代码图标变体1
+    'vi-tdesign:code-off', // 禁止代码图标
+    'vi-tdesign:cola', // 可乐图标
+    'vi-tdesign:collage', // 拼贴图标
+    'vi-tdesign:collection', // 收藏图标
+    'vi-tdesign:color-invert', // 颜色反转图标
+    'vi-tdesign:combination', // 组合图标
+    'vi-tdesign:command', // 命令图标
+    'vi-tdesign:compass', // 指南针图标
+    'vi-tdesign:compass-1', // 指南针图标变体1
+    'vi-tdesign:component-breadcrumb', // 面包屑组件图标
+    'vi-tdesign:component-checkbox', // 复选框组件图标
+    'vi-tdesign:component-divider-horizontal', // 水平分割线组件图标
+    'vi-tdesign:component-divider-vertical', // 垂直分割线组件图标
+    'vi-tdesign:component-dropdown', // 下拉菜单组件图标
+    'vi-tdesign:component-grid', // 网格组件图标
+    'vi-tdesign:component-input', // 输入框组件图标
+    'vi-tdesign:component-layout', // 布局组件图标
+    'vi-tdesign:component-radio', // 单选框组件图标
+    'vi-tdesign:component-space', // 空间组件图标
+    'vi-tdesign:component-steps', // 步骤组件图标
+    'vi-tdesign:component-switch', // 开关组件图标
+    'vi-tdesign:constraint', // 约束图标
+    'vi-tdesign:contrast', // 对比度图标
+    'vi-tdesign:contrast-1', // 对比度图标变体1
+    'vi-tdesign:control-platform', // 控制平台图标
+    'vi-tdesign:cooperate', // 合作图标
+    'vi-tdesign:coordinate-system', // 坐标系统图标
+    'vi-tdesign:copy', // 复制图标
+    'vi-tdesign:copyright', // 版权图标
+    'vi-tdesign:corn', // 玉米图标
+    'vi-tdesign:coupon', // 优惠券图标
+    'vi-tdesign:course', // 课程图标
+    'vi-tdesign:cpu', // CPU 图标
+    'vi-tdesign:crack', // 裂缝图标
+    'vi-tdesign:creditcard', // 信用卡图标
+    'vi-tdesign:creditcard-add', // 添加信用卡图标
+    'vi-tdesign:creditcard-off', // 信用卡禁用图标
+    'vi-tdesign:crooked-smile', // 歪笑脸图标
+    'vi-tdesign:cry-and-laugh', // 又哭又笑图标
+    'vi-tdesign:cry-loudly', // 大哭图标
+    'vi-tdesign:css3', // CSS3 图标
+    'vi-tdesign:cucumber', // 黄瓜图标
+    'vi-tdesign:currency-exchange', // 货币兑换图标
+    'vi-tdesign:cursor', // 光标图标
+    'vi-tdesign:curtain', // 窗帘图标
+    'vi-tdesign:curve', // 曲线图标
+    'vi-tdesign:cut', // 剪切图标
+    'vi-tdesign:cut-1', // 剪切图标变体1
+    'vi-tdesign:dam', // 水坝图标
+    'vi-tdesign:dam-1', // 水坝图标变体1
+    'vi-tdesign:dam-2', // 水坝图标变体2
+    'vi-tdesign:dam-3', // 水坝图标变体3
+    'vi-tdesign:dam-4', // 水坝图标变体4
+    'vi-tdesign:dam-5', // 水坝图标变体5
+    'vi-tdesign:dam-6', // 水坝图标变体6
+    'vi-tdesign:dam-7', // 水坝图标变体7
+    'vi-tdesign:dart-board', // 飞镖靶图标
+    'vi-tdesign:dashboard', // 仪表盘图标
+    'vi-tdesign:dashboard-1', // 仪表盘图标变体1
+    'vi-tdesign:data', // 数据图标
+    'vi-tdesign:data-base', // 数据库图标
+    'vi-tdesign:data-checked', // 数据校验图标
+    'vi-tdesign:data-display', // 数据展示图标
+    'vi-tdesign:data-error', // 数据错误图标
+    'vi-tdesign:data-search', // 数据搜索图标
+    'vi-tdesign:delete', // 删除图标
+    'vi-tdesign:delete-1', // 删除图标变体1
+    'vi-tdesign:delete-time', // 定时删除图标
+    'vi-tdesign:delta', // 增量图标
+    'vi-tdesign:depressed', // 沮丧图标
+    'vi-tdesign:desktop', // 桌面图标
+    'vi-tdesign:desktop-1', // 桌面图标变体1
+    'vi-tdesign:despise', // 鄙视图标
+    'vi-tdesign:device', // 设备图标
+    'vi-tdesign:discount', // 折扣图标
+    'vi-tdesign:discount-filled', // 实心折扣图标
+    'vi-tdesign:dissatisfaction', // 不满图标
+    'vi-tdesign:divide', // 除法图标
+    'vi-tdesign:dividers', // 分隔线图标
+    'vi-tdesign:dividers-1', // 分隔线图标变体1
+    'vi-tdesign:doge', // Doge 图标
+    'vi-tdesign:double-storey', // 双层建筑图标
+    'vi-tdesign:download', // 下载图标
+    'vi-tdesign:download-1', // 下载图标变体1
+    'vi-tdesign:downscale', // 缩小比例图标
+    'vi-tdesign:drag-drop', // 拖放图标
+    'vi-tdesign:drag-move', // 拖动图标
+    'vi-tdesign:drink', // 饮料图标
+    'vi-tdesign:drumstick', // 鸡腿图标
+    'vi-tdesign:dv', // DV 图标
+    'vi-tdesign:dvd', // DVD 图标
+    'vi-tdesign:earphone', // 耳机图标
+    'vi-tdesign:earth', // 地球图标
+    'vi-tdesign:edit', // 编辑图标
+    'vi-tdesign:edit-1', // 编辑图标变体1
+    'vi-tdesign:edit-2', // 编辑图标变体2
+    'vi-tdesign:edit-off', // 编辑禁用图标
+    'vi-tdesign:education', // 教育图标
+    'vi-tdesign:eggplant', // 茄子图标
+    'vi-tdesign:ellipsis', // 省略号图标
+    'vi-tdesign:emo-emotional', // 表情情绪图标
+    'vi-tdesign:enter', // 进入图标
+    'vi-tdesign:equal', // 等于图标
+    'vi-tdesign:error', // 错误图标
+    'vi-tdesign:error-circle', // 错误圆形图标
+    'vi-tdesign:error-circle-filled', // 实心错误圆形图标
+    'vi-tdesign:error-triangle', // 错误三角形图标
+    'vi-tdesign:excited', // 兴奋图标
+    'vi-tdesign:excited-1', // 兴奋图标变体1
+    'vi-tdesign:expand-horizontal', // 横向展开图标
+    'vi-tdesign:expand-vertical', // 纵向展开图标
+    'vi-tdesign:explore', // 探索图标
+    'vi-tdesign:explore-off', // 探索禁用图标
+    'vi-tdesign:exposure', // 曝光图标
+    'vi-tdesign:extension', // 扩展图标
+    'vi-tdesign:extension-off', // 扩展禁用图标
+    'vi-tdesign:face-retouching', // 面部修饰图标
+    'vi-tdesign:fact-check', // 事实核查图标
+    'vi-tdesign:fahrenheit-scale', // 华氏度标尺图标
+    'vi-tdesign:feel-at-ease', // 放松图标
+    'vi-tdesign:ferocious', // 凶猛图标
+    'vi-tdesign:ferris-wheel', // 摩天轮图标
+    'vi-tdesign:file', // 文件图标
+    'vi-tdesign:file-1', // 文件图标变体1
+    'vi-tdesign:file-add', // 添加文件图标
+    'vi-tdesign:file-add-1', // 添加文件图标变体1
+    'vi-tdesign:file-attachment', // 文件附件图标
+    'vi-tdesign:file-blocked', // 文件禁用图标
+    'vi-tdesign:file-code', // 文件代码图标
+    'vi-tdesign:file-code-1', // 文件代码图标变体1
+    'vi-tdesign:file-copy', // 文件复制图标
+    'vi-tdesign:file-download', // 文件下载图标
+    'vi-tdesign:file-excel', // Excel文件图标
+    'vi-tdesign:file-export', // 文件导出图标
+    'vi-tdesign:file-icon', // 文件图标
+    'vi-tdesign:file-image', // 文件图片图标
+    'vi-tdesign:file-import', // 文件导入图标
+    'vi-tdesign:file-locked', // 文件加锁图标
+    'vi-tdesign:file-minus', // 删除文件图标
+    'vi-tdesign:file-music', // 文件音乐图标
+    'vi-tdesign:file-onenote', // OneNote文件图标
+    'vi-tdesign:file-outlook', // Outlook文件图标
+    'vi-tdesign:file-paste', // 文件粘贴图标
+    'vi-tdesign:file-pdf', // PDF文件图标
+    'vi-tdesign:file-powerpoint', // PowerPoint文件图标
+    'vi-tdesign:file-restore', // 文件恢复图标
+    'vi-tdesign:file-safety', // 文件安全图标
+    'vi-tdesign:file-search', // 文件搜索图标
+    'vi-tdesign:file-setting', // 文件设置图标
+    'vi-tdesign:file-teams', // Teams文件图标
+    'vi-tdesign:file-unknown', // 未知文件图标
+    'vi-tdesign:file-unlocked', // 文件解锁图标
+    'vi-tdesign:file-word', // Word文件图标
+    'vi-tdesign:file-zip', // 压缩文件图标
+    'vi-tdesign:fill-color', // 填充颜色图标
+    'vi-tdesign:fill-color-1', // 填充颜色图标变体1
+    'vi-tdesign:film', // 电影图标
+    'vi-tdesign:film-1', // 电影图标变体1
+    'vi-tdesign:filter', // 过滤器图标
+    'vi-tdesign:filter-1', // 过滤器图标变体1
+    'vi-tdesign:filter-2', // 过滤器图标变体2
+    'vi-tdesign:filter-3', // 过滤器图标变体3
+    'vi-tdesign:filter-clear', // 清除过滤器图标
+    'vi-tdesign:filter-off', // 过滤器禁用图标
+    'vi-tdesign:fingerprint', // 指纹图标
+    'vi-tdesign:fingerprint-1', // 指纹图标变体1
+    'vi-tdesign:fingerprint-2', // 指纹图标变体2
+    'vi-tdesign:fingerprint-3', // 指纹图标变体3
+    'vi-tdesign:fish', // 鱼图标
+    'vi-tdesign:flag', // 旗帜图标
+    'vi-tdesign:flag-1', // 旗帜图标变体1
+    'vi-tdesign:flag-2', // 旗帜图标变体2
+    'vi-tdesign:flag-3', // 旗帜图标变体3
+    'vi-tdesign:flag-4', // 旗帜图标变体4
+    'vi-tdesign:flashlight', // 手电筒图标
+    'vi-tdesign:flight-landing', // 飞机降落图标
+    'vi-tdesign:flight-takeoff', // 飞机起飞图标
+    'vi-tdesign:flip-smiling-face', // 翻转笑脸图标
+    'vi-tdesign:flip-to-back', // 翻转到背面图标
+    'vi-tdesign:flip-to-front', // 翻转到正面图标
+    'vi-tdesign:focus', // 聚焦图标
+    'vi-tdesign:fog', // 雾气图标
+    'vi-tdesign:fog-night', // 夜雾图标
+    'vi-tdesign:fog-sunny', // 晴雾图标
+    'vi-tdesign:folder', // 文件夹图标
+    'vi-tdesign:folder-1', // 文件夹图标变体1
+    'vi-tdesign:folder-add', // 添加文件夹图标
+    'vi-tdesign:folder-add-1', // 添加文件夹图标变体1
+    'vi-tdesign:folder-blocked', // 文件夹禁用图标
+    'vi-tdesign:folder-details', // 文件夹详情图标
+    'vi-tdesign:folder-export', // 文件夹导出图标
+    'vi-tdesign:folder-import', // 文件夹导入图标
+    'vi-tdesign:folder-locked', // 文件夹加锁图标
+    'vi-tdesign:folder-minus', // 删除文件夹图标
+    'vi-tdesign:folder-move', // 文件夹移动图标
+    'vi-tdesign:folder-off', // 文件夹禁用图标
+    'vi-tdesign:folder-open', // 打开文件夹图标
+    'vi-tdesign:folder-open-1', // 打开文件夹图标变体1
+    'vi-tdesign:folder-search', // 文件夹搜索图标
+    'vi-tdesign:folder-setting', // 文件夹设置图标
+    'vi-tdesign:folder-shared', // 共享文件夹图标
+    'vi-tdesign:folder-unlocked', // 文件夹解锁图标
+    'vi-tdesign:folder-zip', // 压缩文件夹图标
+    'vi-tdesign:forest', // 森林图标
+    'vi-tdesign:fork', // 叉子图标
+    'vi-tdesign:form', // 表单图标
+    'vi-tdesign:format-horizontal-align-bottom', // 水平底对齐图标
+    'vi-tdesign:format-horizontal-align-center', // 水平居中对齐图标
+    'vi-tdesign:format-horizontal-align-top', // 水平顶对齐图标
+    'vi-tdesign:format-vertical-align-center', // 垂直居中对齐图标
+    'vi-tdesign:format-vertical-align-left', // 垂直左对齐图标
+    'vi-tdesign:format-vertical-align-right', // 垂直右对齐图标
+    'vi-tdesign:forward', // 前进图标
+    'vi-tdesign:frame', // 框架图标
+    'vi-tdesign:frame-1', // 框架图标变体1
+    'vi-tdesign:fries', // 薯条图标
+    'vi-tdesign:fullscreen', // 全屏图标
+    'vi-tdesign:fullscreen-1', // 全屏图标变体1
+    'vi-tdesign:fullscreen-2', // 全屏图标变体2
+    'vi-tdesign:fullscreen-exit', // 退出全屏图标
+    'vi-tdesign:fullscreen-exit-1', // 退出全屏图标变体1
+    'vi-tdesign:function-curve', // 函数曲线图标
+    'vi-tdesign:functions', // 函数图标
+    'vi-tdesign:functions-1', // 函数图标变体1
+    'vi-tdesign:gamepad', // 游戏手柄图标
+    'vi-tdesign:gamepad-1', // 游戏手柄图标变体1
+    'vi-tdesign:gamma', // 伽马值图标
+    'vi-tdesign:garlic', // 大蒜图标
+    'vi-tdesign:gender-female', // 女性性别图标
+    'vi-tdesign:gender-male', // 男性性别图标
+    'vi-tdesign:gesture-applause', // 鼓掌手势图标
+    'vi-tdesign:gesture-click', // 点击手势图标
+    'vi-tdesign:gesture-down', // 向下手势图标
+    'vi-tdesign:gesture-expansion', // 扩展手势图标
+    'vi-tdesign:gesture-left', // 向左手势图标
+    'vi-tdesign:gesture-left-slip', // 向左滑动手势图标
+    'vi-tdesign:gesture-pray', // 祈祷手势图标
+    'vi-tdesign:gesture-pray-1', // 祈祷手势图标变体1
+    'vi-tdesign:gesture-press', // 按压手势图标
+    'vi-tdesign:gesture-ranslation', // 手势平移图标
+    'vi-tdesign:gesture-ranslation-1', // 手势平移图标变体1
+    'vi-tdesign:gesture-right', // 向右手势图标
+    'vi-tdesign:gesture-right-slip', // 向右滑动手势图标
+    'vi-tdesign:gesture-slide-up', // 向上滑动手势图标
+    'vi-tdesign:gesture-up', // 向上手势图标
+    'vi-tdesign:gesture-up-1', // 向上手势图标变体1
+    'vi-tdesign:gesture-up-2', // 向上手势图标变体2
+    'vi-tdesign:gesture-up-and-down', // 上下手势图标
+    'vi-tdesign:gesture-wipe-down', // 向下擦拭手势图标
+    'vi-tdesign:gift', // 礼物图标
+    'vi-tdesign:giggle', // 笑嘻嘻表情图标
+    'vi-tdesign:git-branch', // Git分支图标
+    'vi-tdesign:git-commit', // Git提交图标
+    'vi-tdesign:git-merge', // Git合并图标
+    'vi-tdesign:git-pull-request', // Git拉取请求图标
+    'vi-tdesign:git-repository', // Git仓库图标
+    'vi-tdesign:git-repository-commits', // Git提交记录图标
+    'vi-tdesign:git-repository-private', // Git私有仓库图标
+    'vi-tdesign:gps', // GPS定位图标
+    'vi-tdesign:grape', // 葡萄图标
+    'vi-tdesign:greater-than', // 大于号图标
+    'vi-tdesign:greater-than-or-equal', // 大于等于号图标
+    'vi-tdesign:green-onion', // 青葱图标
+    'vi-tdesign:grid-add', // 添加网格图标
+    'vi-tdesign:grid-view', // 网格视图图标
+    'vi-tdesign:guitar', // 吉他图标
+    'vi-tdesign:hamburger', // 汉堡图标
+    'vi-tdesign:happy', // 开心表情图标
+    'vi-tdesign:hard-disk-storage', // 硬盘存储图标
+    'vi-tdesign:hard-drive', // 硬盘图标
+    'vi-tdesign:hashtag', // 井号图标
+    'vi-tdesign:hd', // 高清图标
+    'vi-tdesign:heart', // 心形图标
+    'vi-tdesign:heart-filled', // 实心心形图标
+    'vi-tdesign:help', // 帮助图标
+    'vi-tdesign:help-circle', // 圆形帮助图标
+    'vi-tdesign:help-circle-filled', // 实心圆形帮助图标
+    'vi-tdesign:help-rectangle', // 矩形帮助图标
+    'vi-tdesign:highlight', // 高亮图标
+    'vi-tdesign:highlight-1', // 高亮图标变体1
+    'vi-tdesign:history', // 历史记录图标
+    'vi-tdesign:history-setting', // 历史记录设置图标
+    'vi-tdesign:home', // 主页图标
+    'vi-tdesign:hospital', // 医院图标
+    'vi-tdesign:hospital-1', // 医院图标变体1
+    'vi-tdesign:hotspot-wave', // 热点波纹图标
+    'vi-tdesign:hourglass', // 沙漏图标
+    'vi-tdesign:houses', // 房屋图标
+    'vi-tdesign:houses-1', // 房屋图标变体1
+    'vi-tdesign:houses-2', // 房屋图标变体2
+    'vi-tdesign:html5', // HTML5图标
+    'vi-tdesign:https', // HTTPS图标
+    'vi-tdesign:ice-cream', // 冰淇淋图标
+    'vi-tdesign:icon', // 图标
+    'vi-tdesign:image', // 图像图标
+    'vi-tdesign:image-1', // 图像图标变体1
+    'vi-tdesign:image-add', // 添加图像图标
+    'vi-tdesign:image-edit', // 编辑图像图标
+    'vi-tdesign:image-error', // 图像错误图标
+    'vi-tdesign:image-off', // 图像关闭图标
+    'vi-tdesign:image-search', // 搜索图像图标
+    'vi-tdesign:indent-left', // 左缩进图标
+    'vi-tdesign:indent-right', // 右缩进图标
+    'vi-tdesign:indicator', // 指示器图标
+    'vi-tdesign:info-circle', // 信息圆圈图标
+    'vi-tdesign:info-circle-filled', // 实心信息圆圈图标
+    'vi-tdesign:ink', // 墨水图标
+    'vi-tdesign:install', // 安装图标
+    'vi-tdesign:install-desktop', // 桌面安装图标
+    'vi-tdesign:install-mobile', // 移动设备安装图标
+    'vi-tdesign:institution', // 机构图标
+    'vi-tdesign:institution-checked', // 机构校验图标
+    'vi-tdesign:internet', // 网络图标
+    'vi-tdesign:ipod', // iPod图标
+    'vi-tdesign:joyful', // 喜悦表情图标
+    'vi-tdesign:jump', // 跳跃图标
+    'vi-tdesign:jump-off', // 跳跃关闭图标
+    'vi-tdesign:keyboard', // 键盘图标
+    'vi-tdesign:laptop', // 笔记本电脑图标
+    'vi-tdesign:layers', // 图层图标
+    'vi-tdesign:layout', // 布局图标
+    'vi-tdesign:leaderboard', // 排行榜图标
+    'vi-tdesign:lemon', // 柠檬图标
+    'vi-tdesign:lemon-slice', // 柠檬切片图标
+    'vi-tdesign:less-than', // 小于号图标
+    'vi-tdesign:less-than-or-equal', // 小于等于号图标
+    'vi-tdesign:letters-a', // 字母A图标
+    'vi-tdesign:letters-b', // 字母B图标
+    'vi-tdesign:letters-c', // 字母C图标
+    'vi-tdesign:letters-d', // 字母D图标
+    'vi-tdesign:letters-e', // 字母E图标
+    'vi-tdesign:letters-f', // 字母F图标
+    'vi-tdesign:letters-g', // 字母G图标
+    'vi-tdesign:letters-h', // 字母H图标
+    'vi-tdesign:letters-i', // 字母I图标
+    'vi-tdesign:letters-j', // 字母J图标
+    'vi-tdesign:letters-k', // 字母K图标
+    'vi-tdesign:letters-l', // 字母L图标
+    'vi-tdesign:letters-m', // 字母M图标
+    'vi-tdesign:letters-n', // 字母N图标
+    'vi-tdesign:letters-o', // 字母O图标
+    'vi-tdesign:letters-p', // 字母P图标
+    'vi-tdesign:letters-q', // 字母Q图标
+    'vi-tdesign:letters-r', // 字母R图标
+    'vi-tdesign:letters-s', // 字母S图标
+    'vi-tdesign:letters-t', // 字母T图标
+    'vi-tdesign:letters-u', // 字母U图标
+    'vi-tdesign:letters-v', // 字母V图标
+    'vi-tdesign:letters-w', // 字母W图标
+    'vi-tdesign:letters-x', // 字母X图标
+    'vi-tdesign:letters-y', // 字母Y图标
+    'vi-tdesign:letters-z', // 字母Z图标
+    'vi-tdesign:lightbulb', // 灯泡图标
+    'vi-tdesign:lightbulb-circle', // 灯泡圆圈图标
+    'vi-tdesign:lighthouse', // 灯塔图标
+    'vi-tdesign:lighthouse-1', // 灯塔图标变体1
+    'vi-tdesign:lighthouse-2', // 灯塔图标变体2
+    'vi-tdesign:lighting-circle', // 圆形光照图标
+    'vi-tdesign:line-height', // 行高图标
+    'vi-tdesign:link', // 链接图标
+    'vi-tdesign:link-1', // 链接图标变体1
+    'vi-tdesign:link-unlink', // 断开链接图标
+    'vi-tdesign:liquor', // 酒精饮料图标
+    'vi-tdesign:list', // 列表图标
+    'vi-tdesign:load', // 加载图标
+    'vi-tdesign:loading', // 加载动画图标
+    'vi-tdesign:location', // 定位图标
+    'vi-tdesign:location-1', // 定位图标变体1
+    'vi-tdesign:location-enlargement', // 定位放大图标
+    'vi-tdesign:location-error', // 定位错误图标
+    'vi-tdesign:location-parking-place', // 停车位图标
+    'vi-tdesign:location-reduction', // 定位缩小图标
+    'vi-tdesign:location-setting', // 定位设置图标
+    'vi-tdesign:lock-off', // 锁定关闭图标
+    'vi-tdesign:lock-on', // 锁定打开图标
+    'vi-tdesign:lock-time', // 锁定时间图标
+    'vi-tdesign:login', // 登录图标
+    'vi-tdesign:logo-adobe-illustrate', // Adobe Illustrator图标
+    'vi-tdesign:logo-adobe-photoshop', // Adobe Photoshop图标
+    'vi-tdesign:logo-adobe-photoshop-1', // Adobe Photoshop图标变体1
+    'vi-tdesign:logo-android', // Android系统图标
+    'vi-tdesign:logo-apple', // 苹果图标
+    'vi-tdesign:logo-apple-filled', // 实心苹果图标
+    'vi-tdesign:logo-behance', // Behance图标
+    'vi-tdesign:logo-chrome', // Chrome浏览器图标
+    'vi-tdesign:logo-chrome-filled', // 实心Chrome图标
+    'vi-tdesign:logo-cinema4d', // Cinema 4D图标
+    'vi-tdesign:logo-codepen', // CodePen图标
+    'vi-tdesign:logo-codesandbox', // CodeSandbox图标
+    'vi-tdesign:logo-dribbble', // Dribbble图标
+    'vi-tdesign:logo-facebook', // Facebook图标
+    'vi-tdesign:logo-figma', // Figma图标
+    'vi-tdesign:logo-framer', // Framer图标
+    'vi-tdesign:logo-github', // GitHub图标
+    'vi-tdesign:logo-github-filled', // 实心GitHub图标
+    'vi-tdesign:logo-gitlab', // GitLab图标
+    'vi-tdesign:logo-ie', // Internet Explorer图标
+    'vi-tdesign:logo-ie-filled', // 实心IE图标
+    'vi-tdesign:logo-instagram', // Instagram图标
+    'vi-tdesign:logo-qq', // QQ图标
+    'vi-tdesign:logo-twitter', // Twitter图标
+    'vi-tdesign:logo-wechat', // 微信图标
+    'vi-tdesign:logo-wechat-stroke', // 微信轮廓图标
+    'vi-tdesign:logo-wecom', // 企业微信图标
+    'vi-tdesign:logo-windows', // Windows图标
+    'vi-tdesign:logo-windows-filled', // 实心Windows图标
+    'vi-tdesign:logo-youtube', // YouTube图标
+    'vi-tdesign:logout', // 登出图标
+    'vi-tdesign:look-around', // 环顾四周图标
+    'vi-tdesign:loudspeaker', // 扩音器图标
+    'vi-tdesign:mail', // 邮件图标
+    'vi-tdesign:map', // 地图图标
+    'vi-tdesign:map-3d', // 3D地图图标
+    'vi-tdesign:map-add', // 添加地图图标
+    'vi-tdesign:map-aiming', // 瞄准地图图标
+    'vi-tdesign:map-blocked', // 地图阻止图标
+    'vi-tdesign:map-bubble', // 地图气泡图标
+    'vi-tdesign:map-cancel', // 地图取消图标
+    'vi-tdesign:map-chat', // 地图聊天图标
+    'vi-tdesign:map-checked', // 地图校验图标
+    'vi-tdesign:map-collection', // 地图集合图标
+    'vi-tdesign:map-connection', // 地图连接图标
+    'vi-tdesign:map-distance', // 地图距离图标
+    'vi-tdesign:map-double', // 双地图图标
+    'vi-tdesign:map-edit', // 地图编辑图标
+    'vi-tdesign:map-grid', // 地图网格图标
+    'vi-tdesign:map-information', // 地图信息图标
+    'vi-tdesign:map-information-1', // 地图信息图标变体1
+    'vi-tdesign:map-information-2', // 地图信息图标变体2
+    'vi-tdesign:map-location', // 地图位置图标
+    'vi-tdesign:map-locked', // 地图锁定图标
+    'vi-tdesign:map-marked', // 地图标记图标
+    'vi-tdesign:map-navigation', // 地图导航图标
+    'vi-tdesign:map-outline', // 地图轮廓图标
+    'vi-tdesign:map-route-planning', // 路线规划图标
+    'vi-tdesign:map-ruler', // 地图测量图标
+    'vi-tdesign:map-safety', // 地图安全图标
+    'vi-tdesign:map-search', // 地图搜索图标
+    'vi-tdesign:map-search-1', // 地图搜索图标变体1
+    'vi-tdesign:map-setting', // 地图设置图标
+    'vi-tdesign:map-unlocked', // 地图解锁图标
+    'vi-tdesign:mark-as-unread', // 标记为未读图标
+    'vi-tdesign:markup', // 标记图标
+    'vi-tdesign:mathematics', // 数学图标
+    'vi-tdesign:measurement', // 测量图标
+    'vi-tdesign:measurement-1', // 测量图标变体1
+    'vi-tdesign:measurement-2', // 测量图标变体2
+    'vi-tdesign:meat-pepper', // 肉与辣椒图标
+    'vi-tdesign:media-library', // 媒体库图标
+    'vi-tdesign:member', // 成员图标
+    'vi-tdesign:menu', // 菜单图标
+    'vi-tdesign:menu-application', // 应用菜单图标
+    'vi-tdesign:menu-fold', // 折叠菜单图标
+    'vi-tdesign:menu-unfold', // 展开菜单图标
+    'vi-tdesign:merge-cells', // 合并单元格图标
+    'vi-tdesign:microphone', // 麦克风图标
+    'vi-tdesign:microphone-1', // 麦克风图标变体1
+    'vi-tdesign:microphone-2', // 麦克风图标变体2
+    'vi-tdesign:milk', // 牛奶图标
+    'vi-tdesign:minus', // 减号图标
+    'vi-tdesign:minus-circle', // 减号圆圈图标
+    'vi-tdesign:minus-circle-filled', // 实心减号圆圈图标
+    'vi-tdesign:minus-rectangle', // 减号矩形图标
+    'vi-tdesign:minus-rectangle-filled', // 实心减号矩形图标
+    'vi-tdesign:mirror', // 镜子图标
+    'vi-tdesign:mobile', // 手机图标
+    'vi-tdesign:mobile-blocked', // 手机阻止图标
+    'vi-tdesign:mobile-list', // 手机列表图标
+    'vi-tdesign:mobile-navigation', // 手机导航图标
+    'vi-tdesign:mobile-shortcut', // 手机快捷方式图标
+    'vi-tdesign:mobile-vibrate', // 手机振动图标
+    'vi-tdesign:mode-dark', // 深色模式图标
+    'vi-tdesign:mode-light', // 浅色模式图标
+    'vi-tdesign:module', // 模块图标
+    'vi-tdesign:money', // 金钱图标
+    'vi-tdesign:monument', // 纪念碑图标
+    'vi-tdesign:moon', // 月亮图标
+    'vi-tdesign:moon-fall', // 月亮下沉图标
+    'vi-tdesign:moon-rising', // 月亮升起图标
+    'vi-tdesign:more', // 更多图标
+    'vi-tdesign:mosque', // 清真寺图标
+    'vi-tdesign:mosque-1', // 清真寺图标变体1
+    'vi-tdesign:mouse', // 鼠标图标
+    'vi-tdesign:move', // 移动图标
+    'vi-tdesign:move-1', // 移动图标变体1
+    'vi-tdesign:movie-clapper', // 场记板图标
+    'vi-tdesign:multiply', // 乘号图标
+    'vi-tdesign:museum', // 博物馆图标
+    'vi-tdesign:museum-1', // 博物馆图标变体1
+    'vi-tdesign:museum-2', // 博物馆图标变体2
+    'vi-tdesign:mushroom', // 蘑菇图标
+    'vi-tdesign:mushroom-1', // 蘑菇图标变体1
+    'vi-tdesign:music', // 音乐图标
+    'vi-tdesign:music-1', // 音乐图标变体1
+    'vi-tdesign:music-2', // 音乐图标变体2
+    'vi-tdesign:music-rectangle-add', // 添加音乐矩形图标
+    'vi-tdesign:navigation-arrow', // 导航箭头图标
+    'vi-tdesign:next', // 下一步图标
+    'vi-tdesign:no-expression', // 无表情图标
+    'vi-tdesign:noodle', // 面条图标
+    'vi-tdesign:notification', // 通知图标
+    'vi-tdesign:notification-add', // 添加通知图标
+    'vi-tdesign:notification-circle', // 通知圆圈图标
+    'vi-tdesign:notification-error', // 通知错误图标
+    'vi-tdesign:notification-filled', // 实心通知图标
+    'vi-tdesign:numbers-0', // 数字0图标
+    'vi-tdesign:numbers-0-1', // 数字0变体图标
+    'vi-tdesign:numbers-1', // 数字1图标
+    'vi-tdesign:numbers-1-1', // 数字1变体图标
+    'vi-tdesign:numbers-2', // 数字2图标
+    'vi-tdesign:numbers-2-1', // 数字2变体图标
+    'vi-tdesign:numbers-3', // 数字3图标
+    'vi-tdesign:numbers-3-1', // 数字3变体图标
+    'vi-tdesign:numbers-4', // 数字4图标
+    'vi-tdesign:numbers-4-1', // 数字4变体图标
+    'vi-tdesign:numbers-5', // 数字5图标
+    'vi-tdesign:numbers-5-1', // 数字5变体图标
+    'vi-tdesign:numbers-6', // 数字6图标
+    'vi-tdesign:numbers-6-1', // 数字6变体图标
+    'vi-tdesign:numbers-7', // 数字7图标
+    'vi-tdesign:numbers-7-1', // 数字7变体图标
+    'vi-tdesign:numbers-8', // 数字8图标
+    'vi-tdesign:numbers-8-1', // 数字8变体图标
+    'vi-tdesign:numbers-9', // 数字9图标
+    'vi-tdesign:numbers-9-1', // 数字9变体图标
+    'vi-tdesign:nut', // 坚果图标
+    'vi-tdesign:object-storage', // 对象存储图标
+    'vi-tdesign:open-mouth', // 张嘴表情图标
+    'vi-tdesign:opera', // Opera浏览器图标
+    'vi-tdesign:order-adjustment-column', // 调整列顺序图标
+    'vi-tdesign:order-ascending', // 升序图标
+    'vi-tdesign:order-descending', // 降序图标
+    'vi-tdesign:outbox', // 发件箱图标
+    'vi-tdesign:page-first', // 首页图标
+    'vi-tdesign:page-head', // 页眉图标
+    'vi-tdesign:page-last', // 尾页图标
+    'vi-tdesign:palace', // 宫殿图标
+    'vi-tdesign:palace-1', // 宫殿变体1图标
+    'vi-tdesign:palace-2', // 宫殿变体2图标
+    'vi-tdesign:palace-3', // 宫殿变体3图标
+    'vi-tdesign:palace-4', // 宫殿变体4图标
+    'vi-tdesign:palette', // 调色板图标
+    'vi-tdesign:palette-1', // 调色板变体图标
+    'vi-tdesign:panorama-horizontal', // 水平全景图标
+    'vi-tdesign:panorama-vertical', // 垂直全景图标
+    'vi-tdesign:pantone', // 潘通色卡图标
+    'vi-tdesign:parabola', // 抛物线图标
+    'vi-tdesign:parentheses', // 括号图标
+    'vi-tdesign:paste', // 粘贴图标
+    'vi-tdesign:patio', // 天井图标
+    'vi-tdesign:pause', // 暂停图标
+    'vi-tdesign:pause-circle', // 暂停圆圈图标
+    'vi-tdesign:pause-circle-filled', // 实心暂停圆圈图标
+    'vi-tdesign:pause-circle-stroke', // 暂停圆圈描边图标
+    'vi-tdesign:pea', // 豌豆图标
+    'vi-tdesign:peach', // 桃子图标
+    'vi-tdesign:pear', // 梨子图标
+    'vi-tdesign:pearl-of-the-orient', // 东方明珠图标
+    'vi-tdesign:pen', // 钢笔图标
+    'vi-tdesign:pen-ball', // 圆珠笔图标
+    'vi-tdesign:pen-brush', // 毛笔图标
+    'vi-tdesign:pen-mark', // 标记笔图标
+    'vi-tdesign:pen-quill', // 羽毛笔图标
+    'vi-tdesign:pending', // 待定图标
+    'vi-tdesign:percent', // 百分比图标
+    'vi-tdesign:personal-information', // 个人信息图标
+    'vi-tdesign:phone-locked', // 手机锁定图标
+    'vi-tdesign:phone-search', // 手机搜索图标
+    'vi-tdesign:pi', // 圆周率图标
+    'vi-tdesign:piano', // 钢琴图标
+    'vi-tdesign:pin', // 大头针图标
+    'vi-tdesign:pin-filled', // 实心大头针图标
+    'vi-tdesign:play', // 播放图标
+    'vi-tdesign:play-circle', // 播放圆圈图标
+    'vi-tdesign:play-circle-filled', // 实心播放圆圈图标
+    'vi-tdesign:play-circle-stroke', // 播放圆圈描边图标
+    'vi-tdesign:play-circle-stroke-add', // 添加播放圆圈描边图标
+    'vi-tdesign:play-demo', // 演示播放图标
+    'vi-tdesign:play-rectangle', // 播放矩形图标
+    'vi-tdesign:plus', // 加号图标
+    'vi-tdesign:popsicle', // 冰棍图标
+    'vi-tdesign:portrait', // 肖像图标
+    'vi-tdesign:pout', // 撅嘴图标
+    'vi-tdesign:poweroff', // 关机图标
+    'vi-tdesign:precise-monitor', // 精确监控图标
+    'vi-tdesign:previous', // 上一步图标
+    'vi-tdesign:print', // 打印图标
+    'vi-tdesign:pumpkin', // 南瓜图标
+    'vi-tdesign:pyramid', // 金字塔图标
+    'vi-tdesign:pyramid-maya', // 玛雅金字塔图标
+    'vi-tdesign:qrcode', // 二维码图标
+    'vi-tdesign:quadratic', // 二次函数图标
+    'vi-tdesign:questionnaire', // 调查问卷图标
+    'vi-tdesign:queue', // 队列图标
+    'vi-tdesign:radar', // 雷达图标
+    'vi-tdesign:radio-1', // 收音机图标1
+    'vi-tdesign:radio-2', // 收音机图标2
+    'vi-tdesign:radish', // 萝卜图标
+    'vi-tdesign:rain-heavy', // 大雨图标
+    'vi-tdesign:rain-light', // 小雨图标
+    'vi-tdesign:rain-medium', // 中雨图标
+    'vi-tdesign:rainbow', // 彩虹图标
+    'vi-tdesign:rectangle', // 矩形图标
+    'vi-tdesign:refresh', // 刷新图标
+    'vi-tdesign:relation', // 关系图标
+    'vi-tdesign:relativity', // 相对论图标
+    'vi-tdesign:remote-wave', // 远程波图标
+    'vi-tdesign:remove', // 移除图标
+    'vi-tdesign:replay', // 重播图标
+    'vi-tdesign:rice', // 米饭图标
+    'vi-tdesign:rice-ball', // 饭团图标
+    'vi-tdesign:roast', // 烤肉图标
+    'vi-tdesign:rocket', // 火箭图标
+    'vi-tdesign:rollback', // 回滚图标
+    'vi-tdesign:rollfront', // 前滚图标
+    'vi-tdesign:root-list', // 根目录列表图标
+    'vi-tdesign:rotate', // 旋转图标
+    'vi-tdesign:rotate-locked', // 旋转锁定图标
+    'vi-tdesign:rotation', // 旋转动作图标
+    'vi-tdesign:round', // 圆形图标
+    'vi-tdesign:router-wave', // 路由器波图标
+    'vi-tdesign:rss', // RSS图标
+    'vi-tdesign:ruler', // 尺子图标
+    'vi-tdesign:sailing-hotel', // 航海酒店图标
+    'vi-tdesign:sandwich', // 三明治图标
+    'vi-tdesign:saturation', // 饱和度图标
+    'vi-tdesign:sausage', // 香肠图标
+    'vi-tdesign:save', // 保存图标
+    'vi-tdesign:saving-pot', // 储蓄罐图标
+    'vi-tdesign:scan', // 扫描图标
+    'vi-tdesign:screen-4k', // 4K屏幕图标
+    'vi-tdesign:screencast', // 屏幕投影图标
+    'vi-tdesign:screenshot', // 屏幕截图图标
+    'vi-tdesign:scroll-bar', // 滚动条图标
+    'vi-tdesign:sd-card', // SD卡图标
+    'vi-tdesign:sd-card-1', // SD卡变体图标
+    'vi-tdesign:search', // 搜索图标
+    'vi-tdesign:search-error', // 搜索错误图标
+    'vi-tdesign:secured', // 安全图标
+    'vi-tdesign:send', // 发送图标
+    'vi-tdesign:send-cancel', // 取消发送图标
+    'vi-tdesign:sensors', // 传感器图标
+    'vi-tdesign:sensors-1', // 传感器变体图标1
+    'vi-tdesign:sensors-2', // 传感器变体图标2
+    'vi-tdesign:sensors-off', // 关闭传感器图标
+    'vi-tdesign:serenity', // 平静图标
+    'vi-tdesign:server', // 服务器图标
+    'vi-tdesign:service', // 服务图标
+    'vi-tdesign:setting', // 设置图标
+    'vi-tdesign:setting-1', // 设置变体图标
+    'vi-tdesign:share', // 分享图标
+    'vi-tdesign:share-1', // 分享变体图标
+    'vi-tdesign:sharpness', // 清晰度图标
+    'vi-tdesign:shield-error', // 盾牌错误图标
+    'vi-tdesign:shimen', // 石门图标
+    'vi-tdesign:shop', // 商店图标
+    'vi-tdesign:shop-1', // 商店变体图标1
+    'vi-tdesign:shop-2', // 商店变体图标2
+    'vi-tdesign:shop-3', // 商店变体图标3
+    'vi-tdesign:shop-4', // 商店变体图标4
+    'vi-tdesign:shop-5', // 商店变体图标5
+    'vi-tdesign:shrimp', // 虾图标
+    'vi-tdesign:shrink-horizontal', // 水平缩小图标
+    'vi-tdesign:shrink-vertical', // 垂直缩小图标
+    'vi-tdesign:shutter', // 快门图标
+    'vi-tdesign:shutup', // 禁言图标
+    'vi-tdesign:sim-card', // SIM卡图标
+    'vi-tdesign:sim-card-1', // SIM卡变体图标1
+    'vi-tdesign:sim-card-2', // SIM卡变体图标2
+    'vi-tdesign:sinister-smile', // 阴险笑容图标
+    'vi-tdesign:sip', // SIP协议图标
+    'vi-tdesign:slash', // 斜线图标
+    'vi-tdesign:sleep', // 睡眠图标
+    'vi-tdesign:slice', // 切片图标
+    'vi-tdesign:slideshow', // 幻灯片图标
+    'vi-tdesign:smile', // 微笑图标
+    'vi-tdesign:sneer', // 冷笑图标
+    'vi-tdesign:snowflake', // 雪花图标
+    'vi-tdesign:sonic', // 声波图标
+    'vi-tdesign:sound', // 声音图标
+    'vi-tdesign:sound-down', // 减小音量图标
+    'vi-tdesign:sound-high', // 高音量图标
+    'vi-tdesign:sound-low', // 低音量图标
+    'vi-tdesign:sound-mute', // 静音图标
+    'vi-tdesign:sound-mute-1', // 静音变体图标
+    'vi-tdesign:sound-up', // 增加音量图标
+    'vi-tdesign:space', // 空间图标
+    'vi-tdesign:speechless-1', // 无语图标
+    'vi-tdesign:star', // 星星图标
+    'vi-tdesign:star-filled', // 实心星星图标
+    'vi-tdesign:statue-of-jesus', // 耶稣像图标
+    'vi-tdesign:sticky-note', // 便利贴图标
+    'vi-tdesign:stop', // 停止图标
+    'vi-tdesign:stop-circle', // 停止圆圈图标
+    'vi-tdesign:stop-circle-filled', // 实心停止圆圈图标
+    'vi-tdesign:stop-circle-stroke', // 停止圆圈描边图标
+    'vi-tdesign:store', // 商店图标
+    'vi-tdesign:street-road', // 街道图标
+    'vi-tdesign:street-road-1', // 街道变体图标
+    'vi-tdesign:subtitle', // 字幕图标
+    'vi-tdesign:subway-line', // 地铁线路图标
+    'vi-tdesign:sum', // 求和图标
+    'vi-tdesign:sun-fall', // 日落图标
+    'vi-tdesign:sun-rising', // 日出图标
+    'vi-tdesign:sunny', // 晴天图标
+    'vi-tdesign:support', // 支持图标
+    'vi-tdesign:surprised', // 惊讶图标
+    'vi-tdesign:surprised-1', // 惊讶变体图标
+    'vi-tdesign:swap', // 交换图标
+    'vi-tdesign:swap-left', // 向左交换图标
+    'vi-tdesign:swap-right', // 向右交换图标
+    'vi-tdesign:swear-1', // 发誓图标1
+    'vi-tdesign:swear-2', // 发誓图标2
+    'vi-tdesign:system-2', // 系统图标2
+    'vi-tdesign:system-3', // 系统图标3
+    'vi-tdesign:system-application', // 系统应用图标
+    'vi-tdesign:system-blocked', // 系统阻止图标
+    'vi-tdesign:system-code', // 系统代码图标
+    'vi-tdesign:system-components', // 系统组件图标
+    'vi-tdesign:system-coordinate', // 系统坐标图标
+    'vi-tdesign:system-device', // 系统设备图标
+    'vi-tdesign:system-interface', // 系统界面图标
+    'vi-tdesign:system-location', // 系统位置图标
+    'vi-tdesign:system-locked', // 系统锁定图标
+    'vi-tdesign:system-log', // 系统日志图标
+    'vi-tdesign:system-marked', // 系统标记图标
+    'vi-tdesign:system-messages', // 系统消息图标
+    'vi-tdesign:system-regulation', // 系统规则图标
+    'vi-tdesign:system-search', // 系统搜索图标
+    'vi-tdesign:system-setting', // 系统设置图标
+    'vi-tdesign:system-storage', // 系统存储图标
+    'vi-tdesign:system-sum', // 系统求和图标
+    'vi-tdesign:system-unlocked', // 系统解锁图标
+    'vi-tdesign:tab', // 标签图标
+    'vi-tdesign:table', // 表格图标
+    'vi-tdesign:table-1', // 表格变体图标1
+    'vi-tdesign:table-2', // 表格变体图标2
+    'vi-tdesign:table-add', // 添加表格图标
+    'vi-tdesign:table-split', // 拆分表格图标
+    'vi-tdesign:tag', // 标签图标
+    'vi-tdesign:tangerinr', // 橘子图标
+    'vi-tdesign:tape', // 胶带图标
+    'vi-tdesign:task', // 任务图标
+    'vi-tdesign:task-1', // 任务变体图标1
+    'vi-tdesign:task-add', // 添加任务图标
+    'vi-tdesign:task-add-1', // 添加任务变体图标1
+    'vi-tdesign:task-checked', // 已完成任务图标
+    'vi-tdesign:task-error', // 任务错误图标
+    'vi-tdesign:task-location', // 任务位置图标
+    'vi-tdesign:task-marked', // 任务标记图标
+    'vi-tdesign:task-setting', // 任务设置图标
+    'vi-tdesign:task-visible', // 任务可见图标
+    'vi-tdesign:tea', // 茶叶图标
+    'vi-tdesign:teahouse', // 茶馆图标
+    'vi-tdesign:template', // 模板图标
+    'vi-tdesign:temple', // 寺庙图标
+    'vi-tdesign:terminal', // 终端图标
+    'vi-tdesign:terminal-rectangle', // 终端矩形图标
+    'vi-tdesign:terminal-rectangle-1', // 终端矩形变体图标
+    'vi-tdesign:terminal-window', // 终端窗口图标
+    'vi-tdesign:textbox', // 文本框图标
+    'vi-tdesign:textformat-bold', // 加粗格式图标
+    'vi-tdesign:textformat-color', // 文本颜色格式图标
+    'vi-tdesign:textformat-italic', // 斜体格式图标
+    'vi-tdesign:textformat-strikethrough', // 删除线格式图标
+    'vi-tdesign:textformat-underline', // 下划线格式图标
+    'vi-tdesign:textformat-wrap', // 文本换行格式图标
+    'vi-tdesign:theaters', // 剧院图标
+    'vi-tdesign:thumb-down', // 点踩图标
+    'vi-tdesign:thumb-down-1', // 点踩变体图标1
+    'vi-tdesign:thumb-down-2', // 点踩变体图标2
+    'vi-tdesign:thumb-up', // 点赞图标
+    'vi-tdesign:thumb-up-1', // 点赞变体图标1
+    'vi-tdesign:thumb-up-2', // 点赞变体图标2
+    'vi-tdesign:thunder', // 雷电图标
+    'vi-tdesign:thunderstorm', // 雷暴图标
+    'vi-tdesign:thunderstorm-night', // 夜间雷暴图标
+    'vi-tdesign:thunderstorm-sunny', // 晴天雷暴图标
+    'vi-tdesign:ticket', // 票据图标
+    'vi-tdesign:time', // 时间图标
+    'vi-tdesign:time-filled', // 实心时间图标
+    'vi-tdesign:tips', // 提示图标
+    'vi-tdesign:tips-double', // 双重提示图标
+    'vi-tdesign:tomato', // 西红柿图标
+    'vi-tdesign:tools', // 工具图标
+    'vi-tdesign:tools-circle', // 圆形工具图标
+    'vi-tdesign:tornado', // 龙卷风图标
+    'vi-tdesign:tower', // 塔楼图标
+    'vi-tdesign:tower-1', // 塔楼变体图标1
+    'vi-tdesign:tower-2', // 塔楼变体图标2
+    'vi-tdesign:tower-3', // 塔楼变体图标3
+    'vi-tdesign:tower-clock', // 塔楼时钟图标
+    'vi-tdesign:town', // 小镇图标
+    'vi-tdesign:traffic', // 交通图标
+    'vi-tdesign:traffic-events', // 交通事件图标
+    'vi-tdesign:transform', // 变换图标
+    'vi-tdesign:transform-1', // 变换变体图标1
+    'vi-tdesign:transform-2', // 变换变体图标2
+    'vi-tdesign:transform-3', // 变换变体图标3
+    'vi-tdesign:translate', // 翻译图标
+    'vi-tdesign:translate-1', // 翻译变体图标
+    'vi-tdesign:tree-list', // 树形列表图标
+    'vi-tdesign:tree-round-dot', // 圆点树图标
+    'vi-tdesign:tree-round-dot-vertical', // 垂直圆点树图标
+    'vi-tdesign:tree-square-dot', // 方点树图标
+    'vi-tdesign:tree-square-dot-vertical', // 垂直方点树图标
+    'vi-tdesign:trending-down', // 趋势下降图标
+    'vi-tdesign:trending-up', // 趋势上升图标
+    'vi-tdesign:tv', // 电视图标
+    'vi-tdesign:tv-1', // 电视变体图标1
+    'vi-tdesign:tv-2', // 电视变体图标2
+    'vi-tdesign:typography', // 排版图标
+    'vi-tdesign:uncomfortable', // 不舒服图标
+    'vi-tdesign:uncomfortable-1', // 不舒服变体图标1
+    'vi-tdesign:uncomfortable-2', // 不舒服变体图标2
+    'vi-tdesign:undertake', // 承担图标
+    'vi-tdesign:undertake-delivery', // 承担交付图标
+    'vi-tdesign:undertake-environment-protection', // 承担环保图标
+    'vi-tdesign:undertake-hold-up', // 承担支持图标
+    'vi-tdesign:undertake-transaction', // 承担交易图标
+    'vi-tdesign:unfold-less', // 收起图标
+    'vi-tdesign:unfold-more', // 展开图标
+    'vi-tdesign:unhappy', // 不开心图标
+    'vi-tdesign:unhappy-1', // 不开心变体图标
+    'vi-tdesign:uninstall', // 卸载图标
+    'vi-tdesign:upload', // 上传图标
+    'vi-tdesign:upload-1', // 上传变体图标
+    'vi-tdesign:upscale', // 升级图标
+    'vi-tdesign:usb', // USB 图标
+    'vi-tdesign:user', // 用户图标
+    'vi-tdesign:user-1', // 用户变体图标
+    'vi-tdesign:user-add', // 添加用户图标
+    'vi-tdesign:user-arrow-down', // 用户箭头向下图标
+    'vi-tdesign:user-arrow-left', // 用户箭头向左图标
+    'vi-tdesign:user-arrow-right', // 用户箭头向右图标
+    'vi-tdesign:user-arrow-up', // 用户箭头向上图标
+    'vi-tdesign:user-avatar', // 用户头像图标
+    'vi-tdesign:user-blocked', // 用户被阻止图标
+    'vi-tdesign:user-business', // 商务用户图标
+    'vi-tdesign:user-checked', // 用户已选图标
+    'vi-tdesign:user-checked-1', // 用户已选变体图标
+    'vi-tdesign:user-circle', // 用户圆形图标
+    'vi-tdesign:user-clear', // 清空用户图标
+    'vi-tdesign:user-error-1', // 用户错误图标
+    'vi-tdesign:user-invisible', // 用户不可见图标
+    'vi-tdesign:user-list', // 用户列表图标
+    'vi-tdesign:user-locked', // 用户锁定图标
+    'vi-tdesign:user-marked', // 用户标记图标
+    'vi-tdesign:user-password', // 用户密码图标
+    'vi-tdesign:user-safety', // 用户安全图标
+    'vi-tdesign:user-search', // 用户搜索图标
+    'vi-tdesign:user-setting', // 用户设置图标
+    'vi-tdesign:user-talk', // 用户对话图标
+    'vi-tdesign:user-talk-1', // 用户对话变体图标
+    'vi-tdesign:user-talk-off-1', // 用户对话关闭变体图标
+    'vi-tdesign:user-time', // 用户时间图标
+    'vi-tdesign:user-transmit', // 用户传输图标
+    'vi-tdesign:user-unknown', // 未知用户图标
+    'vi-tdesign:user-unlocked', // 用户解锁图标
+    'vi-tdesign:user-vip', // VIP 用户图标
+    'vi-tdesign:user-visible', // 用户可见图标
+    'vi-tdesign:usergroup', // 用户组图标
+    'vi-tdesign:usergroup-add', // 添加用户组图标
+    'vi-tdesign:usergroup-clear', // 清空用户组图标
+    'vi-tdesign:vehicle', // 车辆图标
+    'vi-tdesign:verified', // 验证通过图标
+    'vi-tdesign:verify', // 验证图标
+    'vi-tdesign:video', // 视频图标
+    'vi-tdesign:video-camera', // 摄像机图标
+    'vi-tdesign:video-camera-1', // 摄像机变体图标
+    'vi-tdesign:video-camera-2', // 摄像机变体图标 2
+    'vi-tdesign:video-camera-dollar', // 摄像机金钱图标
+    'vi-tdesign:video-camera-minus', // 摄像机减少图标
+    'vi-tdesign:video-camera-music', // 摄像机音乐图标
+    'vi-tdesign:video-camera-off', // 摄像机关闭图标
+    'vi-tdesign:video-library', // 视频库图标
+    'vi-tdesign:view-agenda', // 视图日程图标
+    'vi-tdesign:view-column', // 视图列图标
+    'vi-tdesign:view-in-ar', // AR 视图图标
+    'vi-tdesign:view-list', // 列表视图图标
+    'vi-tdesign:view-module', // 模块视图图标
+    'vi-tdesign:visual-recognition', // 视觉识别图标
+    'vi-tdesign:wallet', // 钱包图标
+    'vi-tdesign:watch', // 手表图标
+    'vi-tdesign:watermelon', // 西瓜图标
+    'vi-tdesign:wave-left', // 左波浪图标
+    'vi-tdesign:wave-right', // 右波浪图标
+    'vi-tdesign:wealth', // 财富图标
+    'vi-tdesign:wealth-1', // 财富变体图标
+    'vi-tdesign:widget', // 小部件图标
+    'vi-tdesign:wifi', // WiFi 图标
+    'vi-tdesign:wifi-1', // WiFi 变体图标
+    'vi-tdesign:wifi-off', // WiFi 关闭图标
+    'vi-tdesign:wifi-off-1', // WiFi 关闭变体图标
+    'vi-tdesign:window', // 窗口图标
+    'vi-tdesign:window-1', // 窗口变体图标
+    'vi-tdesign:windy', // 有风图标
+    'vi-tdesign:windy-rain', // 风雨图标
+    'vi-tdesign:wink', // 眨眼图标
+    'vi-tdesign:work', // 工作图标
+    'vi-tdesign:work-history', // 工作历史图标
+    'vi-tdesign:work-off', // 工作关闭图标
+    'vi-tdesign:wry-smile', // 苦笑图标
+    'vi-tdesign:zoom-in', // 放大图标
+    'vi-tdesign:zoom-out' // 缩小图标
   ]
 }

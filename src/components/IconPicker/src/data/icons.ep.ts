@@ -1,299 +1,308 @@
+/**
+ * @file src/components/IconPicker/src/data/icons.ep.ts
+ * @description Element Plus 图标数据配置文件
+ * @module IconPicker
+ * @example 本文件定义了 Element Plus 图标的配置，包括图标的名称和前缀。
+ * @author [吴尘](https://github.com/wucunping)
+ * @date 2024-11-19
+ */
+
 export default {
-  name: 'Element Plus',
-  prefix: 'vi-ep',
+  name: 'Element Plus', // 配置名称
+  prefix: 'vi-ep', // 图标前缀
   icons: [
-    'vi-ep:add-location',
-    'vi-ep:aim',
-    'vi-ep:alarm-clock',
-    'vi-ep:apple',
-    'vi-ep:arrow-down',
-    'vi-ep:arrow-down-bold',
-    'vi-ep:arrow-left',
-    'vi-ep:arrow-left-bold',
-    'vi-ep:arrow-right',
-    'vi-ep:arrow-right-bold',
-    'vi-ep:arrow-up',
-    'vi-ep:arrow-up-bold',
-    'vi-ep:avatar',
-    'vi-ep:back',
-    'vi-ep:baseball',
-    'vi-ep:basketball',
-    'vi-ep:bell',
-    'vi-ep:bell-filled',
-    'vi-ep:bicycle',
-    'vi-ep:bottom',
-    'vi-ep:bottom-left',
-    'vi-ep:bottom-right',
-    'vi-ep:bowl',
-    'vi-ep:box',
-    'vi-ep:briefcase',
-    'vi-ep:brush',
-    'vi-ep:brush-filled',
-    'vi-ep:burger',
-    'vi-ep:calendar',
-    'vi-ep:camera',
-    'vi-ep:camera-filled',
-    'vi-ep:caret-bottom',
-    'vi-ep:caret-left',
-    'vi-ep:caret-right',
-    'vi-ep:caret-top',
-    'vi-ep:cellphone',
-    'vi-ep:chat-dot-round',
-    'vi-ep:chat-dot-square',
-    'vi-ep:chat-line-round',
-    'vi-ep:chat-line-square',
-    'vi-ep:chat-round',
-    'vi-ep:chat-square',
-    'vi-ep:check',
-    'vi-ep:checked',
-    'vi-ep:cherry',
-    'vi-ep:chicken',
-    'vi-ep:chrome-filled',
-    'vi-ep:circle-check',
-    'vi-ep:circle-check-filled',
-    'vi-ep:circle-close',
-    'vi-ep:circle-close-filled',
-    'vi-ep:circle-plus',
-    'vi-ep:circle-plus-filled',
-    'vi-ep:clock',
-    'vi-ep:close',
-    'vi-ep:close-bold',
-    'vi-ep:cloudy',
-    'vi-ep:coffee',
-    'vi-ep:coffee-cup',
-    'vi-ep:coin',
-    'vi-ep:cold-drink',
-    'vi-ep:collection',
-    'vi-ep:collection-tag',
-    'vi-ep:comment',
-    'vi-ep:compass',
-    'vi-ep:connection',
-    'vi-ep:coordinate',
-    'vi-ep:copy-document',
-    'vi-ep:cpu',
-    'vi-ep:credit-card',
-    'vi-ep:crop',
-    'vi-ep:d-arrow-left',
-    'vi-ep:d-arrow-right',
-    'vi-ep:d-caret',
-    'vi-ep:data-analysis',
-    'vi-ep:data-board',
-    'vi-ep:data-line',
-    'vi-ep:delete',
-    'vi-ep:delete-filled',
-    'vi-ep:delete-location',
-    'vi-ep:dessert',
-    'vi-ep:discount',
-    'vi-ep:dish',
-    'vi-ep:dish-dot',
-    'vi-ep:document',
-    'vi-ep:document-add',
-    'vi-ep:document-checked',
-    'vi-ep:document-copy',
-    'vi-ep:document-delete',
-    'vi-ep:document-remove',
-    'vi-ep:download',
-    'vi-ep:drizzling',
-    'vi-ep:edit',
-    'vi-ep:edit-pen',
-    'vi-ep:eleme',
-    'vi-ep:eleme-filled',
-    'vi-ep:element-plus',
-    'vi-ep:expand',
-    'vi-ep:failed',
-    'vi-ep:female',
-    'vi-ep:files',
-    'vi-ep:film',
-    'vi-ep:filter',
-    'vi-ep:finished',
-    'vi-ep:first-aid-kit',
-    'vi-ep:flag',
-    'vi-ep:fold',
-    'vi-ep:folder',
-    'vi-ep:folder-add',
-    'vi-ep:folder-checked',
-    'vi-ep:folder-delete',
-    'vi-ep:folder-opened',
-    'vi-ep:folder-remove',
-    'vi-ep:food',
-    'vi-ep:football',
-    'vi-ep:fork-spoon',
-    'vi-ep:fries',
-    'vi-ep:full-screen',
-    'vi-ep:goblet',
-    'vi-ep:goblet-full',
-    'vi-ep:goblet-square',
-    'vi-ep:goblet-square-full',
-    'vi-ep:gold-medal',
-    'vi-ep:goods',
-    'vi-ep:goods-filled',
-    'vi-ep:grape',
-    'vi-ep:grid',
-    'vi-ep:guide',
-    'vi-ep:handbag',
-    'vi-ep:headset',
-    'vi-ep:help',
-    'vi-ep:help-filled',
-    'vi-ep:hide',
-    'vi-ep:histogram',
-    'vi-ep:home-filled',
-    'vi-ep:hot-water',
-    'vi-ep:house',
-    'vi-ep:ice-cream',
-    'vi-ep:ice-cream-round',
-    'vi-ep:ice-cream-square',
-    'vi-ep:ice-drink',
-    'vi-ep:ice-tea',
-    'vi-ep:info-filled',
-    'vi-ep:iphone',
-    'vi-ep:key',
-    'vi-ep:knife-fork',
-    'vi-ep:lightning',
-    'vi-ep:link',
-    'vi-ep:list',
-    'vi-ep:loading',
-    'vi-ep:location',
-    'vi-ep:location-filled',
-    'vi-ep:location-information',
-    'vi-ep:lock',
-    'vi-ep:lollipop',
-    'vi-ep:magic-stick',
-    'vi-ep:magnet',
-    'vi-ep:male',
-    'vi-ep:management',
-    'vi-ep:map-location',
-    'vi-ep:medal',
-    'vi-ep:memo',
-    'vi-ep:menu',
-    'vi-ep:message',
-    'vi-ep:message-box',
-    'vi-ep:mic',
-    'vi-ep:microphone',
-    'vi-ep:milk-tea',
-    'vi-ep:minus',
-    'vi-ep:money',
-    'vi-ep:monitor',
-    'vi-ep:moon',
-    'vi-ep:moon-night',
-    'vi-ep:more',
-    'vi-ep:more-filled',
-    'vi-ep:mostly-cloudy',
-    'vi-ep:mouse',
-    'vi-ep:mug',
-    'vi-ep:mute',
-    'vi-ep:mute-notification',
-    'vi-ep:no-smoking',
-    'vi-ep:notebook',
-    'vi-ep:notification',
-    'vi-ep:odometer',
-    'vi-ep:office-building',
-    'vi-ep:open',
-    'vi-ep:operation',
-    'vi-ep:opportunity',
-    'vi-ep:orange',
-    'vi-ep:paperclip',
-    'vi-ep:partly-cloudy',
-    'vi-ep:pear',
-    'vi-ep:phone',
-    'vi-ep:phone-filled',
-    'vi-ep:picture',
-    'vi-ep:picture-filled',
-    'vi-ep:picture-rounded',
-    'vi-ep:pie-chart',
-    'vi-ep:place',
-    'vi-ep:platform',
-    'vi-ep:plus',
-    'vi-ep:pointer',
-    'vi-ep:position',
-    'vi-ep:postcard',
-    'vi-ep:pouring',
-    'vi-ep:present',
-    'vi-ep:price-tag',
-    'vi-ep:printer',
-    'vi-ep:promotion',
-    'vi-ep:quartz-watch',
-    'vi-ep:question-filled',
-    'vi-ep:rank',
-    'vi-ep:reading',
-    'vi-ep:reading-lamp',
-    'vi-ep:refresh',
-    'vi-ep:refresh-left',
-    'vi-ep:refresh-right',
-    'vi-ep:refrigerator',
-    'vi-ep:remove',
-    'vi-ep:remove-filled',
-    'vi-ep:right',
-    'vi-ep:scale-to-original',
-    'vi-ep:school',
-    'vi-ep:scissor',
-    'vi-ep:search',
-    'vi-ep:select',
-    'vi-ep:sell',
-    'vi-ep:semi-select',
-    'vi-ep:service',
-    'vi-ep:set-up',
-    'vi-ep:setting',
-    'vi-ep:share',
-    'vi-ep:ship',
-    'vi-ep:shop',
-    'vi-ep:shopping-bag',
-    'vi-ep:shopping-cart',
-    'vi-ep:shopping-cart-full',
-    'vi-ep:shopping-trolley',
-    'vi-ep:smoking',
-    'vi-ep:soccer',
-    'vi-ep:sold-out',
-    'vi-ep:sort',
-    'vi-ep:sort-down',
-    'vi-ep:sort-up',
-    'vi-ep:stamp',
-    'vi-ep:star',
-    'vi-ep:star-filled',
-    'vi-ep:stopwatch',
-    'vi-ep:success-filled',
-    'vi-ep:sugar',
-    'vi-ep:suitcase',
-    'vi-ep:suitcase-line',
-    'vi-ep:sunny',
-    'vi-ep:sunrise',
-    'vi-ep:sunset',
-    'vi-ep:switch',
-    'vi-ep:switch-button',
-    'vi-ep:switch-filled',
-    'vi-ep:takeaway-box',
-    'vi-ep:ticket',
-    'vi-ep:tickets',
-    'vi-ep:timer',
-    'vi-ep:toilet-paper',
-    'vi-ep:tools',
-    'vi-ep:top',
-    'vi-ep:top-left',
-    'vi-ep:top-right',
-    'vi-ep:trend-charts',
-    'vi-ep:trophy',
-    'vi-ep:trophy-base',
-    'vi-ep:turn-off',
-    'vi-ep:umbrella',
-    'vi-ep:unlock',
-    'vi-ep:upload',
-    'vi-ep:upload-filled',
-    'vi-ep:user',
-    'vi-ep:user-filled',
-    'vi-ep:van',
-    'vi-ep:video-camera',
-    'vi-ep:video-camera-filled',
-    'vi-ep:video-pause',
-    'vi-ep:video-play',
-    'vi-ep:view',
-    'vi-ep:wallet',
-    'vi-ep:wallet-filled',
-    'vi-ep:warn-triangle-filled',
-    'vi-ep:warning',
-    'vi-ep:warning-filled',
-    'vi-ep:watch',
-    'vi-ep:watermelon',
-    'vi-ep:wind-power',
-    'vi-ep:zoom-in',
-    'vi-ep:zoom-out'
+    'vi-ep:add-location', // 添加位置图标
+    'vi-ep:aim', // 目标图标
+    'vi-ep:alarm-clock', // 闹钟图标
+    'vi-ep:apple', // 苹果图标
+    'vi-ep:arrow-down', // 向下箭头图标
+    'vi-ep:arrow-down-bold', // 粗体向下箭头图标
+    'vi-ep:arrow-left', // 向左箭头图标
+    'vi-ep:arrow-left-bold', // 粗体向左箭头图标
+    'vi-ep:arrow-right', // 向右箭头图标
+    'vi-ep:arrow-right-bold', // 粗体向右箭头图标
+    'vi-ep:arrow-up', // 向上箭头图标
+    'vi-ep:arrow-up-bold', // 粗体向上箭头图标
+    'vi-ep:avatar', // 头像图标
+    'vi-ep:back', // 返回图标
+    'vi-ep:baseball', // 棒球图标
+    'vi-ep:basketball', // 篮球图标
+    'vi-ep:bell', // 铃铛图标
+    'vi-ep:bell-filled', // 实心铃铛图标
+    'vi-ep:bicycle', // 自行车图标
+    'vi-ep:bottom', // 底部图标
+    'vi-ep:bottom-left', // 左下角图标
+    'vi-ep:bottom-right', // 右下角图标
+    'vi-ep:bowl', // 碗图标
+    'vi-ep:box', // 盒子图标
+    'vi-ep:briefcase', // 公文包图标
+    'vi-ep:brush', // 画笔图标
+    'vi-ep:brush-filled', // 实心画笔图标
+    'vi-ep:burger', // 汉堡图标
+    'vi-ep:calendar', // 日历图标
+    'vi-ep:camera', // 相机图标
+    'vi-ep:camera-filled', // 实心相机图标
+    'vi-ep:caret-bottom', // 向下尖括号图标
+    'vi-ep:caret-left', // 向左尖括号图标
+    'vi-ep:caret-right', // 向右尖括号图标
+    'vi-ep:caret-top', // 向上尖括号图标
+    'vi-ep:cellphone', // 手机图标
+    'vi-ep:chat-dot-round', // 圆点对话图标
+    'vi-ep:chat-dot-square', // 方形点对话图标
+    'vi-ep:chat-line-round', // 圆形线框聊天图标
+    'vi-ep:chat-line-square', // 方形线框聊天图标
+    'vi-ep:chat-round', // 圆形聊天图标
+    'vi-ep:chat-square', // 方形聊天图标
+    'vi-ep:check', // 检查图标
+    'vi-ep:checked', // 已检查图标
+    'vi-ep:cherry', // 樱桃图标
+    'vi-ep:chicken', // 鸡图标
+    'vi-ep:chrome-filled', // 实心 Chrome 图标
+    'vi-ep:circle-check', // 圆形检查图标
+    'vi-ep:circle-check-filled', // 实心圆形检查图标
+    'vi-ep:circle-close', // 圆形关闭图标
+    'vi-ep:circle-close-filled', // 实心圆形关闭图标
+    'vi-ep:circle-plus', // 圆形加号图标
+    'vi-ep:circle-plus-filled', // 实心圆形加号图标
+    'vi-ep:clock', // 时钟图标
+    'vi-ep:close', // 关闭图标
+    'vi-ep:close-bold', // 粗体关闭图标
+    'vi-ep:cloudy', // 多云图标
+    'vi-ep:coffee', // 咖啡图标
+    'vi-ep:coffee-cup', // 咖啡杯图标
+    'vi-ep:coin', // 硬币图标
+    'vi-ep:cold-drink', // 冷饮图标
+    'vi-ep:collection', // 收藏图标
+    'vi-ep:collection-tag', // 收藏标签图标
+    'vi-ep:comment', // 评论图标
+    'vi-ep:compass', // 指南针图标
+    'vi-ep:connection', // 连接图标
+    'vi-ep:coordinate', // 坐标图标
+    'vi-ep:copy-document', // 复制文档图标
+    'vi-ep:cpu', // CPU 图标
+    'vi-ep:credit-card', // 信用卡图标
+    'vi-ep:crop', // 裁剪图标
+    'vi-ep:d-arrow-left', // 向左双箭头图标
+    'vi-ep:d-arrow-right', // 向右双箭头图标
+    'vi-ep:d-caret', // 双尖括号图标
+    'vi-ep:data-analysis', // 数据分析图标
+    'vi-ep:data-board', // 数据面板图标
+    'vi-ep:data-line', // 数据线图标
+    'vi-ep:delete', // 删除图标
+    'vi-ep:delete-filled', // 实心删除图标
+    'vi-ep:delete-location', // 删除位置图标
+    'vi-ep:dessert', // 甜点图标
+    'vi-ep:discount', // 折扣图标
+    'vi-ep:dish', // 菜肴图标
+    'vi-ep:dish-dot', // 点菜图标
+    'vi-ep:document', // 文档图标
+    'vi-ep:document-add', // 添加文档图标
+    'vi-ep:document-checked', // 检查文档图标
+    'vi-ep:document-copy', // 复制文档图标
+    'vi-ep:document-delete', // 删除文档图标
+    'vi-ep:document-remove', // 移除文档图标
+    'vi-ep:download', // 下载图标
+    'vi-ep:drizzling', // 小雨图标
+    'vi-ep:edit', // 编辑图标
+    'vi-ep:edit-pen', // 编辑笔图标
+    'vi-ep:eleme', // 饿了么图标
+    'vi-ep:eleme-filled', // 实心饿了么图标
+    'vi-ep:element-plus', // Element Plus 图标
+    'vi-ep:expand', // 展开图标
+    'vi-ep:failed', // 失败图标
+    'vi-ep:female', // 女性图标
+    'vi-ep:files', // 文件图标
+    'vi-ep:film', // 电影图标
+    'vi-ep:filter', // 筛选图标
+    'vi-ep:finished', // 完成图标
+    'vi-ep:first-aid-kit', // 急救包图标
+    'vi-ep:flag', // 旗帜图标
+    'vi-ep:fold', // 折叠图标
+    'vi-ep:folder', // 文件夹图标
+    'vi-ep:folder-add', // 添加文件夹图标
+    'vi-ep:folder-checked', // 检查文件夹图标
+    'vi-ep:folder-delete', // 删除文件夹图标
+    'vi-ep:folder-opened', // 打开文件夹图标
+    'vi-ep:folder-remove', // 移除文件夹图标
+    'vi-ep:food', // 食物图标
+    'vi-ep:football', // 足球图标
+    'vi-ep:fork-spoon', // 叉子和勺子图标
+    'vi-ep:fries', // 薯条图标
+    'vi-ep:full-screen', // 全屏图标
+    'vi-ep:goblet', // 酒杯图标
+    'vi-ep:goblet-full', // 满杯图标
+    'vi-ep:goblet-square', // 方形酒杯图标
+    'vi-ep:goblet-square-full', // 方形满杯图标
+    'vi-ep:gold-medal', // 金牌图标
+    'vi-ep:goods', // 商品图标
+    'vi-ep:goods-filled', // 实心商品图标
+    'vi-ep:grape', // 葡萄图标
+    'vi-ep:grid', // 网格图标
+    'vi-ep:guide', // 指引图标
+    'vi-ep:handbag', // 手提包图标
+    'vi-ep:headset', // 耳机图标
+    'vi-ep:help', // 帮助图标
+    'vi-ep:help-filled', // 实心帮助图标
+    'vi-ep:hide', // 隐藏图标
+    'vi-ep:histogram', // 直方图图标
+    'vi-ep:home-filled', // 实心主页图标
+    'vi-ep:hot-water', // 热水图标
+    'vi-ep:house', // 房屋图标
+    'vi-ep:ice-cream', // 冰淇淋图标
+    'vi-ep:ice-cream-round', // 圆形冰淇淋图标
+    'vi-ep:ice-cream-square', // 方形冰淇淋图标
+    'vi-ep:ice-drink', // 冰饮图标
+    'vi-ep:ice-tea', // 冰茶图标
+    'vi-ep:info-filled', // 实心信息图标
+    'vi-ep:iphone', // iPhone 图标
+    'vi-ep:key', // 钥匙图标
+    'vi-ep:knife-fork', // 刀叉图标
+    'vi-ep:lightning', // 闪电图标
+    'vi-ep:link', // 链接图标
+    'vi-ep:list', // 列表图标
+    'vi-ep:loading', // 加载图标
+    'vi-ep:location', // 位置图标
+    'vi-ep:location-filled', // 实心位置图标
+    'vi-ep:location-information', // 位置信息图标
+    'vi-ep:lock', // 锁图标
+    'vi-ep:lollipop', // 棒棒糖图标
+    'vi-ep:magic-stick', // 魔法棒图标
+    'vi-ep:magnet', // 磁铁图标
+    'vi-ep:male', // 男性图标
+    'vi-ep:management', // 管理图标
+    'vi-ep:map-location', // 地图位置图标
+    'vi-ep:medal', // 奖牌图标
+    'vi-ep:memo', // 备忘录图标
+    'vi-ep:menu', // 菜单图标
+    'vi-ep:message', // 消息图标
+    'vi-ep:message-box', // 消息框图标
+    'vi-ep:mic', // 麦克风图标
+    'vi-ep:microphone', // 录音麦克风图标
+    'vi-ep:milk-tea', // 奶茶图标
+    'vi-ep:minus', // 减号图标
+    'vi-ep:money', // 金钱图标
+    'vi-ep:monitor', // 显示器图标
+    'vi-ep:moon', // 月亮图标
+    'vi-ep:moon-night', // 夜晚月亮图标
+    'vi-ep:more', // 更多图标
+    'vi-ep:more-filled', // 实心更多图标
+    'vi-ep:mostly-cloudy', // 多云图标
+    'vi-ep:mouse', // 鼠标图标
+    'vi-ep:mug', // 杯子图标
+    'vi-ep:mute', // 静音图标
+    'vi-ep:mute-notification', // 静音通知图标
+    'vi-ep:no-smoking', // 禁止吸烟图标
+    'vi-ep:notebook', // 笔记本图标
+    'vi-ep:notification', // 通知图标
+    'vi-ep:odometer', // 里程表图标
+    'vi-ep:office-building', // 办公楼图标
+    'vi-ep:open', // 打开图标
+    'vi-ep:operation', // 操作图标
+    'vi-ep:opportunity', // 机会图标
+    'vi-ep:orange', // 橙子图标
+    'vi-ep:paperclip', // 回形针图标
+    'vi-ep:partly-cloudy', // 局部多云图标
+    'vi-ep:pear', // 梨图标
+    'vi-ep:phone', // 电话图标
+    'vi-ep:phone-filled', // 实心电话图标
+    'vi-ep:picture', // 图片图标
+    'vi-ep:picture-filled', // 实心图片图标
+    'vi-ep:picture-rounded', // 圆角图片图标
+    'vi-ep:pie-chart', // 饼图图标
+    'vi-ep:place', // 地点图标
+    'vi-ep:platform', // 平台图标
+    'vi-ep:plus', // 加号图标
+    'vi-ep:pointer', // 指针图标
+    'vi-ep:position', // 位置图标
+    'vi-ep:postcard', // 明信片图标
+    'vi-ep:pouring', // 倾倒图标
+    'vi-ep:present', // 礼物图标
+    'vi-ep:price-tag', // 价格标签图标
+    'vi-ep:printer', // 打印机图标
+    'vi-ep:promotion', // 促销图标
+    'vi-ep:quartz-watch', // 石英表图标
+    'vi-ep:question-filled', // 实心问题图标
+    'vi-ep:rank', // 排名图标
+    'vi-ep:reading', // 阅读图标
+    'vi-ep:reading-lamp', // 阅读灯图标
+    'vi-ep:refresh', // 刷新图标
+    'vi-ep:refresh-left', // 向左刷新图标
+    'vi-ep:refresh-right', // 向右刷新图标
+    'vi-ep:refrigerator', // 冰箱图标
+    'vi-ep:remove', // 移除图标
+    'vi-ep:remove-filled', // 实心移除图标
+    'vi-ep:right', // 向右图标
+    'vi-ep:scale-to-original', // 缩放至原始图标
+    'vi-ep:school', // 学校图标
+    'vi-ep:scissor', // 剪刀图标
+    'vi-ep:search', // 搜索图标
+    'vi-ep:select', // 选择图标
+    'vi-ep:sell', // 销售图标
+    'vi-ep:semi-select', // 半选图标
+    'vi-ep:service', // 服务图标
+    'vi-ep:set-up', // 设置图标
+    'vi-ep:setting', // 设置图标
+    'vi-ep:share', // 分享图标
+    'vi-ep:ship', // 船图标
+    'vi-ep:shop', // 商店图标
+    'vi-ep:shopping-bag', // 购物袋图标
+    'vi-ep:shopping-cart', // 购物车图标
+    'vi-ep:shopping-cart-full', // 满购物车图标
+    'vi-ep:shopping-trolley', // 购物推车图标
+    'vi-ep:smoking', // 吸烟图标
+    'vi-ep:soccer', // 足球图标
+    'vi-ep:sold-out', // 售罄图标
+    'vi-ep:sort', // 排序图标
+    'vi-ep:sort-down', // 向下排序图标
+    'vi-ep:sort-up', // 向上排序图标
+    'vi-ep:stamp', // 印章图标
+    'vi-ep:star', // 星星图标
+    'vi-ep:star-filled', // 实心星星图标
+    'vi-ep:stopwatch', // 秒表图标
+    'vi-ep:success-filled', // 实心成功图标
+    'vi-ep:sugar', // 糖图标
+    'vi-ep:suitcase', // 行李箱图标
+    'vi-ep:suitcase-line', // 行李箱线框图标
+    'vi-ep:sunny', // 晴天图标
+    'vi-ep:sunrise', // 日出图标
+    'vi-ep:sunset', // 日落图标
+    'vi-ep:switch', // 开关图标
+    'vi-ep:switch-button', // 按钮开关图标
+    'vi-ep:switch-filled', // 实心开关图标
+    'vi-ep:takeaway-box', // 外卖盒图标
+    'vi-ep:ticket', // 票图标
+    'vi-ep:tickets', // 门票图标
+    'vi-ep:timer', // 计时器图标
+    'vi-ep:toilet-paper', // 卫生纸图标
+    'vi-ep:tools', // 工具图标
+    'vi-ep:top', // 顶部图标
+    'vi-ep:top-left', // 左上角图标
+    'vi-ep:top-right', // 右上角图标
+    'vi-ep:trend-charts', // 趋势图表图标
+    'vi-ep:trophy', // 奖杯图标
+    'vi-ep:trophy-base', // 奖杯底座图标
+    'vi-ep:turn-off', // 关闭图标
+    'vi-ep:umbrella', // 雨伞图标
+    'vi-ep:unlock', // 解锁图标
+    'vi-ep:upload', // 上传图标
+    'vi-ep:upload-filled', // 实心上传图标
+    'vi-ep:user', // 用户图标
+    'vi-ep:user-filled', // 实心用户图标
+    'vi-ep:van', // 货车图标
+    'vi-ep:video-camera', // 摄像机图标
+    'vi-ep:video-camera-filled', // 实心摄像机图标
+    'vi-ep:video-pause', // 视频暂停图标
+    'vi-ep:video-play', // 视频播放图标
+    'vi-ep:view', // 查看图标
+    'vi-ep:wallet', // 钱包图标
+    'vi-ep:wallet-filled', // 实心钱包图标
+    'vi-ep:warn-triangle-filled', // 实心警告三角图标
+    'vi-ep:warning', // 警告图标
+    'vi-ep:warning-filled', // 实心警告图标
+    'vi-ep:watch', // 手表图标
+    'vi-ep:watermelon', // 西瓜图标
+    'vi-ep:wind-power', // 风力图标
+    'vi-ep:zoom-in', // 放大图标
+    'vi-ep:zoom-out' // 缩小图标
   ]
 }

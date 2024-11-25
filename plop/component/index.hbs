@@ -1,3 +1,15 @@
+{{!--
+@file 组件索引文件模板
+@description 提供组件的导入和导出，用于统一管理组件入口
+@example 使用此模板生成的文件会导出组件 {{ upperFirstName }}，用于按需导入
+@version 1.0.0
+@date 2024-11-19
+@author [吴尘](https://github.com/wucunping)
+@module ComponentIndex
+--}}
+
+{{!-- 导入组件 {{ upperFirstName }} --}}
 import {{ upperFirstName }} from './src/{{ upperFirstName }}.vue'
 
+{{!-- 导出组件 {{ upperFirstName }} --}}
 export { {{ upperFirstName }} }

@@ -1,7 +1,21 @@
+{{!--
+@file Vue 视图模板文件
+@description 用于生成 Vue 3 视图组件的基础模板文件
+@example 使用此模板生成的视图组件会包含一个带标题的内容容器
+@version 1.0.0
+@date 2024-11-19
+@module ViewTemplate
+@author [吴尘](https://github.com/wucunping)
+--}}
+
 <script setup lang="ts">
-import { ContentWrap } from '@/components/ContentWrap'
+  // 引入 ContentWrap 组件，用于包裹内容
+  import { ContentWrap } from '@/components/ContentWrap'
 </script>
 
 <template>
-  <ContentWrap title="{{ upperFirstName }}"> {{ name }} </ContentWrap>
+  {{!-- 使用 ContentWrap 组件渲染视图内容 --}}
+  <ContentWrap title="{{ upperFirstName }}">
+    {{ name }}
+  </ContentWrap>
 </template>

@@ -1,18 +1,44 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import type {
-  Router,
-  RouteLocationNormalized,
-  RouteRecordNormalized,
-  RouteRecordRaw
-} from 'vue-router'
-import { isUrl } from '@/utils/is'
-import { omit, cloneDeep } from 'lodash-es'
+/**
+ * @file routerHelper.ts
+ * @description 提供前端和后端动态路由生成的辅助工具函数，包括路由降级、路径解析等功能。
+ * @version 1.0.0
+ * @date 2024-11-19
+ * @author [吴尘](https://github.com/wucunping)
+ * @module RouterHelper
+ */
 
+// 导入 Vue Router 的核心 API，用于创建路由和管理路由历史记录
+import { createRouter, createWebHashHistory } from 'vue-router'
+
+// 导入 Vue Router 的类型定义，用于定义路由和路由记录的类型
+import type {
+  Router, // Vue Router 实例类型
+  RouteLocationNormalized, // 标准化的路由位置类型
+  RouteRecordNormalized, // 标准化的路由记录类型
+  RouteRecordRaw // 原始的路由记录类型
+} from 'vue-router'
+
+// 导入工具函数，用于处理常见的字符串操作
+import { isUrl } from '@/utils/is' // 判断是否为 URL 的工具函数
+
+// 导入 lodash-es 的方法，用于对象操作
+import { omit, cloneDeep } from 'lodash-es' // omit 用于去除对象属性，cloneDeep 用于深拷贝对象
+
+/**
+ * 动态加载 views 文件夹下的所有 vue 和 tsx 文件。
+ */
 const modules = import.meta.glob('../views/**/*.{vue,tsx}')
 
-/* Layout */
+/**
+ * 定义 Layout 组件，用于顶级路由的布局结构。
+ * @returns 返回 Layout 组件的异步导入函数。
+ */
 export const Layout = () => import('@/layout/Layout.vue')
 
+/**
+ * 获取 ParentLayout 组件的占位函数，用于占位子路由。
+ * @returns 返回一个 Promise，解析为占位的 ParentLayout 对象。
+ */
 export const getParentLayout = () => {
   return () =>
     new Promise((resolve) => {
@@ -22,6 +48,11 @@ export const getParentLayout = () => {
     })
 }
 
+/**
+ * 提取原始路由信息，移除 matched 属性。
+ * @param route 路由对象
+ * @returns 提取后的路由对象
+ */
 export const getRawRoute = (route: RouteLocationNormalized): RouteLocationNormalized => {
   if (!route) return route
   const { matched, ...opt } = route
@@ -29,15 +60,21 @@ export const getRawRoute = (route: RouteLocationNormalized): RouteLocationNormal
     ...opt,
     matched: (matched
       ? matched.map((item) => ({
-          meta: item.meta,
-          name: item.name,
-          path: item.path
+          meta: item.meta, // 提取路由的 meta 信息
+          name: item.name, // 提取路由的 name 信息
+          path: item.path // 提取路由的 path 信息
         }))
       : undefined) as RouteRecordNormalized[]
   }
 }
 
-// 前端控制路由生成
+/**
+ * 根据前端提供的路由配置生成路由表。
+ * @param routes 初始路由表
+ * @param keys 需要过滤的路径或名称数组
+ * @param basePath 基础路径
+ * @returns 过滤后的路由表
+ */
 export const generateRoutesByFrontEnd = (
   routes: AppRouteRecordRaw[],
   keys: string[],
@@ -47,14 +84,14 @@ export const generateRoutesByFrontEnd = (
 
   for (const route of routes) {
     const meta = route.meta ?? {}
-    // skip some route
+    // 如果路由被隐藏且不可访问，则跳过
     if (meta.hidden && !meta.canTo) {
       continue
     }
 
     let data: Nullable<AppRouteRecordRaw> = null
-
     let onlyOneChild: Nullable<string> = null
+    // 如果子路由只有一个，且路由不需要一直显示，则设置为 onlyOneChild
     if (route.children && route.children.length === 1 && !meta.alwaysShow) {
       onlyOneChild = (
         isUrl(route.children[0].path)
@@ -63,20 +100,17 @@ export const generateRoutesByFrontEnd = (
       ) as string
     }
 
-    // 开发者可以根据实际情况进行扩展
+    // 遍历 keys，匹配路径或名称
     for (const item of keys) {
-      // 通过路径去匹配
+      const routePath = (onlyOneChild ?? pathResolve(basePath, route.path)).trim()
       if (isUrl(item) && (onlyOneChild === item || route.path === item)) {
         data = Object.assign({}, route)
-      } else {
-        const routePath = (onlyOneChild ?? pathResolve(basePath, route.path)).trim()
-        if (routePath === item || meta.followRoute === item) {
-          data = Object.assign({}, route)
-        }
+      } else if (routePath === item || meta.followRoute === item) {
+        data = Object.assign({}, route)
       }
     }
 
-    // recursive child routes
+    // 如果存在子路由，递归调用生成路由
     if (route.children && data) {
       data.children = generateRoutesByFrontEnd(
         route.children,
@@ -91,7 +125,11 @@ export const generateRoutesByFrontEnd = (
   return res
 }
 
-// 后端控制路由生成
+/**
+ * 根据后端提供的路由配置生成路由表。
+ * @param routes 后端返回的路由数据
+ * @returns 生成的前端路由表
+ */
 export const generateRoutesByServer = (routes: AppCustomRouteRecordRaw[]): AppRouteRecordRaw[] => {
   const res: AppRouteRecordRaw[] = []
 
@@ -105,15 +143,16 @@ export const generateRoutesByServer = (routes: AppCustomRouteRecordRaw[]): AppRo
     if (route.component) {
       const comModule = modules[`../${route.component}.vue`] || modules[`../${route.component}.tsx`]
       const component = route.component as string
+      // 如果未找到对应组件，输出错误提示
       if (!comModule && !component.includes('#')) {
         console.error(`未找到${route.component}.vue文件或${route.component}.tsx文件，请创建`)
       } else {
-        // 动态加载路由文件，可根据实际情况进行自定义逻辑
+        // 动态加载路由文件，支持 Layout 和 ParentLayout
         data.component =
           component === '#' ? Layout : component.includes('##') ? getParentLayout() : comModule
       }
     }
-    // recursive child routes
+    // 如果存在子路由，递归调用生成路由
     if (route.children) {
       data.children = generateRoutesByServer(route.children)
     }
@@ -122,13 +161,23 @@ export const generateRoutesByServer = (routes: AppCustomRouteRecordRaw[]): AppRo
   return res
 }
 
+/**
+ * 合并路径，确保正确的路由路径结构。
+ * @param parentPath 父路径
+ * @param path 子路径
+ * @returns 合并后的路径
+ */
 export const pathResolve = (parentPath: string, path: string) => {
   if (isUrl(path)) return path
   const childPath = path.startsWith('/') || !path ? path : `/${path}`
   return `${parentPath}${childPath}`.replace(/\/\//g, '/').trim()
 }
 
-// 路由降级
+/**
+ * 将多层嵌套的路由结构拍平。
+ * @param routes 初始路由表
+ * @returns 拍平后的路由表
+ */
 export const flatMultiLevelRoutes = (routes: AppRouteRecordRaw[]) => {
   const modules: AppRouteRecordRaw[] = cloneDeep(routes)
   for (let index = 0; index < modules.length; index++) {
@@ -141,51 +190,47 @@ export const flatMultiLevelRoutes = (routes: AppRouteRecordRaw[]) => {
   return modules
 }
 
-// 层级是否大于2
+/**
+ * 判断路由层级是否超过 2 层。
+ * @param route 路由对象
+ * @returns 是否多层嵌套
+ */
 const isMultipleRoute = (route: AppRouteRecordRaw) => {
   if (!route || !Reflect.has(route, 'children') || !route.children?.length) {
     return false
   }
-
-  const children = route.children
-
-  let flag = false
-  for (let index = 0; index < children.length; index++) {
-    const child = children[index]
-    if (child.children?.length) {
-      flag = true
-      break
-    }
-  }
-  return flag
+  return route.children.some((child) => child.children?.length)
 }
 
-// 生成二级路由
+/**
+ * 提升多层嵌套路由为二级路由。
+ * @param route 路由对象
+ */
 const promoteRouteLevel = (route: AppRouteRecordRaw) => {
   let router: Router | null = createRouter({
     routes: [route as RouteRecordRaw],
     history: createWebHashHistory()
   })
-
   const routes = router.getRoutes()
   addToChildren(routes, route.children || [], route)
   router = null
-
   route.children = route.children?.map((item) => omit(item, 'children'))
 }
 
-// 添加所有子菜单
+/**
+ * 将所有子菜单添加到顶级路由的 children 属性中。
+ * @param routes 路由集合
+ * @param children 子路由
+ * @param routeModule 顶级路由模块
+ */
 const addToChildren = (
   routes: RouteRecordNormalized[],
   children: AppRouteRecordRaw[],
   routeModule: AppRouteRecordRaw
 ) => {
-  for (let index = 0; index < children.length; index++) {
-    const child = children[index]
+  for (const child of children) {
     const route = routes.find((item) => item.name === child.name)
-    if (!route) {
-      continue
-    }
+    if (!route) continue
     routeModule.children = routeModule.children || []
     if (!routeModule.children.find((item) => item.name === route.name)) {
       routeModule.children?.push(route as unknown as AppRouteRecordRaw)

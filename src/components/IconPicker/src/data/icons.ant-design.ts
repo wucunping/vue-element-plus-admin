@@ -1,836 +1,845 @@
+/**
+ * @file icons.ant-design.ts
+ * @description 包含 Ant Design 图标数据的文件
+ * @module IconPicker
+ * @date 2024-11-22
+ * @path /src/components/IconPicker/src/data/icons.ant-design.ts
+ * @author [吴尘](https://github.com/wucunping)
+ */
+
 export default {
-  name: 'Ant Design Icons',
-  prefix: 'vi-ant-design',
+  name: 'Ant Design Icons', // 图标组的名称
+  prefix: 'vi-ant-design', // 图标的前缀，用于标识该图标组
   icons: [
-    'vi-ant-design:account-book-filled',
-    'vi-ant-design:account-book-outlined',
-    'vi-ant-design:account-book-twotone',
-    'vi-ant-design:aim-outlined',
-    'vi-ant-design:alert-filled',
-    'vi-ant-design:alert-outlined',
-    'vi-ant-design:alert-twotone',
-    'vi-ant-design:alibaba-outlined',
-    'vi-ant-design:align-center-outlined',
-    'vi-ant-design:align-left-outlined',
-    'vi-ant-design:align-right-outlined',
-    'vi-ant-design:alipay-circle-filled',
-    'vi-ant-design:alipay-circle-outlined',
-    'vi-ant-design:alipay-outlined',
-    'vi-ant-design:alipay-square-filled',
-    'vi-ant-design:aliwangwang-filled',
-    'vi-ant-design:aliwangwang-outlined',
-    'vi-ant-design:aliyun-outlined',
-    'vi-ant-design:amazon-circle-filled',
-    'vi-ant-design:amazon-outlined',
-    'vi-ant-design:amazon-square-filled',
-    'vi-ant-design:android-filled',
-    'vi-ant-design:android-outlined',
-    'vi-ant-design:ant-cloud-outlined',
-    'vi-ant-design:ant-design-outlined',
-    'vi-ant-design:apartment-outlined',
-    'vi-ant-design:api-filled',
-    'vi-ant-design:api-outlined',
-    'vi-ant-design:api-twotone',
-    'vi-ant-design:apple-filled',
-    'vi-ant-design:apple-outlined',
-    'vi-ant-design:appstore-add-outlined',
-    'vi-ant-design:appstore-filled',
-    'vi-ant-design:appstore-outlined',
-    'vi-ant-design:appstore-twotone',
-    'vi-ant-design:area-chart-outlined',
-    'vi-ant-design:arrow-down-outlined',
-    'vi-ant-design:arrow-left-outlined',
-    'vi-ant-design:arrow-right-outlined',
-    'vi-ant-design:arrow-up-outlined',
-    'vi-ant-design:arrows-alt-outlined',
-    'vi-ant-design:audio-filled',
-    'vi-ant-design:audio-muted-outlined',
-    'vi-ant-design:audio-outlined',
-    'vi-ant-design:audio-twotone',
-    'vi-ant-design:audit-outlined',
-    'vi-ant-design:backward-filled',
-    'vi-ant-design:backward-outlined',
-    'vi-ant-design:baidu-outlined',
-    'vi-ant-design:bank-filled',
-    'vi-ant-design:bank-outlined',
-    'vi-ant-design:bank-twotone',
-    'vi-ant-design:bar-chart-outlined',
-    'vi-ant-design:barcode-outlined',
-    'vi-ant-design:bars-outlined',
-    'vi-ant-design:behance-circle-filled',
-    'vi-ant-design:behance-outlined',
-    'vi-ant-design:behance-square-filled',
-    'vi-ant-design:behance-square-outlined',
-    'vi-ant-design:bell-filled',
-    'vi-ant-design:bell-outlined',
-    'vi-ant-design:bell-twotone',
-    'vi-ant-design:bg-colors-outlined',
-    'vi-ant-design:bilibili-filled',
-    'vi-ant-design:bilibili-outlined',
-    'vi-ant-design:block-outlined',
-    'vi-ant-design:bold-outlined',
-    'vi-ant-design:book-filled',
-    'vi-ant-design:book-outlined',
-    'vi-ant-design:book-twotone',
-    'vi-ant-design:border-bottom-outlined',
-    'vi-ant-design:border-horizontal-outlined',
-    'vi-ant-design:border-inner-outlined',
-    'vi-ant-design:border-left-outlined',
-    'vi-ant-design:border-outer-outlined',
-    'vi-ant-design:border-outlined',
-    'vi-ant-design:border-right-outlined',
-    'vi-ant-design:border-top-outlined',
-    'vi-ant-design:border-verticle-outlined',
-    'vi-ant-design:borderless-table-outlined',
-    'vi-ant-design:box-plot-filled',
-    'vi-ant-design:box-plot-outlined',
-    'vi-ant-design:box-plot-twotone',
-    'vi-ant-design:branches-outlined',
-    'vi-ant-design:bug-filled',
-    'vi-ant-design:bug-outlined',
-    'vi-ant-design:bug-twotone',
-    'vi-ant-design:build-filled',
-    'vi-ant-design:build-outlined',
-    'vi-ant-design:build-twotone',
-    'vi-ant-design:bulb-filled',
-    'vi-ant-design:bulb-outlined',
-    'vi-ant-design:bulb-twotone',
-    'vi-ant-design:calculator-filled',
-    'vi-ant-design:calculator-outlined',
-    'vi-ant-design:calculator-twotone',
-    'vi-ant-design:calendar-filled',
-    'vi-ant-design:calendar-outlined',
-    'vi-ant-design:calendar-twotone',
-    'vi-ant-design:camera-filled',
-    'vi-ant-design:camera-outlined',
-    'vi-ant-design:camera-twotone',
-    'vi-ant-design:car-filled',
-    'vi-ant-design:car-outlined',
-    'vi-ant-design:car-twotone',
-    'vi-ant-design:caret-down-filled',
-    'vi-ant-design:caret-down-outlined',
-    'vi-ant-design:caret-left-filled',
-    'vi-ant-design:caret-left-outlined',
-    'vi-ant-design:caret-right-filled',
-    'vi-ant-design:caret-right-outlined',
-    'vi-ant-design:caret-up-filled',
-    'vi-ant-design:caret-up-outlined',
-    'vi-ant-design:carry-out-filled',
-    'vi-ant-design:carry-out-outlined',
-    'vi-ant-design:carry-out-twotone',
-    'vi-ant-design:check-circle-filled',
-    'vi-ant-design:check-circle-outlined',
-    'vi-ant-design:check-circle-twotone',
-    'vi-ant-design:check-outlined',
-    'vi-ant-design:check-square-filled',
-    'vi-ant-design:check-square-outlined',
-    'vi-ant-design:check-square-twotone',
-    'vi-ant-design:chrome-filled',
-    'vi-ant-design:chrome-outlined',
-    'vi-ant-design:ci-circle-filled',
-    'vi-ant-design:ci-circle-outlined',
-    'vi-ant-design:ci-circle-twotone',
-    'vi-ant-design:ci-outlined',
-    'vi-ant-design:ci-twotone',
-    'vi-ant-design:clear-outlined',
-    'vi-ant-design:clock-circle-filled',
-    'vi-ant-design:clock-circle-outlined',
-    'vi-ant-design:clock-circle-twotone',
-    'vi-ant-design:close-circle-filled',
-    'vi-ant-design:close-circle-outlined',
-    'vi-ant-design:close-circle-twotone',
-    'vi-ant-design:close-outlined',
-    'vi-ant-design:close-square-filled',
-    'vi-ant-design:close-square-outlined',
-    'vi-ant-design:close-square-twotone',
-    'vi-ant-design:cloud-download-outlined',
-    'vi-ant-design:cloud-filled',
-    'vi-ant-design:cloud-outlined',
-    'vi-ant-design:cloud-server-outlined',
-    'vi-ant-design:cloud-sync-outlined',
-    'vi-ant-design:cloud-twotone',
-    'vi-ant-design:cloud-upload-outlined',
-    'vi-ant-design:cluster-outlined',
-    'vi-ant-design:code-filled',
-    'vi-ant-design:code-outlined',
-    'vi-ant-design:code-sandbox-circle-filled',
-    'vi-ant-design:code-sandbox-outlined',
-    'vi-ant-design:code-sandbox-square-filled',
-    'vi-ant-design:code-twotone',
-    'vi-ant-design:codepen-circle-filled',
-    'vi-ant-design:codepen-circle-outlined',
-    'vi-ant-design:codepen-outlined',
-    'vi-ant-design:codepen-square-filled',
-    'vi-ant-design:coffee-outlined',
-    'vi-ant-design:column-height-outlined',
-    'vi-ant-design:column-width-outlined',
-    'vi-ant-design:comment-outlined',
-    'vi-ant-design:compass-filled',
-    'vi-ant-design:compass-outlined',
-    'vi-ant-design:compass-twotone',
-    'vi-ant-design:compress-outlined',
-    'vi-ant-design:console-sql-outlined',
-    'vi-ant-design:contacts-filled',
-    'vi-ant-design:contacts-outlined',
-    'vi-ant-design:contacts-twotone',
-    'vi-ant-design:container-filled',
-    'vi-ant-design:container-outlined',
-    'vi-ant-design:container-twotone',
-    'vi-ant-design:control-filled',
-    'vi-ant-design:control-outlined',
-    'vi-ant-design:control-twotone',
-    'vi-ant-design:copy-filled',
-    'vi-ant-design:copy-outlined',
-    'vi-ant-design:copy-twotone',
-    'vi-ant-design:copyright-circle-filled',
-    'vi-ant-design:copyright-circle-outlined',
-    'vi-ant-design:copyright-circle-twotone',
-    'vi-ant-design:copyright-outlined',
-    'vi-ant-design:copyright-twotone',
-    'vi-ant-design:credit-card-filled',
-    'vi-ant-design:credit-card-outlined',
-    'vi-ant-design:credit-card-twotone',
-    'vi-ant-design:crown-filled',
-    'vi-ant-design:crown-outlined',
-    'vi-ant-design:crown-twotone',
-    'vi-ant-design:customer-service-filled',
-    'vi-ant-design:customer-service-outlined',
-    'vi-ant-design:customer-service-twotone',
-    'vi-ant-design:dash-outlined',
-    'vi-ant-design:dashboard-filled',
-    'vi-ant-design:dashboard-outlined',
-    'vi-ant-design:dashboard-twotone',
-    'vi-ant-design:database-filled',
-    'vi-ant-design:database-outlined',
-    'vi-ant-design:database-twotone',
-    'vi-ant-design:delete-column-outlined',
-    'vi-ant-design:delete-filled',
-    'vi-ant-design:delete-outlined',
-    'vi-ant-design:delete-row-outlined',
-    'vi-ant-design:delete-twotone',
-    'vi-ant-design:delivered-procedure-outlined',
-    'vi-ant-design:deployment-unit-outlined',
-    'vi-ant-design:desktop-outlined',
-    'vi-ant-design:diff-filled',
-    'vi-ant-design:diff-outlined',
-    'vi-ant-design:diff-twotone',
-    'vi-ant-design:dingding-outlined',
-    'vi-ant-design:dingtalk-circle-filled',
-    'vi-ant-design:dingtalk-outlined',
-    'vi-ant-design:dingtalk-square-filled',
-    'vi-ant-design:disconnect-outlined',
-    'vi-ant-design:discord-filled',
-    'vi-ant-design:discord-outlined',
-    'vi-ant-design:dislike-filled',
-    'vi-ant-design:dislike-outlined',
-    'vi-ant-design:dislike-twotone',
-    'vi-ant-design:docker-outlined',
-    'vi-ant-design:dollar-circle-filled',
-    'vi-ant-design:dollar-circle-outlined',
-    'vi-ant-design:dollar-circle-twotone',
-    'vi-ant-design:dollar-outlined',
-    'vi-ant-design:dollar-twotone',
-    'vi-ant-design:dot-chart-outlined',
-    'vi-ant-design:dot-net-outlined',
-    'vi-ant-design:double-left-outlined',
-    'vi-ant-design:double-right-outlined',
-    'vi-ant-design:down-circle-filled',
-    'vi-ant-design:down-circle-outlined',
-    'vi-ant-design:down-circle-twotone',
-    'vi-ant-design:down-outlined',
-    'vi-ant-design:down-square-filled',
-    'vi-ant-design:down-square-outlined',
-    'vi-ant-design:down-square-twotone',
-    'vi-ant-design:download-outlined',
-    'vi-ant-design:drag-outlined',
-    'vi-ant-design:dribbble-circle-filled',
-    'vi-ant-design:dribbble-outlined',
-    'vi-ant-design:dribbble-square-filled',
-    'vi-ant-design:dribbble-square-outlined',
-    'vi-ant-design:dropbox-circle-filled',
-    'vi-ant-design:dropbox-outlined',
-    'vi-ant-design:dropbox-square-filled',
-    'vi-ant-design:edit-filled',
-    'vi-ant-design:edit-outlined',
-    'vi-ant-design:edit-twotone',
-    'vi-ant-design:ellipsis-outlined',
-    'vi-ant-design:enter-outlined',
-    'vi-ant-design:environment-filled',
-    'vi-ant-design:environment-outlined',
-    'vi-ant-design:environment-twotone',
-    'vi-ant-design:euro-circle-filled',
-    'vi-ant-design:euro-circle-outlined',
-    'vi-ant-design:euro-circle-twotone',
-    'vi-ant-design:euro-outlined',
-    'vi-ant-design:euro-twotone',
-    'vi-ant-design:exception-outlined',
-    'vi-ant-design:exclamation-circle-filled',
-    'vi-ant-design:exclamation-circle-outlined',
-    'vi-ant-design:exclamation-circle-twotone',
-    'vi-ant-design:exclamation-outlined',
-    'vi-ant-design:expand-alt-outlined',
-    'vi-ant-design:expand-outlined',
-    'vi-ant-design:experiment-filled',
-    'vi-ant-design:experiment-outlined',
-    'vi-ant-design:experiment-twotone',
-    'vi-ant-design:export-outlined',
-    'vi-ant-design:eye-filled',
-    'vi-ant-design:eye-invisible-filled',
-    'vi-ant-design:eye-invisible-outlined',
-    'vi-ant-design:eye-invisible-twotone',
-    'vi-ant-design:eye-outlined',
-    'vi-ant-design:eye-twotone',
-    'vi-ant-design:facebook-filled',
-    'vi-ant-design:facebook-outlined',
-    'vi-ant-design:fall-outlined',
-    'vi-ant-design:fast-backward-filled',
-    'vi-ant-design:fast-backward-outlined',
-    'vi-ant-design:fast-forward-filled',
-    'vi-ant-design:fast-forward-outlined',
-    'vi-ant-design:field-binary-outlined',
-    'vi-ant-design:field-number-outlined',
-    'vi-ant-design:field-string-outlined',
-    'vi-ant-design:field-time-outlined',
-    'vi-ant-design:file-add-filled',
-    'vi-ant-design:file-add-outlined',
-    'vi-ant-design:file-add-twotone',
-    'vi-ant-design:file-done-outlined',
-    'vi-ant-design:file-excel-filled',
-    'vi-ant-design:file-excel-outlined',
-    'vi-ant-design:file-excel-twotone',
-    'vi-ant-design:file-exclamation-filled',
-    'vi-ant-design:file-exclamation-outlined',
-    'vi-ant-design:file-exclamation-twotone',
-    'vi-ant-design:file-filled',
-    'vi-ant-design:file-gif-outlined',
-    'vi-ant-design:file-image-filled',
-    'vi-ant-design:file-image-outlined',
-    'vi-ant-design:file-image-twotone',
-    'vi-ant-design:file-jpg-outlined',
-    'vi-ant-design:file-markdown-filled',
-    'vi-ant-design:file-markdown-outlined',
-    'vi-ant-design:file-markdown-twotone',
-    'vi-ant-design:file-outlined',
-    'vi-ant-design:file-pdf-filled',
-    'vi-ant-design:file-pdf-outlined',
-    'vi-ant-design:file-pdf-twotone',
-    'vi-ant-design:file-ppt-filled',
-    'vi-ant-design:file-ppt-outlined',
-    'vi-ant-design:file-ppt-twotone',
-    'vi-ant-design:file-protect-outlined',
-    'vi-ant-design:file-search-outlined',
-    'vi-ant-design:file-sync-outlined',
-    'vi-ant-design:file-text-filled',
-    'vi-ant-design:file-text-outlined',
-    'vi-ant-design:file-text-twotone',
-    'vi-ant-design:file-twotone',
-    'vi-ant-design:file-unknown-filled',
-    'vi-ant-design:file-unknown-outlined',
-    'vi-ant-design:file-unknown-twotone',
-    'vi-ant-design:file-word-filled',
-    'vi-ant-design:file-word-outlined',
-    'vi-ant-design:file-word-twotone',
-    'vi-ant-design:file-zip-filled',
-    'vi-ant-design:file-zip-outlined',
-    'vi-ant-design:file-zip-twotone',
-    'vi-ant-design:filter-filled',
-    'vi-ant-design:filter-outlined',
-    'vi-ant-design:filter-twotone',
-    'vi-ant-design:fire-filled',
-    'vi-ant-design:fire-outlined',
-    'vi-ant-design:fire-twotone',
-    'vi-ant-design:flag-filled',
-    'vi-ant-design:flag-outlined',
-    'vi-ant-design:flag-twotone',
-    'vi-ant-design:folder-add-filled',
-    'vi-ant-design:folder-add-outlined',
-    'vi-ant-design:folder-add-twotone',
-    'vi-ant-design:folder-filled',
-    'vi-ant-design:folder-open-filled',
-    'vi-ant-design:folder-open-outlined',
-    'vi-ant-design:folder-open-twotone',
-    'vi-ant-design:folder-outlined',
-    'vi-ant-design:folder-twotone',
-    'vi-ant-design:folder-view-outlined',
-    'vi-ant-design:font-colors-outlined',
-    'vi-ant-design:font-size-outlined',
-    'vi-ant-design:fork-outlined',
-    'vi-ant-design:form-outlined',
-    'vi-ant-design:format-painter-filled',
-    'vi-ant-design:format-painter-outlined',
-    'vi-ant-design:forward-filled',
-    'vi-ant-design:forward-outlined',
-    'vi-ant-design:frown-filled',
-    'vi-ant-design:frown-outlined',
-    'vi-ant-design:frown-twotone',
-    'vi-ant-design:fullscreen-exit-outlined',
-    'vi-ant-design:fullscreen-outlined',
-    'vi-ant-design:function-outlined',
-    'vi-ant-design:fund-filled',
-    'vi-ant-design:fund-outlined',
-    'vi-ant-design:fund-projection-screen-outlined',
-    'vi-ant-design:fund-twotone',
-    'vi-ant-design:fund-view-outlined',
-    'vi-ant-design:funnel-plot-filled',
-    'vi-ant-design:funnel-plot-outlined',
-    'vi-ant-design:funnel-plot-twotone',
-    'vi-ant-design:gateway-outlined',
-    'vi-ant-design:gif-outlined',
-    'vi-ant-design:gift-filled',
-    'vi-ant-design:gift-outlined',
-    'vi-ant-design:gift-twotone',
-    'vi-ant-design:github-filled',
-    'vi-ant-design:github-outlined',
-    'vi-ant-design:gitlab-filled',
-    'vi-ant-design:gitlab-outlined',
-    'vi-ant-design:global-outlined',
-    'vi-ant-design:gold-filled',
-    'vi-ant-design:gold-outlined',
-    'vi-ant-design:gold-twotone',
-    'vi-ant-design:golden-filled',
-    'vi-ant-design:google-circle-filled',
-    'vi-ant-design:google-outlined',
-    'vi-ant-design:google-plus-circle-filled',
-    'vi-ant-design:google-plus-outlined',
-    'vi-ant-design:google-plus-square-filled',
-    'vi-ant-design:google-square-filled',
-    'vi-ant-design:group-outlined',
-    'vi-ant-design:harmony-o-s-outlined',
-    'vi-ant-design:hdd-filled',
-    'vi-ant-design:hdd-outlined',
-    'vi-ant-design:hdd-twotone',
-    'vi-ant-design:heart-filled',
-    'vi-ant-design:heart-outlined',
-    'vi-ant-design:heart-twotone',
-    'vi-ant-design:heat-map-outlined',
-    'vi-ant-design:highlight-filled',
-    'vi-ant-design:highlight-outlined',
-    'vi-ant-design:highlight-twotone',
-    'vi-ant-design:history-outlined',
-    'vi-ant-design:holder-outlined',
-    'vi-ant-design:home-filled',
-    'vi-ant-design:home-outlined',
-    'vi-ant-design:home-twotone',
-    'vi-ant-design:hourglass-filled',
-    'vi-ant-design:hourglass-outlined',
-    'vi-ant-design:hourglass-twotone',
-    'vi-ant-design:html5-filled',
-    'vi-ant-design:html5-outlined',
-    'vi-ant-design:html5-twotone',
-    'vi-ant-design:idcard-filled',
-    'vi-ant-design:idcard-outlined',
-    'vi-ant-design:idcard-twotone',
-    'vi-ant-design:ie-circle-filled',
-    'vi-ant-design:ie-outlined',
-    'vi-ant-design:ie-square-filled',
-    'vi-ant-design:import-outlined',
-    'vi-ant-design:inbox-outlined',
-    'vi-ant-design:info-circle-filled',
-    'vi-ant-design:info-circle-outlined',
-    'vi-ant-design:info-circle-twotone',
-    'vi-ant-design:info-outlined',
-    'vi-ant-design:insert-row-above-outlined',
-    'vi-ant-design:insert-row-below-outlined',
-    'vi-ant-design:insert-row-left-outlined',
-    'vi-ant-design:insert-row-right-outlined',
-    'vi-ant-design:instagram-filled',
-    'vi-ant-design:instagram-outlined',
-    'vi-ant-design:insurance-filled',
-    'vi-ant-design:insurance-outlined',
-    'vi-ant-design:insurance-twotone',
-    'vi-ant-design:interaction-filled',
-    'vi-ant-design:interaction-outlined',
-    'vi-ant-design:interaction-twotone',
-    'vi-ant-design:issues-close-outlined',
-    'vi-ant-design:italic-outlined',
-    'vi-ant-design:java-outlined',
-    'vi-ant-design:java-script-outlined',
-    'vi-ant-design:key-outlined',
-    'vi-ant-design:kubernetes-outlined',
-    'vi-ant-design:laptop-outlined',
-    'vi-ant-design:layout-filled',
-    'vi-ant-design:layout-outlined',
-    'vi-ant-design:layout-twotone',
-    'vi-ant-design:left-circle-filled',
-    'vi-ant-design:left-circle-outlined',
-    'vi-ant-design:left-circle-twotone',
-    'vi-ant-design:left-outlined',
-    'vi-ant-design:left-square-filled',
-    'vi-ant-design:left-square-outlined',
-    'vi-ant-design:left-square-twotone',
-    'vi-ant-design:like-filled',
-    'vi-ant-design:like-outlined',
-    'vi-ant-design:like-twotone',
-    'vi-ant-design:line-chart-outlined',
-    'vi-ant-design:line-height-outlined',
-    'vi-ant-design:line-outlined',
-    'vi-ant-design:link-outlined',
-    'vi-ant-design:linkedin-filled',
-    'vi-ant-design:linkedin-outlined',
-    'vi-ant-design:linux-outlined',
-    'vi-ant-design:loading-3-quarters-outlined',
-    'vi-ant-design:loading-outlined',
-    'vi-ant-design:lock-filled',
-    'vi-ant-design:lock-outlined',
-    'vi-ant-design:lock-twotone',
-    'vi-ant-design:login-outlined',
-    'vi-ant-design:logout-outlined',
-    'vi-ant-design:mac-command-filled',
-    'vi-ant-design:mac-command-outlined',
-    'vi-ant-design:mail-filled',
-    'vi-ant-design:mail-outlined',
-    'vi-ant-design:mail-twotone',
-    'vi-ant-design:man-outlined',
-    'vi-ant-design:medicine-box-filled',
-    'vi-ant-design:medicine-box-outlined',
-    'vi-ant-design:medicine-box-twotone',
-    'vi-ant-design:medium-circle-filled',
-    'vi-ant-design:medium-outlined',
-    'vi-ant-design:medium-square-filled',
-    'vi-ant-design:medium-workmark-outlined',
-    'vi-ant-design:meh-filled',
-    'vi-ant-design:meh-outlined',
-    'vi-ant-design:meh-twotone',
-    'vi-ant-design:menu-fold-outlined',
-    'vi-ant-design:menu-outlined',
-    'vi-ant-design:menu-unfold-outlined',
-    'vi-ant-design:merge-cells-outlined',
-    'vi-ant-design:merge-filled',
-    'vi-ant-design:merge-outlined',
-    'vi-ant-design:message-filled',
-    'vi-ant-design:message-outlined',
-    'vi-ant-design:message-twotone',
-    'vi-ant-design:minus-circle-filled',
-    'vi-ant-design:minus-circle-outlined',
-    'vi-ant-design:minus-circle-twotone',
-    'vi-ant-design:minus-outlined',
-    'vi-ant-design:minus-square-filled',
-    'vi-ant-design:minus-square-outlined',
-    'vi-ant-design:minus-square-twotone',
-    'vi-ant-design:mobile-filled',
-    'vi-ant-design:mobile-outlined',
-    'vi-ant-design:mobile-twotone',
-    'vi-ant-design:money-collect-filled',
-    'vi-ant-design:money-collect-outlined',
-    'vi-ant-design:money-collect-twotone',
-    'vi-ant-design:monitor-outlined',
-    'vi-ant-design:moon-filled',
-    'vi-ant-design:moon-outlined',
-    'vi-ant-design:more-outlined',
-    'vi-ant-design:muted-filled',
-    'vi-ant-design:muted-outlined',
-    'vi-ant-design:node-collapse-outlined',
-    'vi-ant-design:node-expand-outlined',
-    'vi-ant-design:node-index-outlined',
-    'vi-ant-design:notification-filled',
-    'vi-ant-design:notification-outlined',
-    'vi-ant-design:notification-twotone',
-    'vi-ant-design:number-outlined',
-    'vi-ant-design:one-to-one-outlined',
-    'vi-ant-design:open-a-i-filled',
-    'vi-ant-design:open-a-i-outlined',
-    'vi-ant-design:ordered-list-outlined',
-    'vi-ant-design:paper-clip-outlined',
-    'vi-ant-design:partition-outlined',
-    'vi-ant-design:pause-circle-filled',
-    'vi-ant-design:pause-circle-outlined',
-    'vi-ant-design:pause-circle-twotone',
-    'vi-ant-design:pause-outlined',
-    'vi-ant-design:pay-circle-filled',
-    'vi-ant-design:pay-circle-outlined',
-    'vi-ant-design:percentage-outlined',
-    'vi-ant-design:phone-filled',
-    'vi-ant-design:phone-outlined',
-    'vi-ant-design:phone-twotone',
-    'vi-ant-design:pic-center-outlined',
-    'vi-ant-design:pic-left-outlined',
-    'vi-ant-design:pic-right-outlined',
-    'vi-ant-design:picture-filled',
-    'vi-ant-design:picture-outlined',
-    'vi-ant-design:picture-twotone',
-    'vi-ant-design:pie-chart-filled',
-    'vi-ant-design:pie-chart-outlined',
-    'vi-ant-design:pie-chart-twotone',
-    'vi-ant-design:pinterest-filled',
-    'vi-ant-design:pinterest-outlined',
-    'vi-ant-design:play-circle-filled',
-    'vi-ant-design:play-circle-outlined',
-    'vi-ant-design:play-circle-twotone',
-    'vi-ant-design:play-square-filled',
-    'vi-ant-design:play-square-outlined',
-    'vi-ant-design:play-square-twotone',
-    'vi-ant-design:plus-circle-filled',
-    'vi-ant-design:plus-circle-outlined',
-    'vi-ant-design:plus-circle-twotone',
-    'vi-ant-design:plus-outlined',
-    'vi-ant-design:plus-square-filled',
-    'vi-ant-design:plus-square-outlined',
-    'vi-ant-design:plus-square-twotone',
-    'vi-ant-design:pound-circle-filled',
-    'vi-ant-design:pound-circle-outlined',
-    'vi-ant-design:pound-circle-twotone',
-    'vi-ant-design:pound-outlined',
-    'vi-ant-design:poweroff-outlined',
-    'vi-ant-design:printer-filled',
-    'vi-ant-design:printer-outlined',
-    'vi-ant-design:printer-twotone',
-    'vi-ant-design:product-filled',
-    'vi-ant-design:product-outlined',
-    'vi-ant-design:profile-filled',
-    'vi-ant-design:profile-outlined',
-    'vi-ant-design:profile-twotone',
-    'vi-ant-design:project-filled',
-    'vi-ant-design:project-outlined',
-    'vi-ant-design:project-twotone',
-    'vi-ant-design:property-safety-filled',
-    'vi-ant-design:property-safety-outlined',
-    'vi-ant-design:property-safety-twotone',
-    'vi-ant-design:pull-request-outlined',
-    'vi-ant-design:pushpin-filled',
-    'vi-ant-design:pushpin-outlined',
-    'vi-ant-design:pushpin-twotone',
-    'vi-ant-design:python-outlined',
-    'vi-ant-design:qq-circle-filled',
-    'vi-ant-design:qq-outlined',
-    'vi-ant-design:qq-square-filled',
-    'vi-ant-design:qrcode-outlined',
-    'vi-ant-design:question-circle-filled',
-    'vi-ant-design:question-circle-outlined',
-    'vi-ant-design:question-circle-twotone',
-    'vi-ant-design:question-outlined',
-    'vi-ant-design:radar-chart-outlined',
-    'vi-ant-design:radius-bottomleft-outlined',
-    'vi-ant-design:radius-bottomright-outlined',
-    'vi-ant-design:radius-setting-outlined',
-    'vi-ant-design:radius-upleft-outlined',
-    'vi-ant-design:radius-upright-outlined',
-    'vi-ant-design:read-filled',
-    'vi-ant-design:read-outlined',
-    'vi-ant-design:reconciliation-filled',
-    'vi-ant-design:reconciliation-outlined',
-    'vi-ant-design:reconciliation-twotone',
-    'vi-ant-design:red-envelope-filled',
-    'vi-ant-design:red-envelope-outlined',
-    'vi-ant-design:red-envelope-twotone',
-    'vi-ant-design:reddit-circle-filled',
-    'vi-ant-design:reddit-outlined',
-    'vi-ant-design:reddit-square-filled',
-    'vi-ant-design:redo-outlined',
-    'vi-ant-design:reload-outlined',
-    'vi-ant-design:rest-filled',
-    'vi-ant-design:rest-outlined',
-    'vi-ant-design:rest-twotone',
-    'vi-ant-design:retweet-outlined',
-    'vi-ant-design:right-circle-filled',
-    'vi-ant-design:right-circle-outlined',
-    'vi-ant-design:right-circle-twotone',
-    'vi-ant-design:right-outlined',
-    'vi-ant-design:right-square-filled',
-    'vi-ant-design:right-square-outlined',
-    'vi-ant-design:right-square-twotone',
-    'vi-ant-design:rise-outlined',
-    'vi-ant-design:robot-filled',
-    'vi-ant-design:robot-outlined',
-    'vi-ant-design:rocket-filled',
-    'vi-ant-design:rocket-outlined',
-    'vi-ant-design:rocket-twotone',
-    'vi-ant-design:rollback-outlined',
-    'vi-ant-design:rotate-left-outlined',
-    'vi-ant-design:rotate-right-outlined',
-    'vi-ant-design:ruby-outlined',
-    'vi-ant-design:safety-certificate-filled',
-    'vi-ant-design:safety-certificate-outlined',
-    'vi-ant-design:safety-certificate-twotone',
-    'vi-ant-design:safety-outlined',
-    'vi-ant-design:save-filled',
-    'vi-ant-design:save-outlined',
-    'vi-ant-design:save-twotone',
-    'vi-ant-design:scan-outlined',
-    'vi-ant-design:schedule-filled',
-    'vi-ant-design:schedule-outlined',
-    'vi-ant-design:schedule-twotone',
-    'vi-ant-design:scissor-outlined',
-    'vi-ant-design:search-outlined',
-    'vi-ant-design:security-scan-filled',
-    'vi-ant-design:security-scan-outlined',
-    'vi-ant-design:security-scan-twotone',
-    'vi-ant-design:select-outlined',
-    'vi-ant-design:send-outlined',
-    'vi-ant-design:setting-filled',
-    'vi-ant-design:setting-outlined',
-    'vi-ant-design:setting-twotone',
-    'vi-ant-design:shake-outlined',
-    'vi-ant-design:share-alt-outlined',
-    'vi-ant-design:shop-filled',
-    'vi-ant-design:shop-outlined',
-    'vi-ant-design:shop-twotone',
-    'vi-ant-design:shopping-cart-outlined',
-    'vi-ant-design:shopping-filled',
-    'vi-ant-design:shopping-outlined',
-    'vi-ant-design:shopping-twotone',
-    'vi-ant-design:shrink-outlined',
-    'vi-ant-design:signal-filled',
-    'vi-ant-design:signature-filled',
-    'vi-ant-design:signature-outlined',
-    'vi-ant-design:sisternode-outlined',
-    'vi-ant-design:sketch-circle-filled',
-    'vi-ant-design:sketch-outlined',
-    'vi-ant-design:sketch-square-filled',
-    'vi-ant-design:skin-filled',
-    'vi-ant-design:skin-outlined',
-    'vi-ant-design:skin-twotone',
-    'vi-ant-design:skype-filled',
-    'vi-ant-design:skype-outlined',
-    'vi-ant-design:slack-circle-filled',
-    'vi-ant-design:slack-outlined',
-    'vi-ant-design:slack-square-filled',
-    'vi-ant-design:slack-square-outlined',
-    'vi-ant-design:sliders-filled',
-    'vi-ant-design:sliders-outlined',
-    'vi-ant-design:sliders-twotone',
-    'vi-ant-design:small-dash-outlined',
-    'vi-ant-design:smile-filled',
-    'vi-ant-design:smile-outlined',
-    'vi-ant-design:smile-twotone',
-    'vi-ant-design:snippets-filled',
-    'vi-ant-design:snippets-outlined',
-    'vi-ant-design:snippets-twotone',
-    'vi-ant-design:solution-outlined',
-    'vi-ant-design:sort-ascending-outlined',
-    'vi-ant-design:sort-descending-outlined',
-    'vi-ant-design:sound-filled',
-    'vi-ant-design:sound-outlined',
-    'vi-ant-design:sound-twotone',
-    'vi-ant-design:split-cells-outlined',
-    'vi-ant-design:spotify-filled',
-    'vi-ant-design:spotify-outlined',
-    'vi-ant-design:star-filled',
-    'vi-ant-design:star-outlined',
-    'vi-ant-design:star-twotone',
-    'vi-ant-design:step-backward-filled',
-    'vi-ant-design:step-backward-outlined',
-    'vi-ant-design:step-forward-filled',
-    'vi-ant-design:step-forward-outlined',
-    'vi-ant-design:stock-outlined',
-    'vi-ant-design:stop-filled',
-    'vi-ant-design:stop-outlined',
-    'vi-ant-design:stop-twotone',
-    'vi-ant-design:strikethrough-outlined',
-    'vi-ant-design:subnode-outlined',
-    'vi-ant-design:sun-filled',
-    'vi-ant-design:sun-outlined',
-    'vi-ant-design:swap-left-outlined',
-    'vi-ant-design:swap-outlined',
-    'vi-ant-design:swap-right-outlined',
-    'vi-ant-design:switcher-filled',
-    'vi-ant-design:switcher-outlined',
-    'vi-ant-design:switcher-twotone',
-    'vi-ant-design:sync-outlined',
-    'vi-ant-design:table-outlined',
-    'vi-ant-design:tablet-filled',
-    'vi-ant-design:tablet-outlined',
-    'vi-ant-design:tablet-twotone',
-    'vi-ant-design:tag-filled',
-    'vi-ant-design:tag-outlined',
-    'vi-ant-design:tag-twotone',
-    'vi-ant-design:tags-filled',
-    'vi-ant-design:tags-outlined',
-    'vi-ant-design:tags-twotone',
-    'vi-ant-design:taobao-circle-filled',
-    'vi-ant-design:taobao-circle-outlined',
-    'vi-ant-design:taobao-outlined',
-    'vi-ant-design:taobao-square-filled',
-    'vi-ant-design:team-outlined',
-    'vi-ant-design:thunderbolt-filled',
-    'vi-ant-design:thunderbolt-outlined',
-    'vi-ant-design:thunderbolt-twotone',
-    'vi-ant-design:tik-tok-filled',
-    'vi-ant-design:tik-tok-outlined',
-    'vi-ant-design:to-top-outlined',
-    'vi-ant-design:tool-filled',
-    'vi-ant-design:tool-outlined',
-    'vi-ant-design:tool-twotone',
-    'vi-ant-design:trademark-circle-filled',
-    'vi-ant-design:trademark-circle-outlined',
-    'vi-ant-design:trademark-circle-twotone',
-    'vi-ant-design:trademark-outlined',
-    'vi-ant-design:transaction-outlined',
-    'vi-ant-design:translation-outlined',
-    'vi-ant-design:trophy-filled',
-    'vi-ant-design:trophy-outlined',
-    'vi-ant-design:trophy-twotone',
-    'vi-ant-design:truck-filled',
-    'vi-ant-design:truck-outlined',
-    'vi-ant-design:twitch-outlined',
-    'vi-ant-design:twitter-circle-filled',
-    'vi-ant-design:twitter-outlined',
-    'vi-ant-design:twitter-square-filled',
-    'vi-ant-design:underline-outlined',
-    'vi-ant-design:undo-outlined',
-    'vi-ant-design:ungroup-outlined',
-    'vi-ant-design:unlock-filled',
-    'vi-ant-design:unlock-outlined',
-    'vi-ant-design:unlock-twotone',
-    'vi-ant-design:unordered-list-outlined',
-    'vi-ant-design:up-circle-filled',
-    'vi-ant-design:up-circle-outlined',
-    'vi-ant-design:up-circle-twotone',
-    'vi-ant-design:up-outlined',
-    'vi-ant-design:up-square-filled',
-    'vi-ant-design:up-square-outlined',
-    'vi-ant-design:up-square-twotone',
-    'vi-ant-design:upload-outlined',
-    'vi-ant-design:usb-filled',
-    'vi-ant-design:usb-outlined',
-    'vi-ant-design:usb-twotone',
-    'vi-ant-design:user-add-outlined',
-    'vi-ant-design:user-delete-outlined',
-    'vi-ant-design:user-outlined',
-    'vi-ant-design:user-switch-outlined',
-    'vi-ant-design:usergroup-add-outlined',
-    'vi-ant-design:usergroup-delete-outlined',
-    'vi-ant-design:verified-outlined',
-    'vi-ant-design:vertical-align-bottom-outlined',
-    'vi-ant-design:vertical-align-middle-outlined',
-    'vi-ant-design:vertical-align-top-outlined',
-    'vi-ant-design:vertical-left-outlined',
-    'vi-ant-design:vertical-right-outlined',
-    'vi-ant-design:video-camera-add-outlined',
-    'vi-ant-design:video-camera-filled',
-    'vi-ant-design:video-camera-outlined',
-    'vi-ant-design:video-camera-twotone',
-    'vi-ant-design:wallet-filled',
-    'vi-ant-design:wallet-outlined',
-    'vi-ant-design:wallet-twotone',
-    'vi-ant-design:warning-filled',
-    'vi-ant-design:warning-outlined',
-    'vi-ant-design:warning-twotone',
-    'vi-ant-design:wechat-filled',
-    'vi-ant-design:wechat-outlined',
-    'vi-ant-design:wechat-work-filled',
-    'vi-ant-design:wechat-work-outlined',
-    'vi-ant-design:weibo-circle-filled',
-    'vi-ant-design:weibo-circle-outlined',
-    'vi-ant-design:weibo-outlined',
-    'vi-ant-design:weibo-square-filled',
-    'vi-ant-design:weibo-square-outlined',
-    'vi-ant-design:whats-app-outlined',
-    'vi-ant-design:wifi-outlined',
-    'vi-ant-design:windows-filled',
-    'vi-ant-design:windows-outlined',
-    'vi-ant-design:woman-outlined',
-    'vi-ant-design:x-filled',
-    'vi-ant-design:x-outlined',
-    'vi-ant-design:yahoo-filled',
-    'vi-ant-design:yahoo-outlined',
-    'vi-ant-design:youtube-filled',
-    'vi-ant-design:youtube-outlined',
-    'vi-ant-design:yuque-filled',
-    'vi-ant-design:yuque-outlined',
-    'vi-ant-design:zhihu-circle-filled',
-    'vi-ant-design:zhihu-outlined',
-    'vi-ant-design:zhihu-square-filled',
-    'vi-ant-design:zoom-in-outlined',
-    'vi-ant-design:zoom-out-outlined'
+    'vi-ant-design:account-book-filled', // 填充样式的账簿图标
+    'vi-ant-design:account-book-outlined', // 描边样式的账簿图标
+    'vi-ant-design:account-book-twotone', // 两种颜色的账簿图标
+    'vi-ant-design:aim-outlined', // 瞄准图标
+    'vi-ant-design:alert-filled', // 填充样式的警告图标
+    'vi-ant-design:alert-outlined', // 描边样式的警告图标
+    'vi-ant-design:alert-twotone', // 两种颜色的警告图标
+    'vi-ant-design:alibaba-outlined', // 阿里巴巴图标
+    'vi-ant-design:align-center-outlined', // 居中对齐图标
+    'vi-ant-design:align-left-outlined', // 左对齐图标
+    'vi-ant-design:align-right-outlined', // 右对齐图标
+    'vi-ant-design:alipay-circle-filled', // 填充样式的支付宝圆形图标
+    'vi-ant-design:alipay-circle-outlined', // 描边样式的支付宝圆形图标
+    'vi-ant-design:alipay-outlined', // 支付宝图标
+    'vi-ant-design:alipay-square-filled', // 填充样式的支付宝方形图标
+    'vi-ant-design:aliwangwang-filled', // 填充样式的阿里旺旺图标
+    'vi-ant-design:aliwangwang-outlined', // 描边样式的阿里旺旺图标
+    'vi-ant-design:aliyun-outlined', // 阿里云图标
+    'vi-ant-design:amazon-circle-filled', // 填充样式的亚马逊圆形图标
+    'vi-ant-design:amazon-outlined', // 描边样式的亚马逊图标
+    'vi-ant-design:amazon-square-filled', // 填充样式的亚马逊方形图标
+    'vi-ant-design:android-filled', // 填充样式的安卓图标
+    'vi-ant-design:android-outlined', // 描边样式的安卓图标
+    'vi-ant-design:ant-cloud-outlined', // 描边样式的蚂蚁云图标
+    'vi-ant-design:ant-design-outlined', // 描边样式的蚂蚁设计图标
+    'vi-ant-design:apartment-outlined', // 描边样式的公寓图标
+    'vi-ant-design:api-filled', // 填充样式的API图标
+    'vi-ant-design:api-outlined', // 描边样式的API图标
+    'vi-ant-design:api-twotone', // 两种颜色的API图标
+    'vi-ant-design:apple-filled', // 填充样式的苹果图标
+    'vi-ant-design:apple-outlined', // 描边样式的苹果图标
+    'vi-ant-design:appstore-add-outlined', // 添加到应用商店的图标
+    'vi-ant-design:appstore-filled', // 填充样式的应用商店图标
+    'vi-ant-design:appstore-outlined', // 描边样式的应用商店图标
+    'vi-ant-design:appstore-twotone', // 两种颜色的应用商店图标
+    'vi-ant-design:area-chart-outlined', // 区域图表图标
+    'vi-ant-design:arrow-down-outlined', // 向下箭头图标
+    'vi-ant-design:arrow-left-outlined', // 向左箭头图标
+    'vi-ant-design:arrow-right-outlined', // 向右箭头图标
+    'vi-ant-design:arrow-up-outlined', // 向上箭头图标
+    'vi-ant-design:arrows-alt-outlined', // 全屏切换图标
+    'vi-ant-design:audio-filled', // 填充样式的音频图标
+    'vi-ant-design:audio-muted-outlined', // 静音音频图标
+    'vi-ant-design:audio-outlined', // 描边样式的音频图标
+    'vi-ant-design:audio-twotone', // 两种颜色的音频图标
+    'vi-ant-design:audit-outlined', // 审核图标
+    'vi-ant-design:backward-filled', // 填充样式的向后图标
+    'vi-ant-design:backward-outlined', // 描边样式的向后图标
+    'vi-ant-design:baidu-outlined', // 百度图标
+    'vi-ant-design:bank-filled', // 填充样式的银行图标
+    'vi-ant-design:bank-outlined', // 描边样式的银行图标
+    'vi-ant-design:bank-twotone', // 两种颜色的银行图标
+    'vi-ant-design:bar-chart-outlined', // 柱状图图标
+    'vi-ant-design:barcode-outlined', // 条形码图标
+    'vi-ant-design:bars-outlined', // 导航条图标
+    'vi-ant-design:behance-circle-filled', // 填充样式的Behance圆形图标
+    'vi-ant-design:behance-outlined', // 描边样式的Behance图标
+    'vi-ant-design:behance-square-filled', // 填充样式的Behance方形图标
+    'vi-ant-design:behance-square-outlined', // 描边样式的Behance方形图标
+    'vi-ant-design:bell-filled', // 填充样式的铃铛图标
+    'vi-ant-design:bell-outlined', // 描边样式的铃铛图标
+    'vi-ant-design:bell-twotone', // 两种颜色的铃铛图标
+    'vi-ant-design:bg-colors-outlined', // 背景色图标
+    'vi-ant-design:bilibili-filled', // 填充样式的哔哩哔哩图标
+    'vi-ant-design:bilibili-outlined', // 描边样式的哔哩哔哩图标
+    'vi-ant-design:block-outlined', // 阻止图标
+    'vi-ant-design:bold-outlined', // 加粗文本图标
+    'vi-ant-design:book-filled', // 填充样式的书本图标
+    'vi-ant-design:book-outlined', // 描边样式的书本图标
+    'vi-ant-design:book-twotone', // 两种颜色的书本图标
+    'vi-ant-design:border-bottom-outlined', // 下边框图标
+    'vi-ant-design:border-horizontal-outlined', // 水平边框图标
+    'vi-ant-design:border-inner-outlined', // 内部边框图标
+    'vi-ant-design:border-left-outlined', // 左边框图标
+    'vi-ant-design:border-outer-outlined', // 外部边框图标
+    'vi-ant-design:border-outlined', // 边框图标
+    'vi-ant-design:border-right-outlined', // 右边框图标
+    'vi-ant-design:border-top-outlined', // 上边框图标
+    'vi-ant-design:border-verticle-outlined', // 垂直边框图标
+    'vi-ant-design:borderless-table-outlined', // 无边框表格图标
+    'vi-ant-design:box-plot-filled', // 填充样式的箱线图图标
+    'vi-ant-design:box-plot-outlined', // 描边样式的箱线图图标
+    'vi-ant-design:box-plot-twotone', // 两种颜色的箱线图图标
+    'vi-ant-design:branches-outlined', // 分支图标
+    'vi-ant-design:bug-filled', // 填充样式的Bug图标
+    'vi-ant-design:bug-outlined', // 描边样式的Bug图标
+    'vi-ant-design:bug-twotone', // 两种颜色的Bug图标
+    'vi-ant-design:build-filled', // 填充样式的构建图标
+    'vi-ant-design:build-outlined', // 描边样式的构建图标
+    'vi-ant-design:build-twotone', // 两种颜色的构建图标
+    'vi-ant-design:bulb-filled', // 填充样式的灯泡图标
+    'vi-ant-design:bulb-outlined', // 描边样式的灯泡图标
+    'vi-ant-design:bulb-twotone', // 两种颜色的灯泡图标
+    'vi-ant-design:calculator-filled', // 填充样式的计算器图标
+    'vi-ant-design:calculator-outlined', // 描边样式的计算器图标
+    'vi-ant-design:calculator-twotone', // 两种颜色的计算器图标
+    'vi-ant-design:calendar-filled', // 填充样式的日历图标
+    'vi-ant-design:calendar-outlined', // 描边样式的日历图标
+    'vi-ant-design:calendar-twotone', // 两种颜色的日历图标
+    'vi-ant-design:camera-filled', // 填充样式的相机图标
+    'vi-ant-design:camera-outlined', // 描边样式的相机图标
+    'vi-ant-design:camera-twotone', // 两种颜色的相机图标
+    'vi-ant-design:car-filled', // 填充样式的汽车图标
+    'vi-ant-design:car-outlined', // 描边样式的汽车图标
+    'vi-ant-design:car-twotone', // 两种颜色的汽车图标
+    'vi-ant-design:caret-down-filled', // 填充样式的向下三角图标
+    'vi-ant-design:caret-down-outlined', // 描边样式的向下三角图标
+    'vi-ant-design:caret-left-filled', // 填充样式的向左三角图标
+    'vi-ant-design:caret-left-outlined', // 描边样式的向左三角图标
+    'vi-ant-design:caret-right-filled', // 填充样式的向右三角图标
+    'vi-ant-design:caret-right-outlined', // 描边样式的向右三角图标
+    'vi-ant-design:caret-up-filled', // 填充样式的向上三角图标
+    'vi-ant-design:caret-up-outlined', // 描边样式的向上三角图标
+    'vi-ant-design:carry-out-filled', // 填充样式的执行图标
+    'vi-ant-design:carry-out-outlined', // 描边样式的执行图标
+    'vi-ant-design:carry-out-twotone', // 两种颜色的执行图标
+    'vi-ant-design:check-circle-filled', // 填充样式的勾选圆形图标
+    'vi-ant-design:check-circle-outlined', // 描边样式的勾选圆形图标
+    'vi-ant-design:check-circle-twotone', // 两种颜色的勾选圆形图标
+    'vi-ant-design:check-outlined', // 描边样式的勾选图标
+    'vi-ant-design:check-square-filled', // 填充样式的勾选方形图标
+    'vi-ant-design:check-square-outlined', // 描边样式的勾选方形图标
+    'vi-ant-design:check-square-twotone', // 两种颜色的勾选方形图标
+    'vi-ant-design:chrome-filled', // 填充样式的Chrome图标
+    'vi-ant-design:chrome-outlined', // 描边样式的Chrome图标
+    'vi-ant-design:ci-circle-filled', // 填充样式的货币单位圆形图标
+    'vi-ant-design:ci-circle-outlined', // 描边样式的货币单位圆形图标
+    'vi-ant-design:ci-circle-twotone', // 两种颜色的货币单位圆形图标
+    'vi-ant-design:ci-outlined', // 描边样式的货币单位图标
+    'vi-ant-design:ci-twotone', // 两种颜色的货币单位图标
+    'vi-ant-design:clear-outlined', // 清除图标
+    'vi-ant-design:clock-circle-filled', // 填充样式的时钟圆形图标
+    'vi-ant-design:clock-circle-outlined', // 描边样式的时钟圆形图标
+    'vi-ant-design:clock-circle-twotone', // 两种颜色的时钟圆形图标
+    'vi-ant-design:close-circle-filled', // 填充样式的关闭圆形图标
+    'vi-ant-design:close-circle-outlined', // 描边样式的关闭圆形图标
+    'vi-ant-design:close-circle-twotone', // 两种颜色的关闭圆形图标
+    'vi-ant-design:close-outlined', // 描边样式的关闭图标
+    'vi-ant-design:close-square-filled', // 填充样式的关闭方形图标
+    'vi-ant-design:close-square-outlined', // 描边样式的关闭方形图标
+    'vi-ant-design:close-square-twotone', // 两种颜色的关闭方形图标
+    'vi-ant-design:cloud-download-outlined', // 云下载图标
+    'vi-ant-design:cloud-filled', // 填充样式的云图标
+    'vi-ant-design:cloud-outlined', // 描边样式的云图标
+    'vi-ant-design:cloud-server-outlined', // 云服务器图标
+    'vi-ant-design:cloud-sync-outlined', // 云同步图标
+    'vi-ant-design:cloud-twotone', // 两种颜色的云图标
+    'vi-ant-design:cloud-upload-outlined', // 云上传图标
+    'vi-ant-design:cluster-outlined', // 集群图标
+    'vi-ant-design:code-filled', // 填充样式的代码图标
+    'vi-ant-design:code-outlined', // 描边样式的代码图标
+    'vi-ant-design:code-sandbox-circle-filled', // 填充样式的CodeSandbox圆形图标
+    'vi-ant-design:code-sandbox-outlined', // 描边样式的CodeSandbox图标
+    'vi-ant-design:code-sandbox-square-filled', // 填充样式的CodeSandbox方形图标
+    'vi-ant-design:code-twotone', // 两种颜色的代码图标
+    'vi-ant-design:codepen-circle-filled', // 填充样式的CodePen圆形图标
+    'vi-ant-design:codepen-circle-outlined', // 描边样式的CodePen圆形图标
+    'vi-ant-design:codepen-outlined', // 描边样式的CodePen图标
+    'vi-ant-design:codepen-square-filled', // 填充样式的CodePen方形图标
+    'vi-ant-design:coffee-outlined', // 咖啡图标
+    'vi-ant-design:column-height-outlined', // 列高图标
+    'vi-ant-design:column-width-outlined', // 列宽图标
+    'vi-ant-design:comment-outlined', // 评论图标
+    'vi-ant-design:compass-filled', // 填充样式的指南针图标
+    'vi-ant-design:compass-outlined', // 描边样式的指南针图标
+    'vi-ant-design:compass-twotone', // 两种颜色的指南针图标
+    'vi-ant-design:compress-outlined', // 压缩图标
+    'vi-ant-design:console-sql-outlined', // SQL控制台图标
+    'vi-ant-design:contacts-filled', // 填充样式的联系人图标
+    'vi-ant-design:contacts-outlined', // 描边样式的联系人图标
+    'vi-ant-design:contacts-twotone', // 两种颜色的联系人图标
+    'vi-ant-design:container-filled', // 填充样式的容器图标
+    'vi-ant-design:container-outlined', // 描边样式的容器图标
+    'vi-ant-design:container-twotone', // 两种颜色的容器图标
+    'vi-ant-design:control-filled', // 填充样式的控制图标
+    'vi-ant-design:control-outlined', // 描边样式的控制图标
+    'vi-ant-design:control-twotone', // 两种颜色的控制图标
+    'vi-ant-design:copy-filled', // 填充样式的复制图标
+    'vi-ant-design:copy-outlined', // 描边样式的复制图标
+    'vi-ant-design:copy-twotone', // 两种颜色的复制图标
+    'vi-ant-design:copyright-circle-filled', // 填充样式的版权圆形图标
+    'vi-ant-design:copyright-circle-outlined', // 描边样式的版权圆形图标
+    'vi-ant-design:copyright-circle-twotone', // 两种颜色的版权圆形图标
+    'vi-ant-design:copyright-outlined', // 描边样式的版权图标
+    'vi-ant-design:copyright-twotone', // 两种颜色的版权图标
+    'vi-ant-design:credit-card-filled', // 填充样式的信用卡图标
+    'vi-ant-design:credit-card-outlined', // 描边样式的信用卡图标
+    'vi-ant-design:credit-card-twotone', // 两种颜色的信用卡图标
+    'vi-ant-design:crown-filled', // 填充样式的皇冠图标
+    'vi-ant-design:crown-outlined', // 描边样式的皇冠图标
+    'vi-ant-design:crown-twotone', // 两种颜色的皇冠图标
+    'vi-ant-design:customer-service-filled', // 填充样式的客服图标
+    'vi-ant-design:customer-service-outlined', // 描边样式的客服图标
+    'vi-ant-design:customer-service-twotone', // 两种颜色的客服图标
+    'vi-ant-design:dash-outlined', // 短横线图标
+    'vi-ant-design:dashboard-filled', // 填充样式的仪表盘图标
+    'vi-ant-design:dashboard-outlined', // 描边样式的仪表盘图标
+    'vi-ant-design:dashboard-twotone', // 两种颜色的仪表盘图标
+    'vi-ant-design:database-filled', // 填充样式的数据库图标
+    'vi-ant-design:database-outlined', // 描边样式的数据库图标
+    'vi-ant-design:database-twotone', // 两种颜色的数据库图标
+    'vi-ant-design:delete-column-outlined', // 删除列图标
+    'vi-ant-design:delete-filled', // 填充样式的删除图标
+    'vi-ant-design:delete-outlined', // 描边样式的删除图标
+    'vi-ant-design:delete-row-outlined', // 删除行图标
+    'vi-ant-design:delete-twotone', // 两种颜色的删除图标
+    'vi-ant-design:delivered-procedure-outlined', // 交付流程图标
+    'vi-ant-design:deployment-unit-outlined', // 部署单元图标
+    'vi-ant-design:desktop-outlined', // 桌面图标
+    'vi-ant-design:diff-filled', // 填充样式的差异图标
+    'vi-ant-design:diff-outlined', // 描边样式的差异图标
+    'vi-ant-design:diff-twotone', // 两种颜色的差异图标
+    'vi-ant-design:dingding-outlined', // 钉钉图标
+    'vi-ant-design:dingtalk-circle-filled', // 填充样式的钉钉圆形图标
+    'vi-ant-design:dingtalk-outlined', // 描边样式的钉钉图标
+    'vi-ant-design:dingtalk-square-filled', // 填充样式的钉钉方形图标
+    'vi-ant-design:disconnect-outlined', // 描边样式的断开连接图标
+    'vi-ant-design:discord-filled', // 填充样式的Discord图标
+    'vi-ant-design:discord-outlined', // 描边样式的Discord图标
+    'vi-ant-design:dislike-filled', // 填充样式的不喜欢图标
+    'vi-ant-design:dislike-outlined', // 描边样式的不喜欢图标
+    'vi-ant-design:dislike-twotone', // 两种颜色的不喜欢图标
+    'vi-ant-design:docker-outlined', // 描边样式的Docker图标
+    'vi-ant-design:dollar-circle-filled', // 填充样式的美元圆形图标
+    'vi-ant-design:dollar-circle-outlined', // 描边样式的美元圆形图标
+    'vi-ant-design:dollar-circle-twotone', // 两种颜色的美元圆形图标
+    'vi-ant-design:dollar-outlined', // 描边样式的美元图标
+    'vi-ant-design:dollar-twotone', // 两种颜色的美元图标
+    'vi-ant-design:dot-chart-outlined', // 描边样式的点状图表图标
+    'vi-ant-design:dot-net-outlined', // 描边样式的.NET图标
+    'vi-ant-design:double-left-outlined', // 描边样式的双向左箭头图标
+    'vi-ant-design:double-right-outlined', // 描边样式的双向右箭头图标
+    'vi-ant-design:down-circle-filled', // 填充样式的向下圆形图标
+    'vi-ant-design:down-circle-outlined', // 描边样式的向下圆形图标
+    'vi-ant-design:down-circle-twotone', // 两种颜色的向下圆形图标
+    'vi-ant-design:down-outlined', // 描边样式的向下箭头图标
+    'vi-ant-design:down-square-filled', // 填充样式的向下方形图标
+    'vi-ant-design:down-square-outlined', // 描边样式的向下方形图标
+    'vi-ant-design:down-square-twotone', // 两种颜色的向下方形图标
+    'vi-ant-design:download-outlined', // 描边样式的下载图标
+    'vi-ant-design:drag-outlined', // 描边样式的拖动图标
+    'vi-ant-design:dribbble-circle-filled', // 填充样式的Dribbble圆形图标
+    'vi-ant-design:dribbble-outlined', // 描边样式的Dribbble图标
+    'vi-ant-design:dribbble-square-filled', // 填充样式的Dribbble方形图标
+    'vi-ant-design:dribbble-square-outlined', // 描边样式的Dribbble方形图标
+    'vi-ant-design:dropbox-circle-filled', // 填充样式的Dropbox圆形图标
+    'vi-ant-design:dropbox-outlined', // 描边样式的Dropbox图标
+    'vi-ant-design:dropbox-square-filled', // 填充样式的Dropbox方形图标
+    'vi-ant-design:edit-filled', // 填充样式的编辑图标
+    'vi-ant-design:edit-outlined', // 描边样式的编辑图标
+    'vi-ant-design:edit-twotone', // 两种颜色的编辑图标
+    'vi-ant-design:ellipsis-outlined', // 描边样式的省略号图标
+    'vi-ant-design:enter-outlined', // 描边样式的回车图标
+    'vi-ant-design:environment-filled', // 填充样式的环境图标
+    'vi-ant-design:environment-outlined', // 描边样式的环境图标
+    'vi-ant-design:environment-twotone', // 两种颜色的环境图标
+    'vi-ant-design:euro-circle-filled', // 填充样式的欧元圆形图标
+    'vi-ant-design:euro-circle-outlined', // 描边样式的欧元圆形图标
+    'vi-ant-design:euro-circle-twotone', // 两种颜色的欧元圆形图标
+    'vi-ant-design:euro-outlined', // 描边样式的欧元图标
+    'vi-ant-design:euro-twotone', // 两种颜色的欧元图标
+    'vi-ant-design:exception-outlined', // 描边样式的异常图标
+    'vi-ant-design:exclamation-circle-filled', // 填充样式的感叹号圆形图标
+    'vi-ant-design:exclamation-circle-outlined', // 描边样式的感叹号圆形图标
+    'vi-ant-design:exclamation-circle-twotone', // 两种颜色的感叹号圆形图标
+    'vi-ant-design:exclamation-outlined', // 描边样式的感叹号图标
+    'vi-ant-design:expand-alt-outlined', // 描边样式的展开图标
+    'vi-ant-design:expand-outlined', // 描边样式的展开箭头图标
+    'vi-ant-design:experiment-filled', // 填充样式的实验图标
+    'vi-ant-design:experiment-outlined', // 描边样式的实验图标
+    'vi-ant-design:experiment-twotone', // 两种颜色的实验图标
+    'vi-ant-design:export-outlined', // 描边样式的导出图标
+    'vi-ant-design:eye-filled', // 填充样式的眼睛图标
+    'vi-ant-design:eye-invisible-filled', // 填充样式的不可见眼睛图标
+    'vi-ant-design:eye-invisible-outlined', // 描边样式的不可见眼睛图标
+    'vi-ant-design:eye-invisible-twotone', // 两种颜色的不可见眼睛图标
+    'vi-ant-design:eye-outlined', // 描边样式的眼睛图标
+    'vi-ant-design:eye-twotone', // 两种颜色的眼睛图标
+    'vi-ant-design:facebook-filled', // 填充样式的Facebook图标
+    'vi-ant-design:facebook-outlined', // 描边样式的Facebook图标
+    'vi-ant-design:fall-outlined', // 描边样式的下降箭头图标
+    'vi-ant-design:fast-backward-filled', // 填充样式的快退图标
+    'vi-ant-design:fast-backward-outlined', // 描边样式的快退图标
+    'vi-ant-design:fast-forward-filled', // 填充样式的快进图标
+    'vi-ant-design:fast-forward-outlined', // 描边样式的快进图标
+    'vi-ant-design:field-binary-outlined', // 描边样式的二进制字段图标
+    'vi-ant-design:field-number-outlined', // 描边样式的数字字段图标
+    'vi-ant-design:field-string-outlined', // 描边样式的字符串字段图标
+    'vi-ant-design:field-time-outlined', // 描边样式的时间字段图标
+    'vi-ant-design:file-add-filled', // 填充样式的文件添加图标
+    'vi-ant-design:file-add-outlined', // 描边样式的文件添加图标
+    'vi-ant-design:file-add-twotone', // 两种颜色的文件添加图标
+    'vi-ant-design:file-done-outlined', // 描边样式的文件完成图标
+    'vi-ant-design:file-excel-filled', // 填充样式的Excel文件图标
+    'vi-ant-design:file-excel-outlined', // 描边样式的Excel文件图标
+    'vi-ant-design:file-excel-twotone', // 两种颜色的Excel文件图标
+    'vi-ant-design:file-exclamation-filled', // 填充样式的文件感叹号图标
+    'vi-ant-design:file-exclamation-outlined', // 描边样式的文件感叹号图标
+    'vi-ant-design:file-exclamation-twotone', // 两种颜色的文件感叹号图标
+    'vi-ant-design:file-filled', // 填充样式的文件图标
+    'vi-ant-design:file-gif-outlined', // 描边样式的GIF文件图标
+    'vi-ant-design:file-image-filled', // 填充样式的图像文件图标
+    'vi-ant-design:file-image-outlined', // 描边样式的图像文件图标
+    'vi-ant-design:file-image-twotone', // 两种颜色的图像文件图标
+    'vi-ant-design:file-jpg-outlined', // 描边样式的JPG文件图标
+    'vi-ant-design:file-markdown-filled', // 填充样式的Markdown文件图标
+    'vi-ant-design:file-markdown-outlined', // 描边样式的Markdown文件图标
+    'vi-ant-design:file-markdown-twotone', // 两种颜色的Markdown文件图标
+    'vi-ant-design:file-outlined', // 描边样式的普通文件图标
+    'vi-ant-design:file-pdf-filled', // 填充样式的PDF文件图标
+    'vi-ant-design:file-pdf-outlined', // 描边样式的PDF文件图标
+    'vi-ant-design:file-pdf-twotone', // 两种颜色的PDF文件图标
+    'vi-ant-design:file-ppt-filled', // 填充样式的PPT文件图标
+    'vi-ant-design:file-ppt-outlined', // 描边样式的PPT文件图标
+    'vi-ant-design:file-ppt-twotone', // 两种颜色的PPT文件图标
+    'vi-ant-design:file-protect-outlined', // 描边样式的受保护文件图标
+    'vi-ant-design:file-search-outlined', // 描边样式的文件搜索图标
+    'vi-ant-design:file-sync-outlined', // 描边样式的文件同步图标
+    'vi-ant-design:file-text-filled', // 填充样式的文本文件图标
+    'vi-ant-design:file-text-outlined', // 描边样式的文本文件图标
+    'vi-ant-design:file-text-twotone', // 两种颜色的文本文件图标
+    'vi-ant-design:file-twotone', // 两种颜色的普通文件图标
+    'vi-ant-design:file-unknown-filled', // 填充样式的未知文件图标
+    'vi-ant-design:file-unknown-outlined', // 描边样式的未知文件图标
+    'vi-ant-design:file-unknown-twotone', // 两种颜色的未知文件图标
+    'vi-ant-design:file-word-filled', // 填充样式的Word文件图标
+    'vi-ant-design:file-word-outlined', // 描边样式的Word文件图标
+    'vi-ant-design:file-word-twotone', // 两种颜色的Word文件图标
+    'vi-ant-design:file-zip-filled', // 填充样式的压缩文件图标
+    'vi-ant-design:file-zip-outlined', // 描边样式的压缩文件图标
+    'vi-ant-design:file-zip-twotone', // 两种颜色的压缩文件图标
+    'vi-ant-design:filter-filled', // 填充样式的过滤器图标
+    'vi-ant-design:filter-outlined', // 描边样式的过滤器图标
+    'vi-ant-design:filter-twotone', // 两种颜色的过滤器图标
+    'vi-ant-design:fire-filled', // 填充样式的火焰图标
+    'vi-ant-design:fire-outlined', // 描边样式的火焰图标
+    'vi-ant-design:fire-twotone', // 两种颜色的火焰图标
+    'vi-ant-design:flag-filled', // 填充样式的旗帜图标
+    'vi-ant-design:flag-outlined', // 描边样式的旗帜图标
+    'vi-ant-design:flag-twotone', // 两种颜色的旗帜图标
+    'vi-ant-design:folder-add-filled', // 填充样式的添加文件夹图标
+    'vi-ant-design:folder-add-outlined', // 描边样式的添加文件夹图标
+    'vi-ant-design:folder-add-twotone', // 两种颜色的添加文件夹图标
+    'vi-ant-design:folder-filled', // 填充样式的文件夹图标
+    'vi-ant-design:folder-open-filled', // 填充样式的打开文件夹图标
+    'vi-ant-design:folder-open-outlined', // 描边样式的打开文件夹图标
+    'vi-ant-design:folder-open-twotone', // 两种颜色的打开文件夹图标
+    'vi-ant-design:folder-outlined', // 描边样式的文件夹图标
+    'vi-ant-design:folder-twotone', // 两种颜色的文件夹图标
+    'vi-ant-design:folder-view-outlined', // 描边样式的查看文件夹图标
+    'vi-ant-design:font-colors-outlined', // 描边样式的字体颜色图标
+    'vi-ant-design:font-size-outlined', // 描边样式的字体大小图标
+    'vi-ant-design:fork-outlined', // 描边样式的分叉图标
+    'vi-ant-design:form-outlined', // 描边样式的表单图标
+    'vi-ant-design:format-painter-filled', // 填充样式的格式刷图标
+    'vi-ant-design:format-painter-outlined', // 描边样式的格式刷图标
+    'vi-ant-design:forward-filled', // 填充样式的转发图标
+    'vi-ant-design:forward-outlined', // 描边样式的转发图标
+    'vi-ant-design:frown-filled', // 填充样式的皱眉表情图标
+    'vi-ant-design:frown-outlined', // 描边样式的皱眉表情图标
+    'vi-ant-design:frown-twotone', // 两种颜色的皱眉表情图标
+    'vi-ant-design:fullscreen-exit-outlined', // 描边样式的退出全屏图标
+    'vi-ant-design:fullscreen-outlined', // 描边样式的全屏图标
+    'vi-ant-design:function-outlined', // 描边样式的函数图标
+    'vi-ant-design:fund-filled', // 填充样式的资金图标
+    'vi-ant-design:fund-outlined', // 描边样式的资金图标
+    'vi-ant-design:fund-projection-screen-outlined', // 描边样式的资金投影屏幕图标
+    'vi-ant-design:fund-twotone', // 两种颜色的资金图标
+    'vi-ant-design:fund-view-outlined', // 描边样式的资金查看图标
+    'vi-ant-design:funnel-plot-filled', // 填充样式的漏斗图图标
+    'vi-ant-design:funnel-plot-outlined', // 描边样式的漏斗图图标
+    'vi-ant-design:funnel-plot-twotone', // 两种颜色的漏斗图图标
+    'vi-ant-design:gateway-outlined', // 描边样式的网关图标
+    'vi-ant-design:gif-outlined', // 描边样式的GIF图标
+    'vi-ant-design:gift-filled', // 填充样式的礼物图标
+    'vi-ant-design:gift-outlined', // 描边样式的礼物图标
+    'vi-ant-design:gift-twotone', // 两种颜色的礼物图标
+    'vi-ant-design:github-filled', // 填充样式的GitHub图标
+    'vi-ant-design:github-outlined', // 描边样式的GitHub图标
+    'vi-ant-design:gitlab-filled', // 填充样式的GitLab图标
+    'vi-ant-design:gitlab-outlined', // 描边样式的GitLab图标
+    'vi-ant-design:global-outlined', // 描边样式的地球图标
+    'vi-ant-design:gold-filled', // 填充样式的黄金图标
+    'vi-ant-design:gold-outlined', // 描边样式的黄金图标
+    'vi-ant-design:gold-twotone', // 两种颜色的黄金图标
+    'vi-ant-design:golden-filled', // 填充样式的金色图标
+    'vi-ant-design:google-circle-filled', // 填充样式的Google圆形图标
+    'vi-ant-design:google-outlined', // Google 图标，描边样式
+    'vi-ant-design:google-plus-circle-filled', // Google Plus 圆形填充图标
+    'vi-ant-design:google-plus-outlined', // Google Plus 图标，描边样式
+    'vi-ant-design:google-plus-square-filled', // Google Plus 方形填充图标
+    'vi-ant-design:google-square-filled', // Google 方形填充图标
+    'vi-ant-design:group-outlined', // 群组图标，描边样式
+    'vi-ant-design:harmony-o-s-outlined', // HarmonyOS 图标，描边样式
+    'vi-ant-design:hdd-filled', // 硬盘图标，填充样式
+    'vi-ant-design:hdd-outlined', // 硬盘图标，描边样式
+    'vi-ant-design:hdd-twotone', // 硬盘图标，两种颜色
+    'vi-ant-design:heart-filled', // 心形图标，填充样式
+    'vi-ant-design:heart-outlined', // 心形图标，描边样式
+    'vi-ant-design:heart-twotone', // 心形图标，两种颜色
+    'vi-ant-design:heat-map-outlined', // 热力图图标，描边样式
+    'vi-ant-design:highlight-filled', // 高亮图标，填充样式
+    'vi-ant-design:highlight-outlined', // 高亮图标，描边样式
+    'vi-ant-design:highlight-twotone', // 高亮图标，两种颜色
+    'vi-ant-design:history-outlined', // 历史记录图标，描边样式
+    'vi-ant-design:holder-outlined', // 占位符图标，描边样式
+    'vi-ant-design:home-filled', // 首页图标，填充样式
+    'vi-ant-design:home-outlined', // 首页图标，描边样式
+    'vi-ant-design:home-twotone', // 首页图标，两种颜色
+    'vi-ant-design:hourglass-filled', // 沙漏图标，填充样式
+    'vi-ant-design:hourglass-outlined', // 沙漏图标，描边样式
+    'vi-ant-design:hourglass-twotone', // 沙漏图标，两种颜色
+    'vi-ant-design:html5-filled', // HTML5 图标，填充样式
+    'vi-ant-design:html5-outlined', // HTML5 图标，描边样式
+    'vi-ant-design:html5-twotone', // HTML5 图标，两种颜色
+    'vi-ant-design:idcard-filled', // 身份证图标，填充样式
+    'vi-ant-design:idcard-outlined', // 身份证图标，描边样式
+    'vi-ant-design:idcard-twotone', // 身份证图标，两种颜色
+    'vi-ant-design:ie-circle-filled', // IE 浏览器圆形图标，填充样式
+    'vi-ant-design:ie-outlined', // IE 浏览器图标，描边样式
+    'vi-ant-design:ie-square-filled', // IE 浏览器方形图标，填充样式
+    'vi-ant-design:import-outlined', // 导入图标，描边样式
+    'vi-ant-design:inbox-outlined', // 收件箱图标，描边样式
+    'vi-ant-design:info-circle-filled', // 信息圆形图标，填充样式
+    'vi-ant-design:info-circle-outlined', // 信息圆形图标，描边样式
+    'vi-ant-design:info-circle-twotone', // 信息圆形图标，两种颜色
+    'vi-ant-design:info-outlined', // 信息图标，描边样式
+    'vi-ant-design:insert-row-above-outlined', // 插入行（上）图标，描边样式
+    'vi-ant-design:insert-row-below-outlined', // 插入行（下）图标，描边样式
+    'vi-ant-design:insert-row-left-outlined', // 插入行（左）图标，描边样式
+    'vi-ant-design:insert-row-right-outlined', // 插入行（右）图标，描边样式
+    'vi-ant-design:instagram-filled', // Instagram 图标，填充样式
+    'vi-ant-design:instagram-outlined', // Instagram 图标，描边样式
+    'vi-ant-design:insurance-filled', // 保险图标，填充样式
+    'vi-ant-design:insurance-outlined', // 保险图标，描边样式
+    'vi-ant-design:insurance-twotone', // 保险图标，两种颜色
+    'vi-ant-design:interaction-filled', // 交互图标，填充样式
+    'vi-ant-design:interaction-outlined', // 交互图标，描边样式
+    'vi-ant-design:interaction-twotone', // 交互图标，两种颜色
+    'vi-ant-design:issues-close-outlined', // 关闭问题图标，描边样式
+    'vi-ant-design:italic-outlined', // 斜体图标，描边样式
+    'vi-ant-design:java-outlined', // Java 图标，描边样式
+    'vi-ant-design:java-script-outlined', // JavaScript 图标，描边样式
+    'vi-ant-design:key-outlined', // 密钥图标，描边样式
+    'vi-ant-design:kubernetes-outlined', // Kubernetes 图标，描边样式
+    'vi-ant-design:laptop-outlined', // 笔记本电脑图标，描边样式
+    'vi-ant-design:layout-filled', // 布局图标，填充样式
+    'vi-ant-design:layout-outlined', // 布局图标，描边样式
+    'vi-ant-design:layout-twotone', // 布局图标，两种颜色
+    'vi-ant-design:left-circle-filled', // 左向圆形图标，填充样式
+    'vi-ant-design:left-circle-outlined', // 左向圆形图标，描边样式
+    'vi-ant-design:left-circle-twotone', // 左向圆形图标，两种颜色
+    'vi-ant-design:left-outlined', // 左向图标，描边样式
+    'vi-ant-design:left-square-filled', // 左向方形图标，填充样式
+    'vi-ant-design:left-square-outlined', // 左向方形图标，描边样式
+    'vi-ant-design:left-square-twotone', // 左向方形图标，两种颜色
+    'vi-ant-design:like-filled', // 喜欢图标，填充样式
+    'vi-ant-design:like-outlined', // 喜欢图标，描边样式
+    'vi-ant-design:like-twotone', // 喜欢图标，两种颜色
+    'vi-ant-design:line-chart-outlined', // 折线图图标，描边样式
+    'vi-ant-design:line-height-outlined', // 行高图标，描边样式
+    'vi-ant-design:line-outlined', // 直线图标，描边样式
+    'vi-ant-design:link-outlined', // 链接图标，描边样式
+    'vi-ant-design:linkedin-filled', // LinkedIn 图标，填充样式
+    'vi-ant-design:linkedin-outlined', // LinkedIn 图标，描边样式
+    'vi-ant-design:linux-outlined', // Linux 图标，描边样式
+    'vi-ant-design:loading-3-quarters-outlined', // 加载 3/4 图标，描边样式
+    'vi-ant-design:loading-outlined', // 加载图标，描边样式
+    'vi-ant-design:lock-filled', // 锁定图标，填充样式
+    'vi-ant-design:lock-outlined', // 锁定图标，描边样式
+    'vi-ant-design:lock-twotone', // 锁定图标，两种颜色
+    'vi-ant-design:login-outlined', // 登录图标，描边样式
+    'vi-ant-design:logout-outlined', // 登出图标，描边样式
+    'vi-ant-design:mac-command-filled', // Mac Command 图标，填充样式
+    'vi-ant-design:mac-command-outlined', // Mac Command 图标，描边样式
+    'vi-ant-design:mail-filled', // 邮件图标，填充样式
+    'vi-ant-design:mail-outlined', // 邮件图标，描边样式
+    'vi-ant-design:mail-twotone', // 邮件图标，两种颜色
+    'vi-ant-design:man-outlined', // 男性图标，描边样式
+    'vi-ant-design:medicine-box-filled', // 医药箱图标，填充样式
+    'vi-ant-design:medicine-box-outlined', // 医药箱图标，描边样式
+    'vi-ant-design:medicine-box-twotone', // 医药箱图标，两种颜色
+    'vi-ant-design:medium-circle-filled', // Medium 圆形图标，填充样式
+    'vi-ant-design:medium-outlined', // Medium 图标，描边样式
+    'vi-ant-design:medium-square-filled', // Medium 方形图标，填充样式
+    'vi-ant-design:medium-workmark-outlined', // Medium 工作标志图标，描边样式
+    'vi-ant-design:meh-filled', // 平淡表情图标，填充样式
+    'vi-ant-design:meh-outlined', // 平淡表情图标，描边样式
+    'vi-ant-design:meh-twotone', // 平淡表情图标，两种颜色
+    'vi-ant-design:menu-fold-outlined', // 折叠菜单图标，描边样式
+    'vi-ant-design:menu-outlined', // 菜单图标，描边样式
+    'vi-ant-design:menu-unfold-outlined', // 展开菜单图标，描边样式
+    'vi-ant-design:merge-cells-outlined', // 合并单元格图标，描边样式
+    'vi-ant-design:merge-filled', // 合并图标，填充样式
+    'vi-ant-design:merge-outlined', // 合并图标，描边样式
+    'vi-ant-design:message-filled', // 消息图标，填充样式
+    'vi-ant-design:message-outlined', // 消息图标，描边样式
+    'vi-ant-design:message-twotone', // 消息图标，两种颜色
+    'vi-ant-design:minus-circle-filled', // 减号圆形图标，填充样式
+    'vi-ant-design:minus-circle-outlined', // 减号圆形图标，描边样式
+    'vi-ant-design:minus-circle-twotone', // 减号圆形图标，两种颜色
+    'vi-ant-design:minus-outlined', // 减号图标，描边样式
+    'vi-ant-design:minus-square-filled', // 减号方形图标，填充样式
+    'vi-ant-design:minus-square-outlined', // 减号方形图标，描边样式
+    'vi-ant-design:minus-square-twotone', // 减号方形图标，两种颜色
+    'vi-ant-design:mobile-filled', // 手机图标，填充样式
+    'vi-ant-design:mobile-outlined', // 手机图标，描边样式
+    'vi-ant-design:mobile-twotone', // 手机图标，两种颜色
+    'vi-ant-design:money-collect-filled', // 收款图标，填充样式
+    'vi-ant-design:money-collect-outlined', // 收款图标，描边样式
+    'vi-ant-design:money-collect-twotone', // 收款图标，两种颜色
+    'vi-ant-design:monitor-outlined', // 监视器图标，描边样式
+    'vi-ant-design:moon-filled', // 月亮图标，填充样式
+    'vi-ant-design:moon-outlined', // 月亮图标，描边样式
+    'vi-ant-design:more-outlined', // 更多图标，描边样式
+    'vi-ant-design:muted-filled', // 静音图标，填充样式
+    'vi-ant-design:muted-outlined', // 静音图标，描边样式
+    'vi-ant-design:node-collapse-outlined', // 节点折叠图标，描边样式
+    'vi-ant-design:node-expand-outlined', // 节点展开图标，描边样式
+    'vi-ant-design:node-index-outlined', // 节点索引图标，描边样式
+    'vi-ant-design:notification-filled', // 通知图标，填充样式
+    'vi-ant-design:notification-outlined', // 通知图标，描边样式
+    'vi-ant-design:notification-twotone', // 通知图标，两种颜色
+    'vi-ant-design:number-outlined', // 数字图标，描边样式
+    'vi-ant-design:one-to-one-outlined', // 一对一图标，描边样式
+    'vi-ant-design:open-a-i-filled', // 打开 AI 图标，填充样式
+    'vi-ant-design:open-a-i-outlined', // 打开 AI 图标，描边样式
+    'vi-ant-design:ordered-list-outlined', // 有序列表图标，描边样式
+    'vi-ant-design:paper-clip-outlined', // 回形针图标，描边样式
+    'vi-ant-design:partition-outlined', // 分区图标，描边样式
+    'vi-ant-design:pause-circle-filled', // 暂停圆形图标，填充样式
+    'vi-ant-design:pause-circle-outlined', // 暂停圆形图标，描边样式
+    'vi-ant-design:pause-circle-twotone', // 暂停圆形图标，两种颜色
+    'vi-ant-design:pause-outlined', // 暂停图标，描边样式
+    'vi-ant-design:pay-circle-filled', // 支付圆形图标，填充样式
+    'vi-ant-design:pay-circle-outlined', // 支付圆形图标，描边样式
+    'vi-ant-design:percentage-outlined', // 百分比图标，描边样式
+    'vi-ant-design:phone-filled', // 电话图标，填充样式
+    'vi-ant-design:phone-outlined', // 电话图标，描边样式
+    'vi-ant-design:phone-twotone', // 电话图标，两种颜色
+    'vi-ant-design:pic-center-outlined', // 图片居中图标，描边样式
+    'vi-ant-design:pic-left-outlined', // 图片居左图标，描边样式
+    'vi-ant-design:pic-right-outlined', // 图片居右图标，描边样式
+    'vi-ant-design:picture-filled', // 图片图标，填充样式
+    'vi-ant-design:picture-outlined', // 图片图标，描边样式
+    'vi-ant-design:picture-twotone', // 图片图标，两种颜色
+    'vi-ant-design:pie-chart-filled', // 饼图图标，填充样式
+    'vi-ant-design:pie-chart-outlined', // 饼图图标，描边样式
+    'vi-ant-design:pie-chart-twotone', // 饼图图标，两种颜色
+    'vi-ant-design:pinterest-filled', // Pinterest 图标，填充样式
+    'vi-ant-design:pinterest-outlined', // Pinterest 图标，描边样式
+    'vi-ant-design:play-circle-filled', // 播放圆形图标，填充样式
+    'vi-ant-design:play-circle-outlined', // 播放圆形图标，描边样式
+    'vi-ant-design:play-circle-twotone', // 播放圆形图标，两种颜色
+    'vi-ant-design:play-square-filled', // 播放方形图标，填充样式
+    'vi-ant-design:play-square-outlined', // 播放方形图标，描边样式
+    'vi-ant-design:play-square-twotone', // 播放方形图标，两种颜色
+    'vi-ant-design:plus-circle-filled', // 加号圆形图标，填充样式
+    'vi-ant-design:plus-circle-outlined', // 加号圆形图标，描边样式
+    'vi-ant-design:plus-circle-twotone', // 加号圆形图标，两种颜色
+    'vi-ant-design:plus-outlined', // 加号图标，描边样式
+    'vi-ant-design:plus-square-filled', // 加号方形图标，填充样式
+    'vi-ant-design:plus-square-outlined', // 加号方形图标，描边样式
+    'vi-ant-design:plus-square-twotone', // 加号方形图标，两种颜色
+    'vi-ant-design:pound-circle-filled', // 英镑圆形图标，填充样式
+    'vi-ant-design:pound-circle-outlined', // 英镑圆形图标，描边样式
+    'vi-ant-design:pound-circle-twotone', // 英镑圆形图标，两种颜色
+    'vi-ant-design:pound-outlined', // 英镑图标，描边样式
+    'vi-ant-design:poweroff-outlined', // 关机图标，描边样式
+    'vi-ant-design:printer-filled', // 打印机图标，填充样式
+    'vi-ant-design:printer-outlined', // 打印机图标，描边样式
+    'vi-ant-design:printer-twotone', // 打印机图标，两种颜色
+    'vi-ant-design:product-filled', // 产品图标，填充样式
+    'vi-ant-design:product-outlined', // 产品图标，描边样式
+    'vi-ant-design:profile-filled', // 个人资料图标，填充样式
+    'vi-ant-design:profile-outlined', // 个人资料图标，描边样式
+    'vi-ant-design:profile-twotone', // 个人资料图标，两种颜色
+    'vi-ant-design:project-filled', // 项目图标，填充样式
+    'vi-ant-design:project-outlined', // 项目图标，描边样式
+    'vi-ant-design:project-twotone', // 项目图标，两种颜色
+    'vi-ant-design:property-safety-filled', // 财产安全图标，填充样式
+    'vi-ant-design:property-safety-outlined', // 财产安全图标，描边样式
+    'vi-ant-design:property-safety-twotone', // 财产安全图标，两种颜色
+    'vi-ant-design:pull-request-outlined', // 拉取请求图标，描边样式
+    'vi-ant-design:pushpin-filled', // 图钉图标，填充样式
+    'vi-ant-design:pushpin-outlined', // 图钉图标，描边样式
+    'vi-ant-design:pushpin-twotone', // 图钉图标，两种颜色
+    'vi-ant-design:python-outlined', // Python 图标，描边样式
+    'vi-ant-design:qq-circle-filled', // QQ 圆形图标，填充样式
+    'vi-ant-design:qq-outlined', // QQ 图标，描边样式
+    'vi-ant-design:qq-square-filled', // QQ 方形图标，填充样式
+    'vi-ant-design:qrcode-outlined', // 二维码图标，描边样式
+    'vi-ant-design:question-circle-filled', // 问号圆形图标，填充样式
+    'vi-ant-design:question-circle-outlined', // 问号圆形图标，描边样式
+    'vi-ant-design:question-circle-twotone', // 问号圆形图标，两种颜色
+    'vi-ant-design:question-outlined', // 问号图标，描边样式
+    'vi-ant-design:radar-chart-outlined', // 雷达图图标，描边样式
+    'vi-ant-design:radius-bottomleft-outlined', // 圆角左下图标，描边样式
+    'vi-ant-design:radius-bottomright-outlined', // 圆角右下图标，描边样式
+    'vi-ant-design:radius-setting-outlined', // 圆角设置图标，描边样式
+    'vi-ant-design:radius-upleft-outlined', // 圆角左上图标，描边样式
+    'vi-ant-design:radius-upright-outlined', // 圆角右上图标，描边样式
+    'vi-ant-design:read-filled', // 阅读图标，填充样式
+    'vi-ant-design:read-outlined', // 阅读图标，描边样式
+    'vi-ant-design:reconciliation-filled', // 对账图标，填充样式
+    'vi-ant-design:reconciliation-outlined', // 对账图标，描边样式
+    'vi-ant-design:reconciliation-twotone', // 对账图标，两种颜色
+    'vi-ant-design:red-envelope-filled', // 红包图标，填充样式
+    'vi-ant-design:red-envelope-outlined', // 红包图标，描边样式
+    'vi-ant-design:red-envelope-twotone', // 红包图标，两种颜色
+    'vi-ant-design:reddit-circle-filled', // Reddit 圆形图标，填充样式
+    'vi-ant-design:reddit-outlined', // Reddit 图标，描边样式
+    'vi-ant-design:reddit-square-filled', // Reddit 方形图标，填充样式
+    'vi-ant-design:redo-outlined', // 重做图标，描边样式
+    'vi-ant-design:reload-outlined', // 重新加载图标，描边样式
+    'vi-ant-design:rest-filled', // 休息图标，填充样式
+    'vi-ant-design:rest-outlined', // 休息图标，描边样式
+    'vi-ant-design:rest-twotone', // 休息图标，两种颜色
+    'vi-ant-design:retweet-outlined', // 转发图标，描边样式
+    'vi-ant-design:right-circle-filled', // 右箭头圆形图标，填充样式
+    'vi-ant-design:right-circle-outlined', // 右箭头圆形图标，描边样式
+    'vi-ant-design:right-circle-twotone', // 右箭头圆形图标，两种颜色
+    'vi-ant-design:right-outlined', // 右箭头图标，描边样式
+    'vi-ant-design:right-square-filled', // 右箭头方形图标，填充样式
+    'vi-ant-design:right-square-outlined', // 右箭头方形图标，描边样式
+    'vi-ant-design:right-square-twotone', // 右箭头方形图标，两种颜色
+    'vi-ant-design:rise-outlined', // 上升图标，描边样式
+    'vi-ant-design:robot-filled', // 机器人图标，填充样式
+    'vi-ant-design:robot-outlined', // 机器人图标，描边样式
+    'vi-ant-design:rocket-filled', // 火箭图标，填充样式
+    'vi-ant-design:rocket-outlined', // 火箭图标，描边样式
+    'vi-ant-design:rocket-twotone', // 火箭图标，两种颜色
+    'vi-ant-design:rollback-outlined', // 回滚图标，描边样式
+    'vi-ant-design:rotate-left-outlined', // 左旋转图标，描边样式
+    'vi-ant-design:rotate-right-outlined', // 右旋转图标，描边样式
+    'vi-ant-design:ruby-outlined', // Ruby 图标，描边样式
+    'vi-ant-design:safety-certificate-filled', // 安全证书图标，填充样式
+    'vi-ant-design:safety-certificate-outlined', // 安全证书图标，描边样式
+    'vi-ant-design:safety-certificate-twotone', // 安全证书图标，两种颜色
+    'vi-ant-design:safety-outlined', // 安全图标，描边样式
+    'vi-ant-design:save-filled', // 保存图标，填充样式
+    'vi-ant-design:save-outlined', // 保存图标，描边样式
+    'vi-ant-design:save-twotone', // 保存图标，两种颜色
+    'vi-ant-design:scan-outlined', // 扫描图标，描边样式
+    'vi-ant-design:schedule-filled', // 日程表图标，填充样式
+    'vi-ant-design:schedule-outlined', // 日程表图标，描边样式
+    'vi-ant-design:schedule-twotone', // 日程表图标，两种颜色
+    'vi-ant-design:scissor-outlined', // 剪刀图标，描边样式
+    'vi-ant-design:search-outlined', // 搜索图标，描边样式
+    'vi-ant-design:security-scan-filled', // 安全扫描图标，填充样式
+    'vi-ant-design:security-scan-outlined', // 安全扫描图标，描边样式
+    'vi-ant-design:security-scan-twotone', // 安全扫描图标，两种颜色
+    'vi-ant-design:select-outlined', // 选择图标，描边样式
+    'vi-ant-design:send-outlined', // 发送图标，描边样式
+    'vi-ant-design:setting-filled', // 设置图标，填充样式
+    'vi-ant-design:setting-outlined', // 设置图标，描边样式
+    'vi-ant-design:setting-twotone', // 设置图标，两种颜色
+    'vi-ant-design:shake-outlined', // 摇动图标，描边样式
+    'vi-ant-design:share-alt-outlined', // 分享图标，描边样式
+    'vi-ant-design:shop-filled', // 商店图标，填充样式
+    'vi-ant-design:shop-outlined', // 商店图标，描边样式
+    'vi-ant-design:shop-twotone', // 商店图标，两种颜色
+    'vi-ant-design:shopping-cart-outlined', // 购物车图标，描边样式
+    'vi-ant-design:shopping-filled', // 购物图标，填充样式
+    'vi-ant-design:shopping-outlined', // 购物图标，描边样式
+    'vi-ant-design:shopping-twotone', // 购物图标，两种颜色
+    'vi-ant-design:shrink-outlined', // 收缩图标，描边样式
+    'vi-ant-design:signal-filled', // 信号图标，填充样式
+    'vi-ant-design:signature-filled', // 签名图标，填充样式
+    'vi-ant-design:signature-outlined', // 签名图标，描边样式
+    'vi-ant-design:sisternode-outlined', // 兄弟节点图标，描边样式
+    'vi-ant-design:sketch-circle-filled', // 草图圆形图标，填充样式
+    'vi-ant-design:sketch-outlined', // 草图图标，描边样式
+    'vi-ant-design:sketch-square-filled', // 草图方形图标，填充样式
+    'vi-ant-design:skin-filled', // 皮肤图标，填充样式
+    'vi-ant-design:skin-outlined', // 皮肤图标，描边样式
+    'vi-ant-design:skin-twotone', // 皮肤图标，两种颜色
+    'vi-ant-design:skype-filled', // Skype 图标，填充样式
+    'vi-ant-design:skype-outlined', // Skype 图标，描边样式
+    'vi-ant-design:slack-circle-filled', // Slack 圆形图标，填充样式
+    'vi-ant-design:slack-outlined', // Slack 图标，描边样式
+    'vi-ant-design:slack-square-filled', // Slack 方形图标，填充样式
+    'vi-ant-design:slack-square-outlined', // Slack 方形图标，描边样式
+    'vi-ant-design:sliders-filled', // 滑块图标，填充样式
+    'vi-ant-design:sliders-outlined', // 滑块图标，描边样式
+    'vi-ant-design:sliders-twotone', // 滑块图标，两种颜色
+    'vi-ant-design:small-dash-outlined', // 小破折号图标，描边样式
+    'vi-ant-design:smile-filled', // 微笑图标，填充样式
+    'vi-ant-design:smile-outlined', // 微笑图标，描边样式
+    'vi-ant-design:smile-twotone', // 微笑图标，两种颜色
+    'vi-ant-design:snippets-filled', // 代码片段图标，填充样式
+    'vi-ant-design:snippets-outlined', // 代码片段图标，描边样式
+    'vi-ant-design:snippets-twotone', // 代码片段图标，两种颜色
+    'vi-ant-design:solution-outlined', // 解决方案图标，描边样式
+    'vi-ant-design:sort-ascending-outlined', // 升序排序图标，描边样式
+    'vi-ant-design:sort-descending-outlined', // 降序排序图标，描边样式
+    'vi-ant-design:sound-filled', // 声音图标，填充样式
+    'vi-ant-design:sound-outlined', // 声音图标，描边样式
+    'vi-ant-design:sound-twotone', // 声音图标，两种颜色
+    'vi-ant-design:split-cells-outlined', // 拆分单元格图标，描边样式
+    'vi-ant-design:spotify-filled', // Spotify 图标，填充样式
+    'vi-ant-design:spotify-outlined', // Spotify 图标，描边样式
+    'vi-ant-design:star-filled', // 星标图标，填充样式
+    'vi-ant-design:star-outlined', // 星标图标，描边样式
+    'vi-ant-design:star-twotone', // 星标图标，两种颜色
+    'vi-ant-design:step-backward-filled', // 上一步图标，填充样式
+    'vi-ant-design:step-backward-outlined', // 上一步图标，描边样式
+    'vi-ant-design:step-forward-filled', // 下一步图标，填充样式
+    'vi-ant-design:step-forward-outlined', // 下一步图标，描边样式
+    'vi-ant-design:stock-outlined', // 股票图标，描边样式
+    'vi-ant-design:stop-filled', // 停止图标，填充样式
+    'vi-ant-design:stop-outlined', // 停止图标，描边样式
+    'vi-ant-design:stop-twotone', // 停止图标，两种颜色
+    'vi-ant-design:strikethrough-outlined', // 删除线图标，描边样式
+    'vi-ant-design:subnode-outlined', // 子节点图标，描边样式
+    'vi-ant-design:sun-filled', // 太阳图标，填充样式
+    'vi-ant-design:sun-outlined', // 太阳图标，描边样式
+    'vi-ant-design:swap-left-outlined', // 左交换图标，描边样式
+    'vi-ant-design:swap-outlined', // 交换图标，描边样式
+    'vi-ant-design:swap-right-outlined', // 右交换图标，描边样式
+    'vi-ant-design:switcher-filled', // 切换器图标，填充样式
+    'vi-ant-design:switcher-outlined', // 切换器图标，描边样式
+    'vi-ant-design:switcher-twotone', // 切换器图标，两种颜色
+    'vi-ant-design:sync-outlined', // 同步图标，描边样式
+    'vi-ant-design:table-outlined', // 表格图标，描边样式
+    'vi-ant-design:tablet-filled', // 平板图标，填充样式
+    'vi-ant-design:tablet-outlined', // 平板图标，描边样式
+    'vi-ant-design:tablet-twotone', // 平板图标，两种颜色
+    'vi-ant-design:tag-filled', // 标签图标，填充样式
+    'vi-ant-design:tag-outlined', // 标签图标，描边样式
+    'vi-ant-design:tag-twotone', // 标签图标，两种颜色
+    'vi-ant-design:tags-filled', // 多标签图标，填充样式
+    'vi-ant-design:tags-outlined', // 多标签图标，描边样式
+    'vi-ant-design:tags-twotone', // 多标签图标，两种颜色
+    'vi-ant-design:taobao-circle-filled', // 淘宝圆形图标，填充样式
+    'vi-ant-design:taobao-circle-outlined', // 淘宝圆形图标，描边样式
+    'vi-ant-design:taobao-outlined', // 淘宝图标，描边样式
+    'vi-ant-design:taobao-square-filled', // 淘宝方形图标，填充样式
+    'vi-ant-design:team-outlined', // 团队图标，描边样式
+    'vi-ant-design:thunderbolt-filled', // 闪电图标，填充样式
+    'vi-ant-design:thunderbolt-outlined', // 闪电图标，描边样式
+    'vi-ant-design:thunderbolt-twotone', // 闪电图标，两种颜色
+    'vi-ant-design:tik-tok-filled', // 抖音图标，填充样式
+    'vi-ant-design:tik-tok-outlined', // 抖音图标，描边样式
+    'vi-ant-design:to-top-outlined', // 向上箭头图标，描边样式
+    'vi-ant-design:tool-filled', // 工具图标，填充样式
+    'vi-ant-design:tool-outlined', // 工具图标，描边样式
+    'vi-ant-design:tool-twotone', // 工具图标，两种颜色
+    'vi-ant-design:trademark-circle-filled', // 商标圆形图标，填充样式
+    'vi-ant-design:trademark-circle-outlined', // 商标圆形图标，描边样式
+    'vi-ant-design:trademark-circle-twotone', // 商标圆形图标，两种颜色
+    'vi-ant-design:trademark-outlined', // 商标图标，描边样式
+    'vi-ant-design:transaction-outlined', // 交易图标，描边样式
+    'vi-ant-design:translation-outlined', // 翻译图标，描边样式
+    'vi-ant-design:trophy-filled', // 奖杯图标，填充样式
+    'vi-ant-design:trophy-outlined', // 奖杯图标，描边样式
+    'vi-ant-design:trophy-twotone', // 奖杯图标，两种颜色
+    'vi-ant-design:truck-filled', // 卡车图标，填充样式
+    'vi-ant-design:truck-outlined', // 卡车图标，描边样式
+    'vi-ant-design:twitch-outlined', // Twitch 图标，描边样式
+    'vi-ant-design:twitter-circle-filled', // Twitter 圆形图标，填充样式
+    'vi-ant-design:twitter-outlined', // Twitter 图标，描边样式
+    'vi-ant-design:twitter-square-filled', // Twitter 方形图标，填充样式
+    'vi-ant-design:underline-outlined', // 下划线图标，描边样式
+    'vi-ant-design:undo-outlined', // 撤销图标，描边样式
+    'vi-ant-design:ungroup-outlined', // 取消分组图标，描边样式
+    'vi-ant-design:unlock-filled', // 解锁图标，填充样式
+    'vi-ant-design:unlock-outlined', // 解锁图标，描边样式
+    'vi-ant-design:unlock-twotone', // 解锁图标，两种颜色
+    'vi-ant-design:unordered-list-outlined', // 无序列表图标，描边样式
+    'vi-ant-design:up-circle-filled', // 向上圆形图标，填充样式
+    'vi-ant-design:up-circle-outlined', // 向上圆形图标，描边样式
+    'vi-ant-design:up-circle-twotone', // 向上圆形图标，两种颜色
+    'vi-ant-design:up-outlined', // 向上箭头图标，描边样式
+    'vi-ant-design:up-square-filled', // 向上方形图标，填充样式
+    'vi-ant-design:up-square-outlined', // 向上方形图标，描边样式
+    'vi-ant-design:up-square-twotone', // 向上方形图标，两种颜色
+    'vi-ant-design:upload-outlined', // 上传图标，描边样式
+    'vi-ant-design:usb-filled', // USB 图标，填充样式
+    'vi-ant-design:usb-outlined', // USB 图标，描边样式
+    'vi-ant-design:usb-twotone', // USB 图标，两种颜色
+    'vi-ant-design:user-add-outlined', // 添加用户图标，描边样式
+    'vi-ant-design:user-delete-outlined', // 删除用户图标，描边样式
+    'vi-ant-design:user-outlined', // 用户图标，描边样式
+    'vi-ant-design:user-switch-outlined', // 切换用户图标，描边样式
+    'vi-ant-design:usergroup-add-outlined', // 添加用户组图标，描边样式
+    'vi-ant-design:usergroup-delete-outlined', // 删除用户组图标，描边样式
+    'vi-ant-design:verified-outlined', // 已验证图标，描边样式
+    'vi-ant-design:vertical-align-bottom-outlined', // 底部对齐图标，描边样式
+    'vi-ant-design:vertical-align-middle-outlined', // 垂直居中对齐图标，描边样式
+    'vi-ant-design:vertical-align-top-outlined', // 顶部对齐图标，描边样式
+    'vi-ant-design:vertical-left-outlined', // 左对齐图标，描边样式
+    'vi-ant-design:vertical-right-outlined', // 右对齐图标，描边样式
+    'vi-ant-design:video-camera-add-outlined', // 添加摄像机图标，描边样式
+    'vi-ant-design:video-camera-filled', // 摄像机图标，填充样式
+    'vi-ant-design:video-camera-outlined', // 摄像机图标，描边样式
+    'vi-ant-design:video-camera-twotone', // 摄像机图标，两种颜色
+    'vi-ant-design:wallet-filled', // 钱包图标，填充样式
+    'vi-ant-design:wallet-outlined', // 钱包图标，描边样式
+    'vi-ant-design:wallet-twotone', // 钱包图标，两种颜色
+    'vi-ant-design:warning-filled', // 警告图标，填充样式
+    'vi-ant-design:warning-outlined', // 警告图标，描边样式
+    'vi-ant-design:warning-twotone', // 警告图标，两种颜色
+    'vi-ant-design:wechat-filled', // 微信图标，填充样式
+    'vi-ant-design:wechat-outlined', // 微信图标，描边样式
+    'vi-ant-design:wechat-work-filled', // 企业微信图标，填充样式
+    'vi-ant-design:wechat-work-outlined', // 企业微信图标，描边样式
+    'vi-ant-design:weibo-circle-filled', // 微博圆形图标，填充样式
+    'vi-ant-design:weibo-circle-outlined', // 微博圆形图标，描边样式
+    'vi-ant-design:weibo-outlined', // 微博图标，描边样式
+    'vi-ant-design:weibo-square-filled', // 微博方形图标，填充样式
+    'vi-ant-design:weibo-square-outlined', // 微博方形图标，描边样式
+    'vi-ant-design:whats-app-outlined', // WhatsApp 图标，描边样式
+    'vi-ant-design:wifi-outlined', // WiFi 图标，描边样式
+    'vi-ant-design:windows-filled', // Windows 图标，填充样式
+    'vi-ant-design:windows-outlined', // Windows 图标，描边样式
+    'vi-ant-design:woman-outlined', // 女性图标，描边样式
+    'vi-ant-design:x-filled', // X 图标，填充样式
+    'vi-ant-design:x-outlined', // X 图标，描边样式
+    'vi-ant-design:yahoo-filled', // Yahoo 图标，填充样式
+    'vi-ant-design:yahoo-outlined', // Yahoo 图标，描边样式
+    'vi-ant-design:youtube-filled', // YouTube 图标，填充样式
+    'vi-ant-design:youtube-outlined', // YouTube 图标，描边样式
+    'vi-ant-design:yuque-filled', // 语雀图标，填充样式
+    'vi-ant-design:yuque-outlined', // 语雀图标，描边样式
+    'vi-ant-design:zhihu-circle-filled', // 知乎圆形图标，填充样式
+    'vi-ant-design:zhihu-outlined', // 知乎图标，描边样式
+    'vi-ant-design:zhihu-square-filled', // 知乎方形图标，填充样式
+    'vi-ant-design:zoom-in-outlined', // 放大图标，描边样式
+    'vi-ant-design:zoom-out-outlined' // 缩小图标，描边样式
   ]
 }

@@ -1,37 +1,162 @@
 {
+  /**
+   * @file TypeScript 配置文件
+   * @description 配置 TypeScript 编译器选项，支持 Vue 和现代 JavaScript 特性
+   * @example 使用此文件配置，TypeScript 会根据规则检查和编译代码
+   * @version 1.0.0
+   * @date 2024-11-19
+   * @module TSConfig
+   * @see https://www.typescriptlang.org/tsconfig
+   * @author [吴尘](https://github.com/wucunping)
+   */
   "compilerOptions": {
+    /**
+     * 编译目标
+     * 指定生成的 JavaScript 的版本
+     * 可选值：`es3`、`es5`、`es6`、`esnext` 等
+     */
     "target": "esnext",
+
+    /**
+     * 使用 defineProperties 为类字段赋值
+     */
     "useDefineForClassFields": true,
+
+    /**
+     * 模块系统
+     * 指定生成的模块格式
+     * 可选值：`commonjs`、`amd`、`esnext` 等
+     */
     "module": "esnext",
+
+    /**
+     * 模块解析策略
+     * 可选值：`node`、`classic`
+     */
     "moduleResolution": "node",
+
+    /**
+     * 启用严格模式
+     * 包括所有类型检查选项
+     */
     "strict": true,
+
+    /**
+     * JSX 语法支持
+     * - `preserve`: 保留 JSX
+     * - `react`: 转换为 React.createElement
+     * - `react-jsx`: 转换为 React 的 JSX 编译模式
+     */
     "jsx": "preserve",
+
+    /**
+     * 生成 source map 文件，用于调试
+     */
     "sourceMap": true,
+
+    /**
+     * 允许解析 JSON 文件
+     */
     "resolveJsonModule": true,
+
+    /**
+     * 允许默认导入非 ES 模块
+     */
     "esModuleInterop": true,
+
+    /**
+     * 为 Vue JSX 提供支持
+     */
     "jsxImportSource": "vue",
+
+    /**
+     * 包含的库文件
+     * - `esnext`: 包括最新的 ECMAScript 标准
+     * - `dom`: 提供浏览器 DOM API
+     */
     "lib": ["esnext", "dom"],
+
+    /**
+     * 设置基准路径
+     * 用于解析非相对模块路径
+     */
     "baseUrl": "./",
+
+    /**
+     * 允许编译 JavaScript 文件
+     */
     "allowJs": true,
+
+    /**
+     * 文件名大小写强制一致
+     */
     "forceConsistentCasingInFileNames": true,
+
+    /**
+     * 允许使用默认导入的模块
+     */
     "allowSyntheticDefaultImports": true,
+
+    /**
+     * 是否严格检查函数类型
+     * 默认值：true
+     */
     "strictFunctionTypes": false,
+
+    /**
+     * 检查未使用的局部变量
+     */
     "noUnusedLocals": true,
+
+    /**
+     * 检查未使用的函数参数
+     */
     "noUnusedParameters": true,
+
+    /**
+     * 启用实验性装饰器
+     */
     "experimentalDecorators": true,
+
+    /**
+     * 允许隐式 any 类型
+     */
     "noImplicitAny": false,
+
+    /**
+     * 跳过库文件检查
+     */
     "skipLibCheck": true,
+
+    /**
+     * 配置路径别名
+     * 示例中 `@/*` 表示 `src/*`
+     */
     "paths": {
       "@/*": ["src/*"]
     },
+
+    /**
+     * 包含的类型声明文件
+     */
     "types": [
-      "@intlify/unplugin-vue-i18n/types",
-      "vite/client",
-      "element-plus/global",
-      "@types/qrcode",
-      "vite-plugin-svg-icons/client"
+      "@intlify/unplugin-vue-i18n/types", // 国际化支持
+      "vite/client", // Vite 环境
+      "element-plus/global", // Element Plus 全局类型
+      "@types/qrcode", // QRCode 类型
+      "vite-plugin-svg-icons/client" // SVG 图标支持
     ]
   },
+
+  /**
+   * 包含的文件和目录
+   */
   "include": ["src", "types/**/*.d.ts", "mock/**/*.ts"]
+
+  /**
+   * 排除的文件和目录
+   * 默认值：`node_modules`, `bower_components`, `jspm_packages`
+   * 可选值：`dist`, `build`, 等
+   */
   // "exclude": ["dist", "node_modules"]
 }

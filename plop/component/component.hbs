@@ -1,11 +1,32 @@
+{{!--
+@file 组件模板文件
+@description 用于生成 Vue 3 组件的基础模板文件
+@example 使用此模板生成组件文件时会自动替换 {{ name }} 为组件名称
+@version 1.0.0
+@date 2024-11-19
+@author [吴尘](https://github.com/wucunping)
+@module ComponentTemplate
+--}}
+
 <script setup lang="ts">
-import { useDesign } from '@/hooks/web/useDesign'
+  // 引入自定义的设计相关的 Hook
+  import { useDesign } from '@/hooks/web/useDesign'
 
-const { getPrefixCls } = useDesign()
+  /**
+   * 获取设计相关的方法
+   */
+  const { getPrefixCls } = useDesign()
 
-const prefixCls = getPrefixCls('{{ name }}')
+  /**
+   * 组件的前缀 CSS 类名
+   * @type {string}
+   */
+  const prefixCls = getPrefixCls('{{ name }}') // 生成基于组件名称的前缀类名
 </script>
 
 <template>
-  <div :class="`${prefixCls}-{{ name }}`">{{ upperFirstName }}</div>
+  {{!-- 包裹组件的根元素 --}}
+  <div :class="`${prefixCls}-{{ name }}`">
+    {{ upperFirstName }}
+  </div>
 </template>

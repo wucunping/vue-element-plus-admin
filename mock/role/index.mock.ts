@@ -1,29 +1,52 @@
+/**
+ * @file mock-role.ts
+ * @description 模拟角色管理接口，包含角色列表、角色权限等模拟数据的接口定义。
+ * @example
+ * import mockRoleApi from './mock-role';
+ * mockRoleApi[0].response(); // 获取角色列表数据
+ * @version 1.0.0
+ * @date 2024-11-19
+ * @author [吴尘](https://github.com/wucunping)
+ * @module mockRole
+ */
+
+// 导入 Mock.js
 import Mock from 'mockjs'
+
+// 导入常量：表示请求成功的状态码
 import { SUCCESS_CODE } from '@/constants'
+
+// 导入工具函数：生成随机字符串
 import { toAnyString } from '@/utils'
 
+/**
+ * 默认超时时间，单位为毫秒
+ */
 const timeout = 1000
 
+/**
+ * 管理员的路由配置列表
+ */
 const adminList = [
   {
-    path: '/dashboard',
-    component: '#',
-    redirect: '/dashboard/analysis',
-    name: 'Dashboard',
+    path: '/dashboard', // 路由路径
+    component: '#', // 路由组件占位符
+    redirect: '/dashboard/analysis', // 跳转路径
+    name: 'Dashboard', // 路由名称
     meta: {
-      title: 'router.dashboard',
-      icon: 'vi-ant-design:dashboard-filled',
-      alwaysShow: true
+      title: 'router.dashboard', // 路由标题
+      icon: 'vi-ant-design:dashboard-filled', // 路由图标
+      alwaysShow: true // 是否始终显示
     },
     children: [
       {
-        path: 'analysis',
-        component: 'views/Dashboard/Analysis',
-        name: 'Analysis',
+        path: 'analysis', // 子路由路径
+        component: 'views/Dashboard/Analysis', // 子路由组件
+        name: 'Analysis', // 子路由名称
         meta: {
-          title: 'router.analysis',
-          noCache: true,
-          affix: true
+          title: 'router.analysis', // 子路由标题
+          noCache: true, // 不缓存
+          affix: true // 固定在标签页
         }
       },
       {
@@ -671,11 +694,14 @@ const adminList = [
   }
 ]
 
+/**
+ * 测试路由路径列表
+ */
 const testList: string[] = [
-  '/dashboard',
-  '/dashboard/analysis',
-  '/dashboard/workplace',
-  'external-link',
+  '/dashboard', // 仪表盘首页
+  '/dashboard/analysis', // 仪表盘分析页
+  '/dashboard/workplace', // 仪表盘工作台
+  '/external-link', // 外部链接
   'https://element-plus-admin-doc.cn/',
   '/guide',
   '/guide/index',
@@ -748,9 +774,19 @@ const testList: string[] = [
   '/error/500-demo'
 ]
 
-const List: any[] = []
+/**
+ * 存储生成的角色数据
+ */
+const List: any[] = [] // 动态生成的角色列表
 
+/**
+ * 定义角色名称数组
+ */
 const roleNames = ['超级管理员', '管理员', '普通用户', '游客']
+
+/**
+ * 动态菜单数据
+ */
 const menus = [
   [
     {
@@ -758,23 +794,23 @@ const menus = [
       component: '#',
       redirect: '/dashboard/analysis',
       name: 'Dashboard',
-      status: Mock.Random.integer(0, 1),
-      id: 1,
+      status: Mock.Random.integer(0, 1), // 随机启用状态
+      id: 1, // 菜单唯一标识符
       meta: {
-        title: '首页',
-        icon: 'vi-ant-design:dashboard-filled',
-        alwaysShow: true
+        title: '首页', // 菜单标题
+        icon: 'vi-ant-design:dashboard-filled', // 菜单图标
+        alwaysShow: true // 始终显示
       },
       children: [
         {
           path: 'analysis',
           component: 'views/Dashboard/Analysis',
           name: 'Analysis',
-          status: Mock.Random.integer(0, 1),
+          status: Mock.Random.integer(0, 1), // 启用状态
           id: 2,
           meta: {
-            title: '分析页',
-            noCache: true
+            title: '分析页', // 菜单标题
+            noCache: true // 不缓存
           }
         },
         {
@@ -1156,34 +1192,44 @@ const menus = [
   ]
 ]
 
+/** 动态生成角色列表数据 */
 for (let i = 0; i < 4; i++) {
   List.push(
     Mock.mock({
-      id: toAnyString(),
-      // timestamp: +Mock.Random.date('T'),
-      roleName: roleNames[i],
-      role: '@first',
-      status: Mock.Random.integer(0, 1),
-      createTime: '@datetime',
-      remark: '@cword(10, 15)',
-      menu: menus[i]
+      id: toAnyString(), // 唯一标识符
+      roleName: roleNames[i], // 角色名称
+      role: '@first', // 随机生成角色
+      status: Mock.Random.integer(0, 1), // 随机启用状态
+      createTime: '@datetime', // 随机生成创建时间
+      remark: '@cword(10, 15)', // 随机生成备注信息
+      menu: menus[i] // 角色权限菜单
     })
   )
 }
 
+/**
+ * 导出模拟接口集合
+ */
 export default [
-  // 列表接口
+  /**
+   * 获取管理员路由列表接口
+   * @returns {object} 包含路由列表的数据
+   */
   {
-    url: '/mock/role/list',
-    method: 'get',
-    timeout,
+    url: '/mock/role/list', // 接口 URL
+    method: 'get', // 请求方法
+    timeout, // 请求超时时间
     response: () => {
       return {
-        code: SUCCESS_CODE,
-        data: adminList
+        code: SUCCESS_CODE, // 成功状态码
+        data: adminList // 管理员列表数据
       }
     }
   },
+  /**
+   * 获取角色权限表格接口
+   * @returns {object} 包含角色列表和总记录数
+   */
   {
     url: '/mock/role/table',
     method: 'get',
@@ -1192,13 +1238,16 @@ export default [
       return {
         code: SUCCESS_CODE,
         data: {
-          list: List,
-          total: 4
+          list: List, // 角色列表数据
+          total: 4 // 总记录数
         }
       }
     }
   },
-  // 列表接口
+  /**
+   * 获取测试路由列表接口
+   * @returns {object} 包含测试路由路径数组
+   */
   {
     url: '/mock/role/list2',
     method: 'get',
@@ -1206,7 +1255,7 @@ export default [
     response: () => {
       return {
         code: SUCCESS_CODE,
-        data: testList
+        data: testList // 测试路径列表
       }
     }
   },

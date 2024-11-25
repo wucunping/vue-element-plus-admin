@@ -1,10 +1,24 @@
-// 命名空间
+/**
+ * @file variables.module.less
+ * @description 定义项目中使用的命名空间变量，用于规范 CSS 类名前缀及样式模块化支持。
+ * @example
+ *  // 在组件中使用命名空间
+ *  .@{namespace}-header {
+ *    color: red;
+ *  }
+ * @version 1.0.0
+ * @date 2024-11-18
+ * @author [吴尘](https://github.com/wucunping)
+ */
+
+// 项目中使用的自定义命名空间
 @adminNamespace: v;
-// el命名空间
+
+// Element Plus 组件库的命名空间
 @elNamespace: el;
 
-// 导出变量
+// 导出变量以供模块化使用
 :export {
-  namespace: @adminNamespace;
-  elNamespace: @elNamespace;
+  namespace: @adminNamespace; // 自定义命名空间
+  elNamespace: @elNamespace; // Element Plus 命名空间
 }
